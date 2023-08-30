@@ -1,0 +1,62 @@
+{
+    "sourceFile": "src/styles/_fonts.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1683211991777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1683212017141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @font-face {\r\n     font-family: 'Gill Sans';\r\n-    src: url('/fonts/gillsans-regular.woff2') format('woff2'),\r\n+    src: url('../fonts/Gilroy-Medium') format('woff2'),\r\n          url('/fonts/gillsans-regular.woff') format('woff');\r\n     font-weight: normal;\r\n     font-style: normal;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683212030831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @font-face {\r\n     font-family: 'Gill Sans';\r\n-    src: url('../fonts/Gilroy-Medium') format('woff2'),\r\n+    src: url('../fonts/Gilroy-Medium.ttf') format('ttf'),\r\n          url('/fonts/gillsans-regular.woff') format('woff');\r\n     font-weight: normal;\r\n     font-style: normal;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683212040424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n @font-face {\r\n     font-family: 'Gill Sans';\r\n     src: url('../fonts/Gilroy-Medium.ttf') format('ttf'),\r\n-         url('/fonts/gillsans-regular.woff') format('woff');\r\n     font-weight: normal;\r\n     font-style: normal;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683212047450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n @font-face {\r\n     font-family: 'Gill Sans';\r\n-    src: url('../fonts/Gilroy-Medium.ttf') format('ttf'),\r\n+    src: url('../fonts/Gilroy-Medium.ttf') format('ttf');\r\n+         url('/fonts/gillsans-regular.woff') format('woff');\r\n     font-weight: normal;\r\n     font-style: normal;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683212056550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,18 @@\n @font-face {\r\n     font-family: 'Gill Sans';\r\n     src: url('../fonts/Gilroy-Medium.ttf') format('ttf');\r\n-         url('/fonts/gillsans-regular.woff') format('woff');\r\n     font-weight: normal;\r\n     font-style: normal;\r\n+  }\r\n+  @font-face {\r\n+    font-family: 'Gill Sans';\r\n+    src: url('../fonts/Gilroy-Medium.ttf') format('ttf');\r\n+    font-weight: normal;\r\n+    font-style: normal;\r\n+  }\r\n+  @font-face {\r\n+    font-family: 'Gill Sans';\r\n+    src: url('../fonts/Gilroy-Medium.ttf') format('ttf');\r\n+    font-weight: normal;\r\n+    font-style: normal;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683212072450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     font-style: normal;\r\n   }\r\n   @font-face {\r\n     font-family: 'Gill Sans';\r\n-    src: url('../fonts/Gilroy-Medium.ttf') format('ttf');\r\n+    src: url('../fonts/Gilroy-Heav.ttf') format('ttf');\r\n     font-weight: normal;\r\n     font-style: normal;\r\n   }\r\n   @font-face {\r\n"
+                },
+                {
+                    "date": 1683212078583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,14 +5,14 @@\n     font-style: normal;\r\n   }\r\n   @font-face {\r\n     font-family: 'Gill Sans';\r\n-    src: url('../fonts/Gilroy-Heav.ttf') format('ttf');\r\n+    src: url('../fonts/Gilroy-Heavy.ttf') format('ttf');\r\n     font-weight: normal;\r\n     font-style: normal;\r\n   }\r\n   @font-face {\r\n     font-family: 'Gill Sans';\r\n-    src: url('../fonts/Gilroy-Medium.ttf') format('ttf');\r\n+    src: url('../fonts/Gilroy-.ttf') format('ttf');\r\n     font-weight: normal;\r\n     font-style: normal;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683212086565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     font-style: normal;\r\n   }\r\n   @font-face {\r\n     font-family: 'Gill Sans';\r\n-    src: url('../fonts/Gilroy-.ttf') format('ttf');\r\n-    font-weight: normal;\r\n+    src: url('../fonts/Gilroy-Light.ttf') format('ttf');\r\n+    font-weight: light;\r\n     font-style: normal;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683212092996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,12 @@\n   @font-face {\r\n     font-family: 'Gill Sans';\r\n     src: url('../fonts/Gilroy-Heavy.ttf') format('ttf');\r\n     font-weight: normal;\r\n-    font-style: normal;\r\n+    font-style: hea;\r\n   }\r\n   @font-face {\r\n     font-family: 'Gill Sans';\r\n     src: url('../fonts/Gilroy-Light.ttf') format('ttf');\r\n     font-weight: light;\r\n-    font-style: normal;\r\n+    font-style: light;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683212101025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n   }\r\n   @font-face {\r\n     font-family: 'Gill Sans';\r\n     src: url('../fonts/Gilroy-Heavy.ttf') format('ttf');\r\n-    font-weight: normal;\r\n-    font-style: hea;\r\n+    font-weight: bold;\r\n+    font-style: heavy;\r\n   }\r\n   @font-face {\r\n     font-family: 'Gill Sans';\r\n     src: url('../fonts/Gilroy-Light.ttf') format('ttf');\r\n"
+                },
+                {
+                    "date": 1683212268649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n @font-face {\r\n     font-family: 'Gill Sans';\r\n-    src: url('../fonts/Gilroy-Medium.ttf') format('ttf');\r\n+    src: url('../fonts/Gilroy-Medium.ttf') format('truetype');\r\n     font-weight: normal;\r\n     font-style: normal;\r\n   }\r\n   @font-face {\r\n     font-family: 'Gill Sans';\r\n     src: url('../fonts/Gilroy-Heavy.ttf') format('ttf');\r\n     font-weight: bold;\r\n-    font-style: heavy;\r\n+    font-style: bold;\r\n   }\r\n   @font-face {\r\n     font-family: 'Gill Sans';\r\n     src: url('../fonts/Gilroy-Light.ttf') format('ttf');\r\n"
+                }
+            ],
+            "date": 1683211991777,
+            "name": "Commit-0",
+            "content": "@font-face {\r\n    font-family: 'Gill Sans';\r\n    src: url('/fonts/gillsans-regular.woff2') format('woff2'),\r\n         url('/fonts/gillsans-regular.woff') format('woff');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n  }"
+        }
+    ]
+}

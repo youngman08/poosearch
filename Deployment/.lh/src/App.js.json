@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1682691198166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682691204462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     //import redirect with navigate\r\n     <Router className=\"App\">\r\n         <Routes>\r\n             <Route path=\"/\" element={<Home />} exact />\r\n-          \r\n+            <Routes>\r\n     );\r\n }\r\n \r\n export default App;\r\n"
+                },
+                {
+                    "date": 1682691213262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     <Router className=\"App\">\r\n         <Routes>\r\n             <Route path=\"/\" element={<Home />} exact />\r\n             </Routes>\r\n-            <Router\r\n+            <Router></Router>\r\n     );\r\n }\r\n \r\n export default App;\r\n"
+                },
+                {
+                    "date": 1684600573274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n import './styles/flex.scss';\r\n import BasicResult from \"./pages/basicResult\";\r\n import FullResult from \"./pages/fullResult\";\r\n import './js/script.js';\r\n-import './styles/respons';\r\n+import './styles/respon';\r\n export const BASE_API = \"http://127.0.0.1:8000/api/\";\r\n \r\n export function check_error(response) {\r\n   return response.err_c !== undefined;\r\n"
+                }
+            ],
+            "date": 1682691198166,
+            "name": "Commit-0",
+            "content": "import {BrowserRouter as Router, Routes, Route} from \"react-router-dom\";\r\nimport \"./App.css\";\r\nimport Home from \"./pages\";\r\nimport Signin from \"./pages/signin\";\r\nimport Register from \"./pages/register\";\r\nimport Dashboard from \"./pages/dashboard\";\r\nimport DashViewProfile from \"./pages/view_profile\";\r\nimport DashEditProfile from \"./pages/editProfile\";\r\nimport DashPromotion from \"./pages/dashPromotion\";\r\nimport SearchPage from \"./pages/search\";\r\nimport AdvancedSearchPage from \"./pages/advanced_search\";\r\nimport CreateRecipePage from \"./pages/create_recipe\";\r\nimport ChiefProfilePage from \"./pages/chief_profile\";\r\nimport TicketsPage from \"./pages/ticket\";\r\nimport {useState} from \"react\";\r\nimport axios from \"axios\";\r\nimport Foods from \"./Components/Foods/Food\";\r\nimport FoodDetail from \"./Components/Foods/FoodDetail\";\r\nimport Forum from \"./Components/Forum/Forum\";\r\nimport ForumProfile from \"./Components/Forum/ForumProfile\";\r\nimport ForumDetail from \"./Components/Forum/ForumDetail\";\r\nimport { useLogin } from \"./hooks/useLogin\";\r\n\r\n\r\nexport const BASE_API = \"http://127.0.0.1:8000/api/\"\r\nexport const ROLES = {1: \"کاربر\", 2: \"آشپز\"}\r\n\r\nexport function check_error(response) {\r\n    return response.err_c !== undefined;\r\n}\r\n\r\n\r\nfunction App() {\r\n    const user = useLogin();\r\n    const isLogin = user !== \"unauth\";\r\n    const [fetchFood, setfetchFood] = useState([]);\r\n    const setFoods = (value) => {\r\n        setfetchFood(value)\r\n        console.log(fetchFood);\r\n    };\r\n  //atom globally\r\n\r\n  return (\r\n    //import redirect with navigate\r\n    <Router className=\"App\">\r\n        <Routes>\r\n            <Route path=\"/\" element={<Home />} exact />\r\n          \r\n    );\r\n}\r\n\r\nexport default App;\r\n"
+        }
+    ]
+}

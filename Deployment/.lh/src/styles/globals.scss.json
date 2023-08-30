@@ -1,0 +1,102 @@
+{
+    "sourceFile": "src/styles/globals.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 21,
+            "patches": [
+                {
+                    "date": 1683212537054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1683212610223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     secondary: #4caf50,\r\n     buy: #41b62a,\r\n     sell: #ff3f3f,\r\n     dark-gray: $dark-gray,\r\n-    light-gray: $light-gray,\r\n+    light-g\"ray: $light-gray,\r\n     white: white,\r\n     gray: gray,\r\n     black: black,\r\n     bg: black,\r\n@@ -63,9 +63,8 @@\n }\r\n \r\n body {\r\n     color: black;\r\n-    background: black;\r\n }\r\n \r\n // @media (prefers-color-scheme: dark) {\r\n //     html {\r\n"
+                },
+                {
+                    "date": 1683212619933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n     secondary: #4caf50,\r\n     buy: #41b62a,\r\n     sell: #ff3f3f,\r\n     dark-gray: $dark-gray,\r\n-    light-g\"ray: $light-gray,\r\n-    white: white,\r\n+    light-gray: $light-gray,\r\n+    white: \"white\",\r\n     gray: gray,\r\n     black: black,\r\n     bg: black,\r\n     fg: white,\r\n"
+                },
+                {
+                    "date": 1683212631051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,12 +33,12 @@\n     sell: #ff3f3f,\r\n     dark-gray: $dark-gray,\r\n     light-gray: $light-gray,\r\n     white: \"white\",\r\n-    gray: gray,\r\n-    black: black,\r\n-    bg: black,\r\n-    fg: white,\r\n+    gray: \"gray\",\r\n+    black: \"black\",\r\n+    bg: \"black\",\r\n+    fg: \"white\",\r\n     bg2: $dark-gray,\r\n     fg2: $light-gray,\r\n     green: #2e7d32,\r\n     yellow: #ed6c02,\r\n@@ -62,9 +62,9 @@\n     color-scheme: dark;\r\n }\r\n \r\n body {\r\n-    color: black;\r\n+    color: \"black\";\r\n }\r\n \r\n // @media (prefers-color-scheme: dark) {\r\n //     html {\r\n"
+                },
+                {
+                    "date": 1683212989119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,13 +65,4 @@\n body {\r\n     color: \"black\";\r\n }\r\n \r\n-// @media (prefers-color-scheme: dark) {\r\n-//     html {\r\n-//         color-scheme: dark;\r\n-//     }\r\n-//     body {\r\n-//         color: white;\r\n-//         background: black;\r\n-//     }\r\n-// }\r\n"
+                },
+                {
+                    "date": 1683215923737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n ol {\r\n     list-style-type: persian;\r\n }\r\n \r\n-$dark-gray: #222;\r\n+$dark-gray: #\"222\";\r\n $light-gray: #ddd;\r\n \r\n $colors: (\r\n     primary: #fbaf17,\r\n"
+                },
+                {
+                    "date": 1683215929886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n ol {\r\n     list-style-type: persian;\r\n }\r\n \r\n-$dark-gray: #\"222\";\r\n+$dark-gray: \"#222\";\r\n $light-gray: #ddd;\r\n \r\n $colors: (\r\n     primary: #fbaf17,\r\n"
+                },
+                {
+                    "date": 1683215936130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,12 +23,12 @@\n     list-style-type: persian;\r\n }\r\n \r\n $dark-gray: \"#222\";\r\n-$light-gray: #ddd;\r\n+$light-gray: \"#ddd\";\r\n \r\n $colors: (\r\n-    primary: #fbaf17,\r\n+    primary: \"#fbaf17\",\r\n     secondary: #4caf50,\r\n     buy: #41b62a,\r\n     sell: #ff3f3f,\r\n     dark-gray: $dark-gray,\r\n"
+                },
+                {
+                    "date": 1683215945158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n $light-gray: \"#ddd\";\r\n \r\n $colors: (\r\n     primary: \"#fbaf17\",\r\n-    secondary: #4caf50,\r\n-    buy: #41b62a,\r\n+    secondary: \"#4caf50\",\r\n+    buy:\" #41b62a\"a,\r\n     sell: #ff3f3f,\r\n     dark-gray: $dark-gray,\r\n     light-gray: $light-gray,\r\n     white: \"white\",\r\n"
+                },
+                {
+                    "date": 1683215950972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,10 @@\n \r\n $colors: (\r\n     primary: \"#fbaf17\",\r\n     secondary: \"#4caf50\",\r\n-    buy:\" #41b62a\"a,\r\n-    sell: #ff3f3f,\r\n+    buy:\" #41b62a\",\r\n+    sell: \"#ff3f3f\",\r\n     dark-gray: $dark-gray,\r\n     light-gray: $light-gray,\r\n     white: \"white\",\r\n     gray: \"gray\",\r\n"
+                },
+                {
+                    "date": 1683215958562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,10 +39,10 @@\n     bg: \"black\",\r\n     fg: \"white\",\r\n     bg2: $dark-gray,\r\n     fg2: $light-gray,\r\n-    green: #2e7d32,\r\n-    yellow: #ed6c02,\r\n+    green: \"#2e7d32\",\r\n+    yellow:\" #ed6c02\",\r\n     red: #d32f2f,\r\n     bg-gold: #dba63c,\r\n );\r\n \r\n"
+                },
+                {
+                    "date": 1683215963667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,10 @@\n     bg2: $dark-gray,\r\n     fg2: $light-gray,\r\n     green: \"#2e7d32\",\r\n     yellow:\" #ed6c02\",\r\n-    red: #d32f2f,\r\n-    bg-gold: #dba63c,\r\n+    red:\" #d32f2f\",\r\n+    bg-gold:\" #dba63c\",\r\n );\r\n \r\n @each $k, $v in $colors {\r\n     .back-#{$k} {\r\n"
+                },
+                {
+                    "date": 1683216009831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,8 @@\n     light-gray: $light-gray,\r\n     white: \"white\",\r\n     gray: \"gray\",\r\n     black: \"black\",\r\n-    bg: \"black\",\r\n-    fg: \"white\",\r\n     bg2: $dark-gray,\r\n     fg2: $light-gray,\r\n     green: \"#2e7d32\",\r\n     yellow:\" #ed6c02\",\r\n"
+                },
+                {
+                    "date": 1683216017205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,11 +32,9 @@\n     buy:\" #41b62a\",\r\n     sell: \"#ff3f3f\",\r\n     dark-gray: $dark-gray,\r\n     light-gray: $light-gray,\r\n-    white: \"white\",\r\n-    gray: \"gray\",\r\n-    black: \"black\",\r\n+\r\n     bg2: $dark-gray,\r\n     fg2: $light-gray,\r\n     green: \"#2e7d32\",\r\n     yellow:\" #ed6c02\",\r\n"
+                },
+                {
+                    "date": 1683216092846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,11 @@\n     buy:\" #41b62a\",\r\n     sell: \"#ff3f3f\",\r\n     dark-gray: $dark-gray,\r\n     light-gray: $light-gray,\r\n-\r\n+    white: \"white\",\r\n+    gray: \"gray\",\r\n+    black: \"black\",\r\n     bg2: $dark-gray,\r\n     fg2: $light-gray,\r\n     green: \"#2e7d32\",\r\n     yellow:\" #ed6c02\",\r\n"
+                },
+                {
+                    "date": 1683216122098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,38 +25,9 @@\n \r\n $dark-gray: \"#222\";\r\n $light-gray: \"#ddd\";\r\n \r\n-$colors: (\r\n-    primary: \"#fbaf17\",\r\n-    secondary: \"#4caf50\",\r\n-    buy:\" #41b62a\",\r\n-    sell: \"#ff3f3f\",\r\n-    dark-gray: $dark-gray,\r\n-    light-gray: $light-gray,\r\n-    white: \"white\",\r\n-    gray: \"gray\",\r\n-    black: \"black\",\r\n-    bg2: $dark-gray,\r\n-    fg2: $light-gray,\r\n-    green: \"#2e7d32\",\r\n-    yellow:\" #ed6c02\",\r\n-    red:\" #d32f2f\",\r\n-    bg-gold:\" #dba63c\",\r\n-);\r\n \r\n-@each $k, $v in $colors {\r\n-    .back-#{$k} {\r\n-        background: $v;\r\n-    }\r\n-    .color-#{$k} {\r\n-        color: $v;\r\n-    }\r\n-    .border-#{$k} {\r\n-        border: 1px solid $v;\r\n-    }\r\n-}\r\n-\r\n html {\r\n     color-scheme: dark;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1683216518492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,7 @@\n }\r\n \r\n body {\r\n     color: \"black\";\r\n+    background-color: rgb(0,22,45);\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1683216534488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,8 @@\n     color-scheme: dark;\r\n }\r\n \r\n body {\r\n-    color: \"black\";\r\n+    color: \"white\";\r\n     background-color: rgb(0,22,45);\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1683216551889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,8 @@\n     color-scheme: dark;\r\n }\r\n \r\n body {\r\n-    color: \"white\";\r\n+    color: white;\r\n     background-color: rgb(0,22,45);\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1689497965236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,17 +22,77 @@\n ol {\r\n     list-style-type: persian;\r\n }\r\n \r\n-$dark-gray: \"#222\";\r\n-$light-gray: \"#ddd\";\r\n+$dark-gray: #222;\r\n+$light-gray: #ddd;\r\n \r\n+$colors: (\r\n+    primary: #fbaf17,\r\n+    secondary: #4caf50,\r\n+    buy: #41b62a,\r\n+    sell: #ff3f3f,\r\n+    dark-gray: $dark-gray,\r\n+    light-gray: $light-gray,\r\n+    white: white,\r\n+    gray: gray,\r\n+    gray2: #ABA69A,\r\n+    black: black,\r\n+    bg: black,\r\n+    fg: white,\r\n+    bg2: $dark-gray,\r\n+    fg2: $light-gray,\r\n+    green: #2e7d32,\r\n+    yellow: #ed6c02,\r\n+    red: #d32f2f,\r\n+    bg-gold: #dba63c,\r\n+);\r\n \r\n+@each $k, $v in $colors {\r\n+    .back-#{$k} {\r\n+        background: $v;\r\n+    }\r\n+    .color-#{$k} {\r\n+        color: $v;\r\n+    }\r\n+    .border-#{$k} {\r\n+        border: 1px solid $v;\r\n+    }\r\n+}\r\n+\r\n html {\r\n     color-scheme: dark;\r\n }\r\n \r\n body {\r\n-    color: white;\r\n-    background-color: rgb(0,22,45);\r\n+    color: black;\r\n+    background: black;\r\n }\r\n \r\n+// @media (prefers-color-scheme: dark) {\r\n+//     html {\r\n+//         color-scheme: dark;\r\n+//     }\r\n+//     body {\r\n+//         color: white;\r\n+//         background: black;\r\n+//     }\r\n+// }\r\n+// @media only screen and (max-width: 600px) {\r\n+\r\n+//     .hero-element {\r\n+//         // justify-content: center;\r\n+//             // text-align: center;\r\n+//             // align-items: center;\r\n+        \r\n+//     font-size: 14px;\r\n+\r\n+//     }\r\n+//     .hero-span,.hero-div{\r\n+//         margin-top: 10px;\r\n+//     }\r\n+//     .hero-content{\r\n+//         font-size: 14px;\r\n+//         // text-align: center;\r\n+//         // align-items: center;\r\n+//     }\r\n+// }\r\n"
+                },
+                {
+                    "date": 1689497972542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n }\r\n \r\n body {\r\n     color: black;\r\n-    background: w;\r\n+    background: white;\r\n }\r\n \r\n // @media (prefers-color-scheme: dark) {\r\n //     html {\r\n"
+                },
+                {
+                    "date": 1689498141053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,72 @@\n+html,\r\n+body {\r\n+    min-height: 100%;\r\n+    padding: 0;\r\n+    margin: 0;\r\n+    font-family: Vazirmatn;\r\n+}\r\n+\r\n+html,\r\n+body,\r\n+#__next {\r\n+    display: flex;\r\n+    flex-direction: column;\r\n+    flex-grow: 1;\r\n+}\r\n+\r\n+a {\r\n+    color: inherit;\r\n+    text-decoration: none;\r\n+}\r\n+\r\n+ol {\r\n+    list-style-type: persian;\r\n+}\r\n+\r\n+$dark-gray: #222;\r\n+$light-gray: #ddd;\r\n+\r\n+$colors: (\r\n+    primary: #fbaf17,\r\n+    secondary: #4caf50,\r\n+    buy: #41b62a,\r\n+    sell: #ff3f3f,\r\n+    dark-gray: $dark-gray,\r\n+    light-gray: $light-gray,\r\n+    white: white,\r\n+    gray: gray,\r\n+    gray2: #ABA69A,\r\n+    black: black,\r\n+    bg: black,\r\n+    fg: white,\r\n+    bg2: $dark-gray,\r\n+    fg2: $light-gray,\r\n+    green: #2e7d32,\r\n+    yellow: #ed6c02,\r\n+    red: #d32f2f,\r\n+    bg-gold: #dba63c,\r\n+);\r\n+\r\n+@each $k,\r\n+$v in $colors {\r\n+    .back-#{$k} {\r\n+        background: $v;\r\n+    }\r\n+\r\n+    .color-#{$k} {\r\n+        color: $v;\r\n+    }\r\n+\r\n+    .border-#{$k} {\r\n+        border: 1px solid $v;\r\n+    }\r\n+}\r\n+\r\n+html {\r\n+    color-scheme: dark;\r\n+}\r\n+\r\n+body {\r\n+    color: black;\r\n+    background: white;\r\n+}\r\n"
+                }
+            ],
+            "date": 1683212537054,
+            "name": "Commit-0",
+            "content": "html,\r\nbody {\r\n    min-height: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n    font-family: Vazirmatn;\r\n}\r\n\r\nhtml,\r\nbody,\r\n#__next {\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-grow: 1;\r\n}\r\n\r\na {\r\n    color: inherit;\r\n    text-decoration: none;\r\n}\r\n\r\nol {\r\n    list-style-type: persian;\r\n}\r\n\r\n$dark-gray: #222;\r\n$light-gray: #ddd;\r\n\r\n$colors: (\r\n    primary: #fbaf17,\r\n    secondary: #4caf50,\r\n    buy: #41b62a,\r\n    sell: #ff3f3f,\r\n    dark-gray: $dark-gray,\r\n    light-gray: $light-gray,\r\n    white: white,\r\n    gray: gray,\r\n    black: black,\r\n    bg: black,\r\n    fg: white,\r\n    bg2: $dark-gray,\r\n    fg2: $light-gray,\r\n    green: #2e7d32,\r\n    yellow: #ed6c02,\r\n    red: #d32f2f,\r\n    bg-gold: #dba63c,\r\n);\r\n\r\n@each $k, $v in $colors {\r\n    .back-#{$k} {\r\n        background: $v;\r\n    }\r\n    .color-#{$k} {\r\n        color: $v;\r\n    }\r\n    .border-#{$k} {\r\n        border: 1px solid $v;\r\n    }\r\n}\r\n\r\nhtml {\r\n    color-scheme: dark;\r\n}\r\n\r\nbody {\r\n    color: black;\r\n    background: black;\r\n}\r\n\r\n// @media (prefers-color-scheme: dark) {\r\n//     html {\r\n//         color-scheme: dark;\r\n//     }\r\n//     body {\r\n//         color: white;\r\n//         background: black;\r\n//     }\r\n// }\r\n"
+        }
+    ]
+}

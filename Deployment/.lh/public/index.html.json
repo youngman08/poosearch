@@ -1,0 +1,82 @@
+{
+    "sourceFile": "public/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1682709895564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682709902798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,7 +29,6 @@\n   <body>\n     <noscript>You need to enable JavaScript to run this app.</noscript>\n     <div id=\"root\"></div>\n \n-    -->\n   </body>\n </html>\n"
+                },
+                {
+                    "date": 1682709908623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,17 +14,9 @@\n       manifest.json provides metadata used when your web app is installed on a\n       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/\n     -->\n     <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\n-    <!--\n-      Notice the use of %PUBLIC_URL% in the tags above.\n-      It will be replaced with the URL of the `public` folder during the build.\n-      Only files inside the `public` folder can be referenced from the HTML.\n \n-      Unlike \"/favicon.ico\" or \"favicon.ico\", \"%PUBLIC_URL%/favicon.ico\" will\n-      work correctly both with client-side routing and a non-root public URL.\n-      Learn how to configure a non-root public URL by running `npm run build`.\n-    -->\n     <title>React App</title>\n   </head>\n   <body>\n     <noscript>You need to enable JavaScript to run this app.</noscript>\n"
+                },
+                {
+                    "date": 1683264207609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,18 +9,14 @@\n       name=\"description\"\n       content=\"Web site created using create-react-app\"\n     />\n     <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/logo192.png\" />\n-    <!--\n-      manifest.json provides metadata used when your web app is installed on a\n-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/\n-    -->\n+\n     <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\n \n-    <title>React App</title>\n+    <title>KONWLEDGEOGRAPHY</title>\n   </head>\n   <body>\n     <noscript>You need to enable JavaScript to run this app.</noscript>\n     <div id=\"root\"></div>\n-\n   </body>\n </html>\n"
+                },
+                {
+                    "date": 1683264319312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <!DOCTYPE html>\n <html lang=\"en\">\n   <head>\n     <meta charset=\"utf-8\" />\n-    <link rel=\"icon\" href=\"%PUBLIC_URL%/favicon.ico\" />\n+    <link rel=\"icon\" href=\"../\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n     <meta name=\"theme-color\" content=\"#000000\" />\n     <meta\n       name=\"description\"\n"
+                },
+                {
+                    "date": 1683264325214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <!DOCTYPE html>\n <html lang=\"en\">\n   <head>\n     <meta charset=\"utf-8\" />\n-    <link rel=\"icon\" href=\"../\" />\n+    <link rel=\"icon\" href=\"../src/\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n     <meta name=\"theme-color\" content=\"#000000\" />\n     <meta\n       name=\"description\"\n"
+                },
+                {
+                    "date": 1683264332604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <!DOCTYPE html>\n <html lang=\"en\">\n   <head>\n     <meta charset=\"utf-8\" />\n-    <link rel=\"icon\" href=\"../src/\" />\n+    <link rel=\"icon\" href=\"../src/images/Myearth2.png\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n     <meta name=\"theme-color\" content=\"#000000\" />\n     <meta\n       name=\"description\"\n"
+                },
+                {
+                    "date": 1683264339514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <meta\n       name=\"description\"\n       content=\"Web site created using create-react-app\"\n     />\n-    <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/logo192.png\" />\n+    <link rel=\"apple-touch-icon\" href=\"../src/images/Myearth2.png\" />\n \n     <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\n \n     <title>KONWLEDGEOGRAPHY</title>\n"
+                },
+                {
+                    "date": 1683264365817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       content=\"Web site created using create-react-app\"\n     />\n     <link rel=\"apple-touch-icon\" href=\"../src/images/Myearth2.png\" />\n \n-    <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\n+    <link rel=\"manifest\" href=\"../src/images/Myearth2.png\" />\n \n     <title>KONWLEDGEOGRAPHY</title>\n   </head>\n   <body>\n"
+                },
+                {
+                    "date": 1683264386314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n     <meta name=\"theme-color\" content=\"#000000\" />\n     <meta\n       name=\"description\"\n-      content=\"Web site created using create-react-app\"\n+      content=\"\"\n     />\n     <link rel=\"apple-touch-icon\" href=\"../src/images/Myearth2.png\" />\n \n     <link rel=\"manifest\" href=\"../src/images/Myearth2.png\" />\n"
+                },
+                {
+                    "date": 1683264405251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,17 +6,16 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n     <meta name=\"theme-color\" content=\"#000000\" />\n     <meta\n       name=\"description\"\n-      content=\"\"\n+      content=\"KONWLEDGEOGRAPHY\"\n     />\n     <link rel=\"apple-touch-icon\" href=\"../src/images/Myearth2.png\" />\n \n     <link rel=\"manifest\" href=\"../src/images/Myearth2.png\" />\n \n     <title>KONWLEDGEOGRAPHY</title>\n   </head>\n   <body>\n-    <noscript>You need to enable JavaScript to run this app.</noscript>\n     <div id=\"root\"></div>\n   </body>\n </html>\n"
+                },
+                {
+                    "date": 1683264528765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,8 @@\n       content=\"KONWLEDGEOGRAPHY\"\n     />\n     <link rel=\"apple-touch-icon\" href=\"../src/images/Myearth2.png\" />\n \n-    <link rel=\"manifest\" href=\"../src/images/Myearth2.png\" />\n-\n     <title>KONWLEDGEOGRAPHY</title>\n   </head>\n   <body>\n     <div id=\"root\"></div>\n"
+                },
+                {
+                    "date": 1683264539055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,14 @@\n <!DOCTYPE html>\n <html lang=\"en\">\n   <head>\n     <meta charset=\"utf-8\" />\n-    <link rel=\"icon\" href=\"../src/images/Myearth2.png\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n     <meta name=\"theme-color\" content=\"#000000\" />\n     <meta\n       name=\"description\"\n       content=\"KONWLEDGEOGRAPHY\"\n     />\n-    <link rel=\"apple-touch-icon\" href=\"../src/images/Myearth2.png\" />\n \n     <title>KONWLEDGEOGRAPHY</title>\n   </head>\n   <body>\n"
+                },
+                {
+                    "date": 1683264558892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,13 +2,9 @@\n <html lang=\"en\">\n   <head>\n     <meta charset=\"utf-8\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n-    <meta name=\"theme-color\" content=\"#000000\" />\n-    <meta\n-      name=\"description\"\n-      content=\"KONWLEDGEOGRAPHY\"\n-    />\n+    <meta name=\"description\" content=\"KONWLEDGEOGRAPHY\" />\n \n     <title>KONWLEDGEOGRAPHY</title>\n   </head>\n   <body>\n"
+                },
+                {
+                    "date": 1683264786912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n   <head>\n     <meta charset=\"utf-8\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n     <meta name=\"description\" content=\"KONWLEDGEOGRAPHY\" />\n-\n+    <link rel=\"icon\" href=\"%PUBLIC_URL%/your-favicon.png\" />\n+    <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/your-apple-touch-icon.png\" />\n     <title>KONWLEDGEOGRAPHY</title>\n   </head>\n   <body>\n     <div id=\"root\"></div>\n"
+                },
+                {
+                    "date": 1683264804668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   <head>\n     <meta charset=\"utf-8\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n     <meta name=\"description\" content=\"KONWLEDGEOGRAPHY\" />\n-    <link rel=\"icon\" href=\"%PUBLIC_URL%/your-favicon.png\" />\n+    <link rel=\"icon\" href=\"%PUBLIC_URL%/images/Myearth2.png\"  />\n     <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/your-apple-touch-icon.png\" />\n     <title>KONWLEDGEOGRAPHY</title>\n   </head>\n   <body>\n"
+                },
+                {
+                    "date": 1683264810700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"utf-8\" />\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n     <meta name=\"description\" content=\"KONWLEDGEOGRAPHY\" />\n     <link rel=\"icon\" href=\"%PUBLIC_URL%/images/Myearth2.png\"  />\n-    <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/your-apple-touch-icon.png\" />\n+    <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/images/Myearth2.png\" />\n     <title>KONWLEDGEOGRAPHY</title>\n   </head>\n   <body>\n     <div id=\"root\"></div>\n"
+                }
+            ],
+            "date": 1682709895564,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"%PUBLIC_URL%/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Web site created using create-react-app\"\n    />\n    <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/logo192.png\" />\n    <!--\n      manifest.json provides metadata used when your web app is installed on a\n      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/\n    -->\n    <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\n    <!--\n      Notice the use of %PUBLIC_URL% in the tags above.\n      It will be replaced with the URL of the `public` folder during the build.\n      Only files inside the `public` folder can be referenced from the HTML.\n\n      Unlike \"/favicon.ico\" or \"favicon.ico\", \"%PUBLIC_URL%/favicon.ico\" will\n      work correctly both with client-side routing and a non-root public URL.\n      Learn how to configure a non-root public URL by running `npm run build`.\n    -->\n    <title>React App</title>\n  </head>\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n\n    -->\n  </body>\n</html>\n"
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="F&Q.css">
+    <link rel="stylesheet" href="F&QResponsive.css">
+    <link rel="stylesheet" href="/PackagesPrices/Hambergur.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- header -->
+    <div class="container col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12">
+        <div class="header1">
+          <img
+            class="fullResultHeaderLogo"
+            src="/img/Myearth2.png"
+            alt=""
+          />
+         <div class="dropdown">
+          <a class="dropbtn">Menu</a>
+          <div class="dropdown-content">
+              <a href="#">Contact Us</a>
+               <a href="#">F&Q</a>
+               <a href="#">Packages&Prices</a>
+              </div>
+         </div>
+        </div>
+        <div class="header2">
+          <a>Signin</a>
+          <a>Bookmarks</a>
+        </div>
+    </div>
+    <!-- header in responsive -->
+    <div class="resHeader">
+      <p class="KNp1">KN</p>
+      <img src="/img/Myearth2.png" alt="" />
+      <p class="ledjeographyp2">WLEDGEOGRAPHY</p>
+    </div>
+    <!-- hambergur menu -->
+    <!-- sidenav -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()"> <i class="fa fa-bars"></i></span>
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+      
+      </div>
+      <!-- end of the header -->
+      <!-- body -->
+      <div class="FQbody ">
+        <div class="box1"></div>
+        <div class="box2">
+            <a href="javascript:void(0)" onclick="openCity(event, 'Account');">Account
+                <div class="tablink"></div></a>
+            <a href="javascript:void(0)" onclick="openCity(event, 'Delivery');">Delivery
+                <div class="tablink"></div></a>
+            <a  href="javascript:void(0)" onclick="openCity(event, 'Payment');">Payment
+                <div class="tablink"></div></a>
+            <a  href="javascript:void(0)" onclick="openCity(event, 'Product');">Product
+                <div class="tablink"></div></a>
+                <h2 class="title">FREQUENTLY ASKED QUESTIONS</h2>
+                <h2 class="title2">Got a question? We are here to answer! If you don’t see your question here , drop us a line on our contact page.</h2>
+                
+
+            <div id="Account" class="city" style="display:none">
+                <div class="fq1">
+                    <div>Got a question?</div>
+                    <div><i id="openfirstFQ" class="fa fa-angle-down"></i></div>
+                </div>
+                <div id="thefirstcontentFQ" class="thefirstcontentFQ">
+                    Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is text copy that serves to fill a space without saying . . . . <a href="">READ MORE</a>
+                </div>
+                <div class="fq1">
+                    <div>Got a question?</div>
+                    <div><i id="opensecondFQ" class="fa fa-angle-down"></i></div>
+                </div>
+                <div id="thesecondcontentFQ" class="thefirstcontentFQ">
+                    Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is text copy that serves to fill a space without saying . . . . <a href="">READ MORE</a>
+                </div>
+               
+              </div>
+            
+              <div id="Delivery" class=" city" style="display:none">
+                <div class="fq1">
+                    <div>Got a question?</div>
+                    <div><i id="openthirdFQ" class="fa fa-angle-down"></i></div>
+                </div>
+                <div id="thethirdcontentFQ" class="thefirstcontentFQ">
+                    Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is text copy that serves to fill a space without saying . . . . <a href="">READ MORE</a>
+                </div>
+              </div>
+            
+              <div id="Payment" class=" city" style="display:none">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+              <div id="Product" class=" city" style="display:none">
+                <h2>TokyoOOOO</h2>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+        </div>
+        
+       
+      </div>
+      <!-- end of the body -->
+     
+      
+      <!-- footer -->
+      <div class="footer col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12">
+        <p>Privacy Policy</p>
+        <div></div>
+        <p>Terms Of Services</p>
+      </div>
+      <!-- end of the footer -->
+
+</body>
+<script src="F&Q.js"></script>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</html>

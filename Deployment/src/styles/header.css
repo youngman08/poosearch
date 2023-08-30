@@ -1,0 +1,187 @@
+@media only screen and (max-width: 800px) {
+  .mheader {
+    display: none !important;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .mheader {
+    display: flex;
+  }
+  .mobile-menu {
+    display: none !important;
+  }
+}
+a {
+  text-decoration: none !important;
+}
+
+.header-logoResponsive {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  box-shadow: 0 0 20px -5px white;
+}
+.mobile-menu {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  letter-spacing: 5px;
+  margin-top: 5px;
+}
+.mobile-menu2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  letter-spacing: 5px;
+}
+.containerm-fluid {
+  position: relative;
+}
+.MuiTabPanel-root {
+  display: flex;
+  justify-content: center;
+}
+
+.MuiTabPanel-root {
+  flex-direction: column;
+  padding: 24px;
+}
+.containerm {
+  padding-bottom: 0px;
+  min-width: 100%;
+}
+.containerm-fluid {
+  background-color: rgb(0, 22, 45) !important;
+  width: 100%;
+    height: 610px;
+}
+#BrInput {
+  margin: 10px 0px;
+  padding: 0px 5px;
+  color: black;
+  padding: 5px 25px;
+}
+p {
+  font-size: 15px;
+}
+.save-patent-btn {
+  padding: 10px 15px;
+  color: black;
+  outline: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+  border: var(--border-color);
+}
+
+.my-icon {
+  color: black !important;
+}
+
+.Tabs-firstpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(0, 22, 45) !important;
+}
+.tablist {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#BrInput {
+  width: 80vw;
+}
+
+#text.row1 {
+  color: black;
+}
+.row1 {
+  background-color: #f0f8ff;
+  color: black;
+  border-radius: 20px;
+  margin: 20px 10px;
+  padding: 20px 10px;
+}
+
+hr {
+  color: black !important;
+}
+.row1 > div > p {
+  color: black;
+}
+
+.custom-pagination button.MuiButtonBase-root {
+  background: white;
+  color: black;
+}
+.custom-pagination button.MuiButtonBase-root:hover {
+  background: rgb(214, 220, 229);
+}
+.custom-pagination .Mui-selected {
+  color: white !important;
+  background: rgb(15, 39, 65) !important;
+  border-color: white !important;
+}
+.custom-pagination .MuiPaginationItem-ellipsis {
+  color: black !important;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.topbar-result {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.mrow {
+  display: flex;
+  flex-direction: row;
+}
+.header-icon.MuiButtonBase-root {
+  padding: 10px;
+}
+
+.mheader,
+.mobile-menu {
+  color: white ;
+  background: rgb(15, 39, 65);
+
+}
+
+.container-fluid {
+  padding: 0px !important;
+  color: white;
+    background: rgb(15, 39, 65);
+}
+button.MuiTab-fullWidth.Mui-selected {
+  color: #001530;
+}
+
+span.MuiTabs-indicator {
+  background: #001530;
+}
+
+.faqtab.MuiTab-root.Mui-selected::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  /* Assuming you have 3 tabs */
+  background-color: #3f51b5;
+  /* Substitute this with your desired color */
+}
+
+.faqtab .MuiTabs-root .MuiTabs-indicator {
+  background: none;
+}

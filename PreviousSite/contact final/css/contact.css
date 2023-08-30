@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  /*box*/
+  .wrapper {
+    position: relative;
+  }
+  .info-contact {
+    background: rgba(10, 30, 55);
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+  }
+  .content {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 55px;
+  }
+  .content h1 {
+    font-size: 20px;
+  }
+  .content h3 {
+    font-size: 16px;
+  }
+  .main-info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+  }
+  .card {
+    width: 350px;
+    margin-right: 30px;
+    border-radius: 10px;
+    margin-top: -5px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 3;
+    border: 1px solid;
+    box-shadow: 3px 1px 15px 1px #dddddd, 0 3px 10px 0 #dddddd;
+    background: transparent;
+  }
+  .card-header {
+    background-color: rgba(10, 30, 55);
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .card-subtitle {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .card-subtitle a {
+    color: #000;
+  }
+  .card-subtitle a:hover {
+    color: rgba(10, 30, 55);
+  }
+  
+  /*form*/
+  .wrapper2 {
+    position: relative;
+  }
+  
+  .title-form {
+    position: absolute;
+    top: -1px;
+    z-index: 3;
+    font-style: italic;
+    text-align: center;
+    padding: 3px;
+    border-radius: 2px;
+    border: 2px solid rgba(10, 30, 55);
+    background-color: #fff;
+    color: white;
+    width: 454px;
+    background-color: rgba(10, 30, 55);
+  }
+  .hero {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    width: 100%;
+    background: #fff;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+  form {
+    font-style: italic;
+    position: relative;
+    margin-top: 16px;
+    width: 90%;
+    max-width: 800px;
+    border: 5px solid rgba(10, 30, 55);
+    border-radius: 20px;
+    padding: 30px 30px 30px 30px;
+    box-shadow: rgb(10 30 55) 3px 3px 6px 0px inset,
+      rgb(10 30 55) -3px -3px 6px 1px inset;
+  }
+  .form-element {
+    margin: 7px 8px;
+  }
+  .form-element label {
+    font-size: 14px;
+    color: #222;
+  }
+  .form-element input[type="text"],
+  .form-element input[type="email"],
+  .form-element input[type="password"],
+  .form-element textarea {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    outline: none;
+    padding-left: 32px;
+    border-radius: 18px;
+    border: 1px solid #dddddd;
+    box-shadow: #dddddd -3px -2px 6px 3px;
+  }
+  .form-element input[type="checkbox"] span {
+    margin-right: 5px;
+    margin-bottom: 30px;
+  }
+  .form-element button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .form-element a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .Icon-inside {
+    position: relative;
+  }
+  .Icon-inside i {
+    position: absolute;
+    left: 0;
+    top: 33px;
+    padding: 10px 10px;
+    color: #001530;
+  }
+  .input-group {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgb(10, 30, 55);
+    box-shadow: 2px 2px rgb(10, 30, 55);
+    color: black;
+    background: transparent;
+    font-size: 15px;
+    border-radius: 20px;
+  }
+  label {
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: rgb(10, 30, 55);
+    cursor: text;
+  }
+  button {
+    padding: 10px 15px;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    background-color: rgb(10, 30, 55);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input:focus ~ label,
+  input:valid ~ label,
+  textarea:focus ~ label,
+  textarea:valid ~ label {
+    top: -35px;
+    font-size: 14px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .row .input-group {
+    flex-basis: 45%;
+  }
+  /*.row .input-group  label{
+     padding-left: 20px;
+  }
+  */
+  /* /////////////////responsive//////////////// */
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 300px;
+    }
+    .title-form {
+      width: 300px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .container-fluid .fullResultHeader .fullResultH1 {
+      display: none;
+    }
+    .container-fluid .fullResultHeader .fullResultH2 {
+      display: none;
+    }
+    .fullResultBodyMenuItems a {
+      font-size: 7px;
+    }
+  
+    .fullResultContainer .fullResultBodyMenu .fullResultBodyMenuLine {
+      left: 15px;
+      top: 90px;
+    }
+    .fullResultContainer .fullResultBodyMenu .fullResultBodyMenuIcon {
+      left: 8px;
+      font-size: 14px;
+    }
+    .fullResultBodyMenuItems {
+      left: 10px;
+      top: 30px;
+    }
+  }

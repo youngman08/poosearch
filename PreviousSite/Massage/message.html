@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/PackagesPrices/Hambergur.css">
+    <link rel="stylesheet" href="messageResponsive.css" />
+    <link rel="stylesheet" href="message.css" />
+    <link rel="stylesheet" href="/PackagesPrices/Hambergur.css" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="container col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12">
+      <div class="header1">
+        <img class="fullResultHeaderLogo" src="/img/Myearth2.png" alt="" />
+        <div class="dropdown">
+          <a class="dropbtn">Menu</a>
+          <div class="dropdown-content">
+            <a href="#">Contact Us</a>
+            <a href="#">F&Q</a>
+            <a href="#">Packages&Prices</a>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <a>Signin</a>
+        <a>Bookmarks</a>
+      </div>
+    </div>
+    <!-- header in responsive -->
+    <div class="resHeader">
+      <p class="KNp1">KN</p>
+      <img src="/img/Myearth2.png" alt="" />
+      <p class="ledjeographyp2">WLEDGEOGRAPHY</p>
+    </div>
+    <!-- hambergur menu -->
+     <!-- sidenav -->
+     <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()"> <i class="fa fa-bars"></i></span>
+    
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+    
+    </div>
+    <!-- sidenav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()"> <i class="fa fa-bars"></i></span>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main"></div>
+
+    <!-- end of the header -->
+    <div class="buttomHeader"><i>All Message</i></div>
+    <!-- body -->
+    <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12 Body">
+      <div class="myprofilebox col-3 col-lg-3 col-md-3 col-sm-3 col-xl-3">
+        <div class="myprofilecontent"></div>
+      </div>
+      <div class="messagebox col-9 col-lg-9 col-md-9 col-sm-9 col-xl-9">
+        <div id="Inbox" class="city ">
+          <h2>London</h2>
+          <p>London is the capital of England.</p>
+        </div>
+        
+        <div id="Sent" class="city" style="display:none">
+          <h2>Paris</h2>
+          <p>Paris is the capital of France.</p>
+        </div>
+        
+     
+        <div class="w3-bar w3-black">
+          <button class="w3-bar-item w3-button" onclick="openCity('Inbox')">Inbox</button>
+          <button class="w3-bar-item w3-button" onclick="openCity('Sent')">Sent</button>
+         
+        </div>
+      </div>
+    </div>
+    <!-- end of body -->
+    <!-- footer -->
+    <div
+      class="col-12 col-md-12 col-sm-12 col-xl-12 col-lg-12 fullResultFooter"
+    >
+      <p>Privacy Policy</p>
+      <div></div>
+      <p>Terms Of Services</p>
+    </div>
+    <!-- end of the footer -->
+  </body>
+
+  <!-- bootstrap -->
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <!-- javascript -->
+  <script src="message.js"></script>
+</html>
+<!-- fa fa-angle-down -->
+<!-- fa fa-angle-up -->
+<!-- fa fa-envelope-o -->
+<!-- fa fa-envelope-open-o -->

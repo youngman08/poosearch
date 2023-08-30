@@ -1,0 +1,60 @@
+
+@media  screen and (max-width: 800px) {
+  .container-fluid .header  .header-item1{
+    display: none;
+  }
+  .container-fluid .header  .header-item2 a{
+    display: none;
+  }
+  .container-fluid .header{
+    height: 50px;
+    
+  }
+   .HamburgerResponsiveHeader{
+    display: flex;
+  }
+  .container-fluid .header .header-item2 .headerDayNight{
+    display: none;
+  }
+  }
+  
+  @media  screen and (min-width: 800px) {
+    .container-fluid .header .header-logoResponsive{
+      display: none;
+    }
+    .container-fluid .header  p{
+      display: none;
+    }
+    .header a i{
+      
+      display: none;
+    }
+  
+  }
+
+/* styles */
+.container-fluid .header .KNp1{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 16px;
+  top:17px;
+
+}
+.container-fluid .header .ledjeographyp2{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left:68px;
+  top:17px;
+ 
+}
+  .container-fluid .header .header-logoResponsive{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px -5px white;
+    position: absolute;
+    left: 37px;
+    top:12px;
+    
+  }
+ 

@@ -1,0 +1,90 @@
+{
+    "sourceFile": "src/pages/notFound.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1689497105140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689497111209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,12 @@\n-<Route path=\"/fullresult\" element={<FullResult />} exact />\n\\ No newline at end of file\n+import React from 'react';\r\n+\r\n+const NotFound = () => {\r\n+  return (\r\n+    <div>\r\n+      <h1>404 - Page Not Found</h1>\r\n+      <p>The page you are looking for does not exist.</p>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default NotFound;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689497433299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,19 @@\n import React from 'react';\r\n \r\n const NotFound = () => {\r\n   return (\r\n-    <div>\r\n-      <h1>404 - Page Not Found</h1>\r\n-      <p>The page you are looking for does not exist.</p>\r\n+    <div class=\"container\">\r\n+    <div class=\"adad\">\r\n+        <i>404</i>\r\n     </div>\r\n+    <div class=\"contentof404\">\r\n+        <p>Ooops!!!!</p>\r\n+        <p>We Couldnt Find This Page.</p>\r\n+        <button>Visit The HomePage</button>\r\n+    </div>\r\n+</div>\r\n+<div class=\"img\"><img src=\"4042.jpg\" alt=\"\"></div>\r\n   );\r\n };\r\n \r\n export default NotFound;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689497441898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import React from 'react';\r\n \r\n const NotFound = () => {\r\n   return (\r\n+    <></>\r\n     <div class=\"container\">\r\n     <div class=\"adad\">\r\n         <i>404</i>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1689497448394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react';\r\n \r\n const NotFound = () => {\r\n   return (\r\n-    <></>\r\n+    <>\r\n     <div class=\"container\">\r\n     <div class=\"adad\">\r\n         <i>404</i>\r\n     </div>\r\n@@ -13,8 +13,9 @@\n         <button>Visit The HomePage</button>\r\n     </div>\r\n </div>\r\n <div class=\"img\"><img src=\"4042.jpg\" alt=\"\"></div>\r\n+</>\r\n   );\r\n };\r\n \r\n export default NotFound;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689497473953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         <p>We Couldnt Find This Page.</p>\r\n         <button>Visit The HomePage</button>\r\n     </div>\r\n </div>\r\n-<div class=\"img\"><img src=\"4042.jpg\" alt=\"\"></div>\r\n+<div class=\"img\"><img src=\"4042.jpg\" alt=\"\"/></div>\r\n </>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1689497493798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\r\n-\r\n+import bgtemp from \"../images/MyVector.jpg\";\r\n const NotFound = () => {\r\n   return (\r\n     <>\r\n     <div class=\"container\">\r\n"
+                },
+                {
+                    "date": 1689497500599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\r\n-import bgtemp from \"../images/MyVector.jpg\";\r\n+import 4042 from \"../images/MyVector.jpg\";\r\n const NotFound = () => {\r\n   return (\r\n     <>\r\n     <div class=\"container\">\r\n"
+                },
+                {
+                    "date": 1689497564514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import React from 'react';\r\n+import 404_Image from \"../images/MyVector.jpg\";\r\n+const NotFound = () => {\r\n+  return (\r\n+    <>\r\n+    <div class=\"container\">\r\n+    <div class=\"adad\">\r\n+        <i>404</i>\r\n+    </div>\r\n+    <div class=\"contentof404\">\r\n+        <p>Ooops!!!!</p>\r\n+        <p>We Couldnt Find This Page.</p>\r\n+        <button>Visit The HomePage</button>\r\n+    </div>\r\n+</div>\r\n+<div class=\"img\"><img src=\"4042.jpg\" alt=\"\"/></div>\r\n+</>\r\n+  );\r\n+};\r\n+\r\n+export default NotFound;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689497580154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\r\n-import 404_Image from \"../images/MyVector.jpg\";\r\n+import 404_]Image from \"../images/MyVector.jpg\";\r\n const NotFound = () => {\r\n   return (\r\n     <>\r\n     <div class=\"container\">\r\n@@ -17,26 +17,5 @@\n </>\r\n   );\r\n };\r\n \r\n-export default NotFound;\n-import React from 'react';\r\n-import 4042 from \"../images/MyVector.jpg\";\r\n-const NotFound = () => {\r\n-  return (\r\n-    <>\r\n-    <div class=\"container\">\r\n-    <div class=\"adad\">\r\n-        <i>404</i>\r\n-    </div>\r\n-    <div class=\"contentof404\">\r\n-        <p>Ooops!!!!</p>\r\n-        <p>We Couldnt Find This Page.</p>\r\n-        <button>Visit The HomePage</button>\r\n-    </div>\r\n-</div>\r\n-<div class=\"img\"><img src=\"4042.jpg\" alt=\"\"/></div>\r\n-</>\r\n-  );\r\n-};\r\n-\r\n export default NotFound;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689497591064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\r\n-import 404_]Image from \"../images/MyVector.jpg\";\r\n+import  from \"../images/MyVector.jpg\";\r\n const NotFound = () => {\r\n   return (\r\n     <>\r\n     <div class=\"container\">\r\n"
+                },
+                {
+                    "date": 1689497597020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\r\n-import  from \"../images/MyVector.jpg\";\r\n+import nitFound from \"../images/MyVector.jpg\";\r\n const NotFound = () => {\r\n   return (\r\n     <>\r\n     <div class=\"container\">\r\n"
+                },
+                {
+                    "date": 1689497602866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\r\n-import nitFound from \"../images/MyVector.jpg\";\r\n+import notFound from \"../images/MyVector.jpg\";\r\n const NotFound = () => {\r\n   return (\r\n     <>\r\n     <div class=\"container\">\r\n"
+                },
+                {
+                    "date": 1689497629490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         <p>We Couldnt Find This Page.</p>\r\n         <button>Visit The HomePage</button>\r\n     </div>\r\n </div>\r\n-<div class=\"img\"><img src=\"4042.jpg\" alt=\"\"/></div>\r\n+<div class=\"img\"><img src=src={bgtemp} alt=\"\"/></div>\r\n </>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1689497638836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         <p>We Couldnt Find This Page.</p>\r\n         <button>Visit The HomePage</button>\r\n     </div>\r\n </div>\r\n-<div class=\"img\"><img src=src={bgtemp} alt=\"\"/></div>\r\n+<div class=\"img\"><img src={notFound} alt=\"\"/></div>\r\n </>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1689498207891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\r\n-import notFound from \"../images/MyVector.jpg\";\r\n+import notFound from \"../images/404.jpg\";\r\n const NotFound = () => {\r\n   return (\r\n     <>\r\n     <div class=\"container\">\r\n"
+                },
+                {
+                    "date": 1689498280412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,22 @@\n-import React from 'react';\r\n import notFound from \"../images/404.jpg\";\r\n const NotFound = () => {\r\n   return (\r\n     <>\r\n-    <div class=\"container\">\r\n-    <div class=\"adad\">\r\n-        <i>404</i>\r\n-    </div>\r\n-    <div class=\"contentof404\">\r\n-        <p>Ooops!!!!</p>\r\n-        <p>We Couldnt Find This Page.</p>\r\n-        <button>Visit The HomePage</button>\r\n-    </div>\r\n-</div>\r\n-<div class=\"img\"><img src={notFound} alt=\"\"/></div>\r\n-</>\r\n+      <div class=\"container\">\r\n+        <div class=\"adad\">\r\n+          <i>404</i>\r\n+        </div>\r\n\\ No newline at end of file\n+        <div class=\"contentof404\">\r\n+          <p>Ooops!!!!</p>\r\n+          <p>We Couldnt Find This Page.</p>\r\n+          <button>Visit The HomePage</button>\r\n+        </div>\r\n+      </div>\r\n+      <div class=\"img\">\r\n+        <img src={notFound} alt=\"\" />\r\n+      </div>\r\n+    </>\r\n   );\r\n };\r\n \r\n-export default NotFound;\n+export default NotFound;\r\n"
+                },
+                {
+                    "date": 1689498288343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import notFound from \"../images/404.jpg\";\r\n const NotFound = () => {\r\n   return (\r\n     <>\r\n-      <div class=\"\">\r\n+      <div class=\"r\">\r\n         <div class=\"adad\">\r\n           <i>404</i>\r\n         </div>\r\n         <div class=\"contentof404\">\r\n"
+                },
+                {
+                    "date": 1689500363484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import notFound from \"../images/404.jpg\";\r\n+const NotFound = () => {\r\n+  return (\r\n+    <>\r\n+      <div class=\"row\">\r\n+        <span class=\"adad\">\r\n+          <i>404</i>\r\n+        </span>\r\n+        <span class=\"contentof404\">\r\n+          <p>Ooops!!!!</p>\r\n+          <p>We Couldnt Find This Page.</p>\r\n+          <button>Visit The HomePage</button>\r\n+        </span>\r\n+      </div>\r\n+      <div class=\"img\">\r\n+        <img src={notFound} alt=\"\" />\r\n+      </div>\r\n+    </>\r\n+  );\r\n+};\r\n+\r\n+export default NotFound;\r\n"
+                }
+            ],
+            "date": 1689497105140,
+            "name": "Commit-0",
+            "content": "<Route path=\"/fullresult\" element={<FullResult />} exact />"
+        }
+    ]
+}

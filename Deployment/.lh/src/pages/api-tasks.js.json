@@ -1,0 +1,166 @@
+{
+    "sourceFile": "src/pages/api-tasks.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 37,
+            "patches": [
+                {
+                    "date": 1685816993191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1685818139260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n-export function apiDeletePickup(id: number) {\r\n-    return requestManager.invoke<void>({\r\n-        url: \"pickup/delete\",\r\n-        body: { id },\r\n-    });\r\n-}\n\\ No newline at end of file\n+import axios from 'axios';\r\n+\r\n+const api = axios.create({\r\n+  baseURL: 'https://example.com/api', // Replace with your API base URL\r\n+});\r\n"
+                },
+                {
+                    "date": 1685818157538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import axios from 'axios';\r\n \r\n const api = axios.create({\r\n-  baseURL: 'https://example.com/api', // Replace with your API base URL\r\n+  baseURL: 'http://213.233.184.122:8001/api', // Replace with your API base URL\r\n });\r\n"
+                },
+                {
+                    "date": 1685819126967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,4 +2,25 @@\n \r\n const api = axios.create({\r\n   baseURL: 'http://213.233.184.122:8001/api', // Replace with your API base URL\r\n });\r\n+import axios from 'axios';\r\n+\r\n+// Function to send the request\r\n+const sendRequest = async (val) => {\r\n+  try {\r\n+    const response = await axios.get('/api/basic-search', {\r\n+      params: {\r\n+        val: val\r\n+      }\r\n+    });\r\n+\r\n+    // Handle the response data\r\n+    console.log(response.data);\r\n+    // Do something with the response data\r\n+\r\n+  } catch (error) {\r\n+    // Handle any errors\r\n+    console.error(error);\r\n+    // Handle the error condition\r\n+  }\r\n+};\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685819132508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \r\n const api = axios.create({\r\n   baseURL: 'http://213.233.184.122:8001/api', // Replace with your API base URL\r\n });\r\n-import axios from 'axios';\r\n \r\n // Function to send the request\r\n const sendRequest = async (val) => {\r\n   try {\r\n"
+                },
+                {
+                    "date": 1685819141022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   baseURL: 'http://213.233.184.122:8001/api', // Replace with your API base URL\r\n });\r\n \r\n // Function to send the request\r\n-const sendRequest = async (val) => {\r\n+export const sendRequest = async (val) => {\r\n   try {\r\n     const response = await axios.get('/api/basic-search', {\r\n       params: {\r\n         val: val\r\n"
+                },
+                {
+                    "date": 1685819172755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n // Function to send the request\r\n export const sendRequest = async (val) => {\r\n   try {\r\n-    const response = await axios.get('/api/basic-search', {\r\n+    const response = await api.get('/basic-search', {\r\n       params: {\r\n         val: val\r\n       }\r\n     });\r\n"
+                },
+                {
+                    "date": 1685819184801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   baseURL: 'http://213.233.184.122:8001/api', // Replace with your API base URL\r\n });\r\n \r\n // Function to send the request\r\n-export const sendRequest = async (val) => {\r\n+export const  = async (val) => {\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n         val: val\r\n"
+                },
+                {
+                    "date": 1685819190247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   baseURL: 'http://213.233.184.122:8001/api', // Replace with your API base URL\r\n });\r\n \r\n // Function to send the request\r\n-export const  = async (val) => {\r\n+export const basicSearchApi = async (val) => {\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n         val: val\r\n"
+                },
+                {
+                    "date": 1685819545348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n export const basicSearchApi = async (val) => {\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n-        val: val\r\n+        \"keyw\":: val\r\n       }\r\n     });\r\n \r\n     // Handle the response data\r\n"
+                },
+                {
+                    "date": 1685819551491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n export const basicSearchApi = async (val) => {\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n-        \"keyw\":: val\r\n+        keyw: val\r\n       }\r\n     });\r\n \r\n     // Handle the response data\r\n"
+                },
+                {
+                    "date": 1685856964683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n export const basicSearchApi = async (val) => {\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n-        keyw: val\r\n+        \"keyw: val\r\n       }\r\n     });\r\n \r\n     // Handle the response data\r\n"
+                },
+                {
+                    "date": 1685857010910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,14 +8,14 @@\n export const basicSearchApi = async (val) => {\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n-        \"keyw: val\r\n+        \"keyw\": val\r\n       }\r\n     });\r\n \r\n     // Handle the response data\r\n-    console.log(response.data);\r\n+    console.log(val);\r\n     // Do something with the response data\r\n \r\n   } catch (error) {\r\n     // Handle any errors\r\n"
+                },
+                {
+                    "date": 1685857033004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n       }\r\n     });\r\n \r\n     // Handle the response data\r\n-    console.log(val);\r\n+\r\n     // Do something with the response data\r\n \r\n   } catch (error) {\r\n     // Handle any errors\r\n"
+                },
+                {
+                    "date": 1685857130280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n });\r\n \r\n // Function to send the request\r\n export const basicSearchApi = async (val) => {\r\n+  console.log(val+\"QQ\");\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n         \"keyw\": val\r\n"
+                },
+                {
+                    "date": 1685858063232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   console.log(val+\"QQ\");\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n-        \"keyw\": val\r\n+        \"keyw\":val\r\n       }\r\n     });\r\n \r\n     // Handle the response data\r\n"
+                },
+                {
+                    "date": 1685858068668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,9 @@\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n         \"keyw\":val\r\n-      }\r\n-    });\r\n+      }});\r\n \r\n     // Handle the response data\r\n \r\n     // Do something with the response data\r\n"
+                },
+                {
+                    "date": 1685858738434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,9 @@\n   console.log(val+\"QQ\");\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n-        \"keyw\":val\r\n-      }});\r\n+       val}});\r\n \r\n     // Handle the response data\r\n \r\n     // Do something with the response data\r\n"
+                },
+                {
+                    "date": 1685858814770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   console.log(val+\"QQ\");\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n-       val}});\r\n+        \"keyw\":val}});\r\n \r\n     // Handle the response data\r\n \r\n     // Do something with the response data\r\n"
+                },
+                {
+                    "date": 1685859420286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       params: {\r\n         \"keyw\":val}});\r\n \r\n     // Handle the response data\r\n-\r\n+    console.log(response.data);\r\n     // Do something with the response data\r\n \r\n   } catch (error) {\r\n     // Handle any errors\r\n"
+                },
+                {
+                    "date": 1685859431076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n \r\n     // Handle the response data\r\n     console.log(response.data);\r\n     // Do something with the response data\r\n-\r\n   } catch (error) {\r\n     // Handle any errors\r\n     console.error(error);\r\n     // Handle the error condition\r\n"
+                },
+                {
+                    "date": 1685859440961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,17 +2,15 @@\n \r\n const api = axios.create({\r\n   baseURL: 'http://213.233.184.122:8001/api', // Replace with your API base URL\r\n });\r\n-\r\n-// Function to send the request\r\n+// Function to send the  request\r\n export const basicSearchApi = async (val) => {\r\n   console.log(val+\"QQ\");\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n         \"keyw\":val}});\r\n-\r\n     // Handle the response data\r\n     console.log(response.data);\r\n     // Do something with the response data\r\n   } catch (error) {\r\n"
+                },
+                {
+                    "date": 1685864079089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const api = axios.create({\r\n   baseURL: 'http://213.233.184.122:8001/api', // Replace with your API base URL\r\n });\r\n-// Function to send the  request\r\n+// Function to send the basic search request\r\n export const basicSearchApi = async (val) => {\r\n   console.log(val+\"QQ\");\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n@@ -17,5 +17,20 @@\n     // Handle any errors\r\n     console.error(error);\r\n     // Handle the error condition\r\n   }\r\n+};\r\n+export const basicSearchApi = async (val) => {\r\n+  console.log(val+\"QQ\");\r\n+  try {\r\n+    const response = await api.get('/basic-search', {\r\n+      params: {\r\n+        \"keyw\":val}});\r\n+    // Handle the response data\r\n+    console.log(response.data);\r\n+    // Do something with the response data\r\n+  } catch (error) {\r\n+    // Handle any errors\r\n+    console.error(error);\r\n+    // Handle the error condition\r\n+  }\r\n };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685864085667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     console.error(error);\r\n     // Handle the error condition\r\n   }\r\n };\r\n-export const basicSearchApi = async (val) => {\r\n+export const advaSearchApi = async (val) => {\r\n   console.log(val+\"QQ\");\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n"
+                },
+                {
+                    "date": 1685864137731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,10 @@\n     console.error(error);\r\n     // Handle the error condition\r\n   }\r\n };\r\n-export const advaSearchApi = async (val) => {\r\n-  console.log(val+\"QQ\");\r\n+export const advanceSearchApi = async (val) => {\r\n+  console.log(val+\"QQAdvance\");\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n         \"keyw\":val}});\r\n"
+                },
+                {
+                    "date": 1685864193330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   baseURL: 'http://213.233.184.122:8001/api', // Replace with your API base URL\r\n });\r\n // Function to send the basic search request\r\n export const basicSearchApi = async (val) => {\r\n-  console.log(val+\"QQ\");\r\n+  console.log(val+\"QQBasic\");\r\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n         \"keyw\":val}});\r\n@@ -21,9 +21,9 @@\n };\r\n export const advanceSearchApi = async (val) => {\r\n   console.log(val+\"QQAdvance\");\r\n   try {\r\n-    const response = await api.get('/basic-search', {\r\n+    const response = await api.get('advanced-search/', {\r\n       params: {\r\n         \"keyw\":val}});\r\n     // Handle the response data\r\n     console.log(response.data);\r\n"
+                },
+                {
+                    "date": 1685864205475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,11 +21,11 @@\n };\r\n export const advanceSearchApi = async (val) => {\r\n   console.log(val+\"QQAdvance\");\r\n   try {\r\n-    const response = await api.get('advanced-search/', {\r\n+    const response = await api.get('/advanced-search', {\r\n       params: {\r\n-        \"keyw\":val}});\r\n+        \"inclusive_title\":val}});\r\n     // Handle the response data\r\n     console.log(response.data);\r\n     // Do something with the response data\r\n   } catch (error) {\r\n"
+                },
+                {
+                    "date": 1685864214569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n   console.log(val+\"QQAdvance\");\r\n   try {\r\n     const response = await api.get('/advanced-search', {\r\n       params: {\r\n-        \"inclusive_title\":val}});\r\n+        \"inclusive_title\":val.inclusive_title}});\r\n     // Handle the response data\r\n     console.log(response.data);\r\n     // Do something with the response data\r\n   } catch (error) {\r\n"
+                },
+                {
+                    "date": 1685864520177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     // Handle the error condition\r\n   }\r\n };\r\n export const advanceSearchApi = async (val) => {\r\n-  console.log(val+\"QQAdvance\");\r\n+  console.log(val.inclusive_title+\"QQAdvance\");\r\n   try {\r\n     const response = await api.get('/advanced-search', {\r\n       params: {\r\n         \"inclusive_title\":val.inclusive_title}});\r\n"
+                },
+                {
+                    "date": 1685971717203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,15 @@\n   console.log(val.inclusive_title+\"QQAdvance\");\r\n   try {\r\n     const response = await api.get('/advanced-search', {\r\n       params: {\r\n-        \"inclusive_title\":val.inclusive_title}});\r\n+        \"inclusive_title\":val.inclusive_title\r\n+      \r\n+      \r\n+      \r\n+      \r\n+      \r\n+      }});\r\n     // Handle the response data\r\n     console.log(response.data);\r\n     // Do something with the response data\r\n   } catch (error) {\r\n"
+                },
+                {
+                    "date": 1685971723567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,13 +24,13 @@\n   try {\r\n     const response = await api.get('/advanced-search', {\r\n       params: {\r\n         \"inclusive_title\":val.inclusive_title\r\n+        \"inclusive_title\":val.inclusive_title\r\n       \r\n       \r\n       \r\n       \r\n-      \r\n       }});\r\n     // Handle the response data\r\n     console.log(response.data);\r\n     // Do something with the response data\r\n"
+                },
+                {
+                    "date": 1685971733698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,14 +23,19 @@\n   console.log(val.inclusive_title+\"QQAdvance\");\r\n   try {\r\n     const response = await api.get('/advanced-search', {\r\n       params: {\r\n+        \"inclusive_title\":val.inclusive_title,\r\n+        \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title\r\n         \"inclusive_title\":val.inclusive_title\r\n+        \"inclusive_title\":val.inclusive_title\r\n+        \"inclusive_title\":val.inclusive_title\r\n+        \"inclusive_title\":val.inclusive_title\r\n+        \"inclusive_title\":val.inclusive_title\r\n+        \"inclusive_title\":val.inclusive_title\r\n+        \"inclusive_title\":val.inclusive_title\r\n       \r\n-      \r\n-      \r\n-      \r\n       }});\r\n     // Handle the response data\r\n     console.log(response.data);\r\n     // Do something with the response data\r\n"
+                },
+                {
+                    "date": 1685971744975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,17 +25,17 @@\n     const response = await api.get('/advanced-search', {\r\n       params: {\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n-        \"inclusive_title\":val.inclusive_title\r\n-        \"inclusive_title\":val.inclusive_title\r\n-        \"inclusive_title\":val.inclusive_title\r\n-        \"inclusive_title\":val.inclusive_title\r\n-        \"inclusive_title\":val.inclusive_title\r\n-        \"inclusive_title\":val.inclusive_title\r\n-        \"inclusive_title\":val.inclusive_title\r\n-        \"inclusive_title\":val.inclusive_title\r\n-      \r\n+        \"inclusive_title\":val.inclusive_title,\r\n+        \"inclusive_title\":val.inclusive_title,\r\n+        \"inclusive_title\":val.inclusive_title,\r\n+        \"inclusive_title\":val.inclusive_title,\r\n+        \"inclusive_title\":val.inclusive_title,\r\n+        \"inclusive_title\":val.inclusive_title,,\r\n+        \"inclusive_title\":val.inclusive_title,\r\n+        \"inclusive_title\":val.inclusive_title,\r\n+        \"inclusive_title\":val.inclusive_title,\r\n       }});\r\n     // Handle the response data\r\n     console.log(response.data);\r\n     // Do something with the response data\r\n"
+                },
+                {
+                    "date": 1685971813563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,15 +24,15 @@\n   try {\r\n     const response = await api.get('/advanced-search', {\r\n       params: {\r\n         \"inclusive_title\":val.inclusive_title,\r\n+        \"inclusive_title\":val.an_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n-        \"inclusive_title\":val.inclusive_title,,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n       }});\r\n"
+                },
+                {
+                    "date": 1685971824289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,18 +24,18 @@\n   try {\r\n     const response = await api.get('/advanced-search', {\r\n       params: {\r\n         \"inclusive_title\":val.inclusive_title,\r\n-        \"inclusive_title\":val.an_title,\r\n+        \"inclusive_title\":val.anyof_title,\r\n+        \"inclusive_title\":val.exact_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n-        \"inclusive_title\":val.inclusive_title,\r\n       }});\r\n     // Handle the response data\r\n     console.log(response.data);\r\n     // Do something with the response data\r\n"
+                },
+                {
+                    "date": 1685971831477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,16 +26,16 @@\n       params: {\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.anyof_title,\r\n         \"inclusive_title\":val.exact_title,\r\n+        \"inclusive_title\":val.exclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n-        \"inclusive_title\":val.inclusive_title,\r\n       }});\r\n     // Handle the response data\r\n     console.log(response.data);\r\n     // Do something with the response data\r\n"
+                },
+                {
+                    "date": 1685971837236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,15 +27,15 @@\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.anyof_title,\r\n         \"inclusive_title\":val.exact_title,\r\n         \"inclusive_title\":val.exclusive_title,\r\n-        \"inclusive_title\":val.a,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n         \"inclusive_title\":val.inclusive_title,\r\n+        \"inclusive_title\":val.inclusive_title,\r\n       }});\r\n     // Handle the response data\r\n     console.log(response.data);\r\n     // Do something with the response data\r\n"
+                },
+                {
+                    "date": 1685977820947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   try {\r\n     const response = await api.get('/basic-search', {\r\n       params: {\r\n         \"keyw\":val}});\r\n-        navigate('/result', { state: res[data, replace: true });\r\n+        navigate('/result', { state: resdata, replace: true });\r\n   } catch (error) {\r\n     // Handle any errors\r\n     console.error(error);\r\n     // Handle the error condition\r\n"
+                }
+            ],
+            "date": 1685816993191,
+            "name": "Commit-0",
+            "content": "export function apiDeletePickup(id: number) {\r\n    return requestManager.invoke<void>({\r\n        url: \"pickup/delete\",\r\n        body: { id },\r\n    });\r\n}"
+        }
+    ]
+}

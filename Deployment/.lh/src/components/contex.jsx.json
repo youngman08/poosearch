@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/contex.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1690556906195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690556927391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   const [anotherState, setAnotherState] = useState(null);\r\n \r\n   const handleOpen = () => setOpen(true);\r\n   const handleClose = () => setOpen(false);\r\n-  const anotherFunction = () => {/* Whatever this function does */}\r\n+//   const anotherFunction = () => {/* Whatever this function does */}\r\n \r\n   return (\r\n     <AppContext.Provider value={{ open, handleOpen, handleClose, anotherState, setAnotherState, anotherFunction }}>\r\n       {props.children}\r\n"
+                },
+                {
+                    "date": 1690556938720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   const handleClose = () => setOpen(false);\r\n //   const anotherFunction = () => {/* Whatever this function does */}\r\n \r\n   return (\r\n-    <AppContext.Provider value={{ open, handleOpen, handleClose, anotherState, setAnotherState, anotherFunction }}>\r\n+    <AppContext.Provider value={{ open, handleOpen, handleClose }}>\r\n       {props.children}\r\n     </AppContext.Provider>\r\n   );\r\n };\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1690556906195,
+            "name": "Commit-0",
+            "content": "import React, { useState, createContext } from 'react';\r\n\r\nexport const AppContext = createContext();\r\n\r\nexport const AppProvider = props => {\r\n  const [open, setOpen] = useState(false);\r\n  const [anotherState, setAnotherState] = useState(null);\r\n\r\n  const handleOpen = () => setOpen(true);\r\n  const handleClose = () => setOpen(false);\r\n  const anotherFunction = () => {/* Whatever this function does */}\r\n\r\n  return (\r\n    <AppContext.Provider value={{ open, handleOpen, handleClose, anotherState, setAnotherState, anotherFunction }}>\r\n      {props.children}\r\n    </AppContext.Provider>\r\n  );\r\n};"
+        }
+    ]
+}

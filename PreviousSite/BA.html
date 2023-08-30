@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/basic2.css" />
+    <link rel="stylesheet" href="css/responsiveHeader.css" />
+    <link rel="stylesheet" href="css/responsiveBody.css" />
+    <link rel="stylesheet" href="css/hamburger.css" />
+    <!-- bootsrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"
+    />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+   
+    <div id="containrfldStyle2" class="container-fluid">
+       <!-- header -->
+      <div id="headerdayba" class="header col-lg-12 col-md-12 col-xl-12 col-xs-12">
+        <div class="header-item1">
+          <img class="header-logo" src="img/Myearth2.png" alt="" />
+         
+          <div class="dropdownMenu">
+             <a id="menuInDayMood" class="firstLink">Menu</a>
+             <div class="dropdown-content">
+              <a id="ContactUsInDayMood" class="firstLink" href="#">Contact Us</a>
+              <a id="F&QInDayMood" class="firstLink" href="#">F&Q</a>
+              <a id="Packages&PricesInDayMood" class="firstLink" href="#">Packages&Prices</a>
+              </div>
+          
+          </div>
+          
+        </div>
+        <div class="header-item2">
+          <a id="SigninInDayMood" class="firstLink">Signin</a>
+          <a id="BookmarksInDayMood" class="firstLink">Bookmarks</a>
+          <div class="headerDayNight" id="headerDayNight">
+            <div class="darkmood" id="darkmood"><img class="iconOfImg" id="iconofimginday"  alt=""></div>
+
+          </div>
+        </div>
+        <!-- logo in header for responsive -->
+        <p class="KNp1">KN</p>
+        <img class="header-logoResponsive" src="img/Myearth2.png" alt="" />
+        <p class="ledjeographyp2">WLEDGEOGRAPHY</p>
+        <!-- Use any element to open the sidenav -->
+
+        <a
+          href="javascript:void(0);"
+          class="HamburgerResponsiveHeader"
+          onclick="openNav()"
+          ><i class="fa fa-bars"></i>
+        </a>
+      </div>
+       <!-- end of the header -->
+    <!-- body -->
+    <div  class="container">
+      <div id="body1dayba" class="body1 col-lg-12 col-md-12 col-xl-12 col-xs-12">
+        <div id="body1namelogodayba" class="body1-NameLogo">KN<img class="earthimg"src="https://upload.wikimedia.org/wikipedia/commons/1/13/Rotating_earth_%28huge%29.gif"alt=""/>WLEDGEOGRAPHY</div>
+        <div id="body1advancedsearchbardayba" class="body1-AdvancedSearchBar">
+          <div id="AdvancedInputSearchDiv" class="AdvancedInputSearchDiv">
+            <input id="BAFirstINPUT" type="text" placeholder="KeyWord" />
+          </div>
+          <div id="BasicButtonDiv" class="BasicButtonDiv">
+            <button id="basicsearchdayba" class="BasicSearchBtn">Basic Search</button>
+          </div>
+          <div id="AdvancedButtonDiv" class="AdvancedButtonDiv">
+            <button id="advancedsearchdayba" class="AdvancedSearchBtn">Advanced Search</button>
+          </div>
+        </div>
+      </div>
+      <div id="body2" class="body2">
+        <div id="advTab" class="tab">
+          <button class="tablinks" onclick="openTab(event, 'Title')">
+            TITLE
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'Abstract')">
+            ABSTRACT
+          </button>
+          <button
+            class="tablinks"
+            onclick="openTab(event, 'Date')"
+          >
+           DATE
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'Classification')">
+            CLASSIFICATION
+          </button>
+        </div>
+      </div>
+      <div id="body3" class="body3">
+        <div id="Title" class="tabcontent">
+          <div class="searchInputs">
+            <div class="inputBox">
+              <input type="text" required />
+              <span>inclusive title</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" required />
+              <span>any of title</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" required />
+              <span>exact title </span>
+            </div>
+            <div class="inputBox">
+              <input type="text" required />
+              <span>exclusive title</span>
+            </div>
+            <div class="inputBox">
+              <textarea class="searchSummary"></textarea>
+              <span>Search Summary</span>
+            </div>
+          </div>
+        </div>
+        <div id="Abstract" class="tabcontent">
+          <div class="searchInputs">
+            <div class="inputBox">
+              <input type="text" required />
+              <span>inclusive abstract</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" required />
+              <span>any of abstract</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" required />
+              <span>exact abstract</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" required />
+              <span>exclusive abstract</span>
+            </div>
+            <div class="inputBox">
+              <textarea class="searchSummary"></textarea>
+              <span>Search Summary</span>
+            </div>
+          </div>
+        </div>
+        <div id="Date" class="tabcontent">
+          <div class="searchInputs">
+            <div class="inputBox">
+              <input type="text" required />
+              <span>inclusive start date</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" required />
+              <span>exclusive start date</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" required />
+              <span>inclusive end date</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" required />
+              <span>exclusive end date</span>
+            </div>
+            <div class="inputBox">
+              <textarea class="searchSummary"></textarea>
+              <span>Search Summary</span>
+            </div>
+          </div>
+        </div>
+        <div id="Classification" class="tabcontent">
+          <div class="searchInputs">
+            <div class="inputBox">
+              <input type="text" required />
+              <span>Inclusive CPC</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" required />
+              <span>Exclusive CPC</span>
+            </div>
+            <div class="inputBox">
+              <textarea class="searchSummary"></textarea>
+              <span>Search Summary</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="body4" class="body4"><img id="ImgInBody4" src="img/MyVector.jpg" alt="" /></div>
+    </div>
+ <!-- end of the body -->
+    <!-- start the footer -->
+    <div id="bafooterdayba" class="BA-Footer">
+      <p id="PrivacyPolicyInDaymood">Privacy Policy</p>
+      <div id="divInfooterInDaymood"></div>
+      <p id="TermsOfInDaymood">Terms Of Services</p>
+    </div>
+    <!-- end of the footer -->
+
+    </div>
+   
+   
+   
+    <!-- Top Navigation Menu -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Menu</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Signin</a>
+      <a href="#">Bookmarks</a>
+      <div class="header-DayNight"></div>
+    </div>
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main"></div>
+    <!-- End of the Top Navigation Menu -->
+  </body>
+  <!-- bootstap scripts -->
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <!-- end of bootstrap scripts -->
+  <script src="js/script.js"></script>
+</html>

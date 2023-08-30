@@ -1,0 +1,450 @@
+{
+    "sourceFile": "src/styles/header.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 108,
+            "patches": [
+                {
+                    "date": 1683218957905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1683218990098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,3 @@\n-@media only screen and (max-width: 600px) {\r\n-    body {\r\n-      background-color: lightblue;\r\n-    }\r\n+@media only screen and (max-width: 800px) {\r\n+  .header\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683219012877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,8 @@\n @media only screen and (max-width: 800px) {\r\n-  .header\r\n+  .header{\r\n+    display: none;\r\n+  }\r\n+  .header-item2{\r\n+    \r\n+  }\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683219018057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n   .header{\r\n     display: none;\r\n   }\r\n   .header-item2{\r\n-    \r\n+    display: none;\r\n   }\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683219027023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,12 @@\n @media only screen and (max-width: 800px) {\r\n   .header{\r\n     display: none;\r\n   }\r\n-  .header-item2{\r\n-    display: none;\r\n+\r\n   }\r\n\\ No newline at end of file\n-  }\n+  @media only screen and (max-width: 800px) {\r\n+    .header{\r\n+      display: none;\r\n+    }\r\n+  \r\n+    }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683219037855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n     display: none;\r\n   }\r\n \r\n   }\r\n-  @media only screen and (max-width: 800px) {\r\n-    .header{\r\n-      display: none;\r\n-    }\r\n+  @media only screen and (min-width: 800px) {\r\n+    .header-item2{\r\n+        display: none;\r\n+      }\r\n   \r\n     }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683219100579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,8 @@\n @media only screen and (max-width: 800px) {\r\n-  .header{\r\n+ \r\n+}\r\n+@media only screen and (min-width: 800px) {\r\n+  .header-item2 {\r\n     display: none;\r\n   }\r\n-\r\n-  }\r\n-  @media only screen and (min-width: 800px) {\r\n-    .header-item2{\r\n\\ No newline at end of file\n-        display: none;\r\n-      }\r\n-  \r\n-    }\n+}\r\n"
+                },
+                {
+                    "date": 1683219298412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,4 @@\n @media only screen and (max-width: 800px) {\r\n  \r\n }\r\n-@media only screen and (min-width: 800px) {\r\n-  .header-item2 {\r\n-    display: none;\r\n-  }\r\n-}\r\n+a { text-decoration:none; } \r\n"
+                },
+                {
+                    "date": 1683219363005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n @media only screen and (max-width: 800px) {\r\n  \r\n }\r\n-a { text-decoration:none; } \r\n+a \r\n+{ text-decoration:none; } \r\n"
+                },
+                {
+                    "date": 1683219373219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n @media only screen and (max-width: 800px) {\r\n- \r\n }\r\n-a \r\n-{ text-decoration:none; } \r\n+a {\r\n+  text-decoration: none;\r\n+}\r\n"
+                },
+                {
+                    "date": 1683219419619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n @media only screen and (max-width: 800px) {\r\n }\r\n a {\r\n-  text-decoration: none;\r\n+  text-decoration: none !important;\r\n }\r\n"
+                },
+                {
+                    "date": 1683220920085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,4 +2,7 @@\n }\r\n a {\r\n   text-decoration: none !important;\r\n }\r\n+*{\r\n+    color: ;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683220927317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n a {\r\n   text-decoration: none !important;\r\n }\r\n *{\r\n-    color: ;\r\n+    color: white !important;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683221081338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,13 @@\n a {\r\n   text-decoration: none !important;\r\n }\r\n *{\r\n-    color: white !important;\r\n+    color: white;\r\n+}\r\n+.header-logo{\r\n+    width: 40px;\r\n+    height: 40px;\r\n+    border-radius: 50%;\r\n+    margin-bottom: 5px;\r\n+    box-shadow: 0 0 20px -5px white;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683221087398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n }\r\n *{\r\n     color: white;\r\n }\r\n-.header-logo{\r\n+.header-logoResponsive{\r\n     width: 40px;\r\n     height: 40px;\r\n     border-radius: 50%;\r\n     margin-bottom: 5px;\r\n"
+                },
+                {
+                    "date": 1683221098902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n *{\r\n     color: white;\r\n }\r\n .header-logoResponsive{\r\n+    \r\n     width: 40px;\r\n     height: 40px;\r\n     border-radius: 50%;\r\n     margin-bottom: 5px;\r\n"
+                },
+                {
+                    "date": 1683221107088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n *{\r\n     color: white;\r\n }\r\n .header-logoResponsive{\r\n-    \r\n+    display: flex;\r\n+    flex-direction: row;\r\n     width: 40px;\r\n     height: 40px;\r\n     border-radius: 50%;\r\n     margin-bottom: 5px;\r\n"
+                },
+                {
+                    "date": 1683221265595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,10 @@\n     height: 40px;\r\n     border-radius: 50%;\r\n     margin-bottom: 5px;\r\n     box-shadow: 0 0 20px -5px white;\r\n-}\n\\ No newline at end of file\n+}\r\n+.mobile-menu {\r\n+    display: flex;\r\n+    flex-direction: row;\r\n+    align-items: center;\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683221413595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,8 @@\n *{\r\n     color: white;\r\n }\r\n .header-logoResponsive{\r\n-    display: flex;\r\n-    flex-direction: row;\r\n     width: 40px;\r\n     height: 40px;\r\n     border-radius: 50%;\r\n     margin-bottom: 5px;\r\n@@ -18,5 +16,18 @@\n .mobile-menu {\r\n     display: flex;\r\n     flex-direction: row;\r\n     align-items: center;\r\n+  }\r\n+  .container .body1 .body1-NameLogo{\r\n+    width: 100%;\r\n+    height: 100px;\r\n+    background-color:rgb(0,22,45);\r\n+    margin-bottom: 40px;\r\n+    padding-top: 130px;\r\n+    display: flex;\r\n+    justify-content: center;\r\n+    align-items: center;\r\n+    color: #fff;\r\n+    letter-spacing:5px;\r\n+    font-size:22px;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683221420776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,17 +17,7 @@\n     display: flex;\r\n     flex-direction: row;\r\n     align-items: center;\r\n   }\r\n-  .container .body1 .body1-NameLogo{\r\n-    width: 100%;\r\n-    height: 100px;\r\n-    background-color:rgb(0,22,45);\r\n-    margin-bottom: 40px;\r\n-    padding-top: 130px;\r\n-    display: flex;\r\n-    justify-content: center;\r\n-    align-items: center;\r\n-    color: #fff;\r\n-    letter-spacing:5px;\r\n-    font-size:22px;\r\n+ .body1-NameLogo{\r\n+\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683221427957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,16 @@\n .mobile-menu {\r\n     display: flex;\r\n     flex-direction: row;\r\n     align-items: center;\r\n+    width: 100%;\r\n+    height: 100px;\r\n+    background-color:rgb(0,22,45);\r\n+    margin-bottom: 40px;\r\n\\ No newline at end of file\n+    padding-top: 130px;\r\n+    display: flex;\r\n+    justify-content: center;\r\n+    align-items: center;\r\n+    color: #fff;\r\n+    letter-spacing:5px;\r\n+    font-size:22px;\r\n   }\r\n- .body1-NameLogo{\r\n-\r\n-  }\n"
+                },
+                {
+                    "date": 1683221453901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,10 @@\n     background-color:rgb(0,22,45);\r\n     margin-bottom: 40px;\r\n     padding-top: 130px;\r\n     display: flex;\r\n-    justify-content: center;\r\n+    justify-content: fl;\r\n     align-items: center;\r\n     color: #fff;\r\n     letter-spacing:5px;\r\n     font-size:22px;\r\n\\ No newline at end of file\n-  }\n+  }\r\n"
+                },
+                {
+                    "date": 1683221466245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,16 +16,15 @@\n .mobile-menu {\r\n     display: flex;\r\n     flex-direction: row;\r\n     align-items: center;\r\n-    width: 100%;\r\n     height: 100px;\r\n     background-color:rgb(0,22,45);\r\n     margin-bottom: 40px;\r\n     padding-top: 130px;\r\n     display: flex;\r\n-    justify-content: fl;\r\n+    justify-content: flex-start;\r\n     align-items: center;\r\n     color: #fff;\r\n     letter-spacing:5px;\r\n     font-size:22px;\r\n\\ No newline at end of file\n-  }\n+  }\r\n"
+                },
+                {
+                    "date": 1683221477746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,15 +16,13 @@\n .mobile-menu {\r\n     display: flex;\r\n     flex-direction: row;\r\n     align-items: center;\r\n-    height: 100px;\r\n-    background-color:rgb(0,22,45);\r\n     margin-bottom: 40px;\r\n     padding-top: 130px;\r\n     display: flex;\r\n     justify-content: flex-start;\r\n     align-items: center;\r\n     color: #fff;\r\n     letter-spacing:5px;\r\n     font-size:22px;\r\n-  }\n\\ No newline at end of file\n+  }\r\n"
+                },
+                {
+                    "date": 1683221487698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,13 +16,10 @@\n .mobile-menu {\r\n     display: flex;\r\n     flex-direction: row;\r\n     align-items: center;\r\n-    margin-bottom: 40px;\r\n-    padding-top: 130px;\r\n     display: flex;\r\n     justify-content: flex-start;\r\n     align-items: center;\r\n-    color: #fff;\r\n     letter-spacing:5px;\r\n     font-size:22px;\r\n   }\r\n"
+                },
+                {
+                    "date": 1683221493343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,6 +20,5 @@\n     display: flex;\r\n     justify-content: flex-start;\r\n     align-items: center;\r\n     letter-spacing:5px;\r\n-    font-size:22px;\r\n   }\r\n"
+                },
+                {
+                    "date": 1683266631994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,4 +21,5 @@\n     justify-content: flex-start;\r\n     align-items: center;\r\n     letter-spacing:5px;\r\n   }\r\n+#\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683266637949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,7 @@\n     justify-content: flex-start;\r\n     align-items: center;\r\n     letter-spacing:5px;\r\n   }\r\n-#\n\\ No newline at end of file\n+#containrfldStyle2{\r\n+    position: relative;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683269123801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,5 +23,8 @@\n     letter-spacing:5px;\r\n   }\r\n #containrfldStyle2{\r\n     position: relative;\r\n+}\r\n+.Tabs-firstpage{\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683269148173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,6 @@\n #containrfldStyle2{\r\n     position: relative;\r\n }\r\n .Tabs-firstpage{\r\n-    \r\n+    display: flex;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683269157285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,6 @@\n     position: relative;\r\n }\r\n .Tabs-firstpage{\r\n     display: flex;\r\n+    jus\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683269259781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,4 @@\n   }\r\n #containrfldStyle2{\r\n     position: relative;\r\n }\r\n-.Tabs-firstpage{\r\n-    display: flex;\r\n-    jus\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683269319406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,4 +24,9 @@\n   }\r\n #containrfldStyle2{\r\n     position: relative;\r\n }\r\n+.MuiTabPanel-root {\r\n+    padding: 24px;\r\n+    display: flex;\r\n+    justify-content: center;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683270198582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,10 @@\n #containrfldStyle2{\r\n     position: relative;\r\n }\r\n .MuiTabPanel-root {\r\n-    padding: 24px;\r\n     display: flex;\r\n     justify-content: center;\r\n+}\r\n+.PrivateTabIndicator-colorSecondary-3 {\r\n+    background-color: wheat;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683270446977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,5 +30,9 @@\n     justify-content: center;\r\n }\r\n .PrivateTabIndicator-colorSecondary-3 {\r\n     background-color: wheat;\r\n+}\r\n+.MuiTabPanel-root {\r\n+    flex-direction: column;\r\n+    padding: 24px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683271070549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,5 +34,8 @@\n }\r\n .MuiTabPanel-root {\r\n     flex-direction: column;\r\n     padding: 24px;\r\n+}\r\n+.container{\r\n+    pa\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683271089738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,6 +36,6 @@\n     flex-direction: column;\r\n     padding: 24px;\r\n }\r\n .container{\r\n-    pa\r\n+    padding-bottom: 300px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683271175471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,6 +36,6 @@\n     flex-direction: column;\r\n     padding: 24px;\r\n }\r\n .container{\r\n-    padding-bottom: 300px;\r\n+    padding-bottom: 100px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683271563158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,5 +37,6 @@\n     padding: 24px;\r\n }\r\n .container{\r\n     padding-bottom: 100px;\r\n+    min-width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683271622936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,8 @@\n }\r\n .container{\r\n     padding-bottom: 100px;\r\n     min-width: 100%;\r\n+}\r\n+body{\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683271628888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,6 +40,6 @@\n     padding-bottom: 100px;\r\n     min-width: 100%;\r\n }\r\n body{\r\n-    \r\n+    background-color: ;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683271673980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,6 +40,6 @@\n     padding-bottom: 100px;\r\n     min-width: 100%;\r\n }\r\n body{\r\n-    background-color: ;\r\n+    background-color: rgb(0, 22, 45) !important;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683271739408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n     flex-direction: column;\r\n     padding: 24px;\r\n }\r\n .container{\r\n-    padding-bottom: 100px;\r\n+    padding-bottom: 0px;\r\n     min-width: 100%;\r\n }\r\n body{\r\n     background-color: rgb(0, 22, 45) !important;\r\n"
+                },
+                {
+                    "date": 1683272036501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,5 +41,6 @@\n     min-width: 100%;\r\n }\r\n body{\r\n     background-color: rgb(0, 22, 45) !important;\r\n-}\n\\ No newline at end of file\n+}\r\n+#\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683272043489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,5 +42,7 @@\n }\r\n body{\r\n     background-color: rgb(0, 22, 45) !important;\r\n }\r\n-#\n\\ No newline at end of file\n+#BAFirstINPUT{\r\n+    \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683272066619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,6 +43,6 @@\n body{\r\n     background-color: rgb(0, 22, 45) !important;\r\n }\r\n #BAFirstINPUT{\r\n-    \r\n-}\n\\ No newline at end of file\n+    margin: 10px 0px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1683272081257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,4 +45,7 @@\n }\r\n #BAFirstINPUT{\r\n     margin: 10px 0px;\r\n }\r\n+.PrivateTabIndicator-colorSecondary-3 {\r\n+    background-color: wheat;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683272087860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     display: flex;\r\n     justify-content: center;\r\n }\r\n .PrivateTabIndicator-colorSecondary-3 {\r\n-    background-color: wheat;\r\n+    background-color: wheat !important;\r\n }\r\n .MuiTabPanel-root {\r\n     flex-direction: column;\r\n     padding: 24px;\r\n@@ -45,7 +45,4 @@\n }\r\n #BAFirstINPUT{\r\n     margin: 10px 0px;\r\n }\r\n-.PrivateTabIndicator-colorSecondary-3 {\r\n-    background-color: wheat;\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683282076014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,5 +44,6 @@\n     background-color: rgb(0, 22, 45) !important;\r\n }\r\n #BAFirstINPUT{\r\n     margin: 10px 0px;\r\n+    pa\r\n }\r\n"
+                },
+                {
+                    "date": 1683282081253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,6 +44,6 @@\n     background-color: rgb(0, 22, 45) !important;\r\n }\r\n #BAFirstINPUT{\r\n     margin: 10px 0px;\r\n-    pa\r\n+    padding: 0;\r\n }\r\n"
+                },
+                {
+                    "date": 1683282089827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,6 +44,7 @@\n     background-color: rgb(0, 22, 45) !important;\r\n }\r\n #BAFirstINPUT{\r\n     margin: 10px 0px;\r\n-    padding: 0;\r\n+    padding: 0px 5px;\r\n+    co\r\n }\r\n"
+                },
+                {
+                    "date": 1683282520128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,6 +45,6 @@\n }\r\n #BAFirstINPUT{\r\n     margin: 10px 0px;\r\n     padding: 0px 5px;\r\n-    co\r\n+    color: black;\r\n }\r\n"
+                },
+                {
+                    "date": 1683282533198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,4 +47,7 @@\n     margin: 10px 0px;\r\n     padding: 0px 5px;\r\n     color: black;\r\n }\r\n+p{\r\n+    font-size: 15px;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683282544162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,52 +2,52 @@\n }\r\n a {\r\n   text-decoration: none !important;\r\n }\r\n-*{\r\n-    color: white;\r\n+* {\r\n+  color: white;\r\n }\r\n-.header-logoResponsive{\r\n-    width: 40px;\r\n-    height: 40px;\r\n-    border-radius: 50%;\r\n-    margin-bottom: 5px;\r\n-    box-shadow: 0 0 20px -5px white;\r\n+.header-logoResponsive {\r\n+  width: 40px;\r\n+  height: 40px;\r\n+  border-radius: 50%;\r\n+  margin-bottom: 5px;\r\n+  box-shadow: 0 0 20px -5px white;\r\n }\r\n .mobile-menu {\r\n-    display: flex;\r\n-    flex-direction: row;\r\n-    align-items: center;\r\n-    display: flex;\r\n-    justify-content: flex-start;\r\n-    align-items: center;\r\n-    letter-spacing:5px;\r\n-  }\r\n-#containrfldStyle2{\r\n-    position: relative;\r\n+  display: flex;\r\n+  flex-direction: row;\r\n+  align-items: center;\r\n+  display: flex;\r\n+  justify-content: flex-start;\r\n+  align-items: center;\r\n+  letter-spacing: 5px;\r\n }\r\n+#containrfldStyle2 {\r\n+  position: relative;\r\n+}\r\n .MuiTabPanel-root {\r\n-    display: flex;\r\n-    justify-content: center;\r\n+  display: flex;\r\n+  justify-content: center;\r\n }\r\n .PrivateTabIndicator-colorSecondary-3 {\r\n-    background-color: wheat !important;\r\n\\ No newline at end of file\n+  background-color: wheat !important;\r\n }\r\n .MuiTabPanel-root {\r\n-    flex-direction: column;\r\n-    padding: 24px;\r\n+  flex-direction: column;\r\n+  padding: 24px;\r\n }\r\n-.container{\r\n-    padding-bottom: 0px;\r\n-    min-width: 100%;\r\n+.container {\r\n+  padding-bottom: 0px;\r\n+  min-width: 100%;\r\n }\r\n-body{\r\n-    background-color: rgb(0, 22, 45) !important;\r\n+body {\r\n+  background-color: rgb(0, 22, 45) !important;\r\n }\r\n-#BAFirstINPUT{\r\n-    margin: 10px 0px;\r\n-    padding: 0px 5px;\r\n-    color: black;\r\n+#BAFirstINPUT {\r\n+  margin: 10px 0px;\r\n+  padding: 0px 5px;\r\n+  color: black;\r\n }\r\n-p{\r\n-    font-size: 15px;\r\n-}\n+p {\r\n+  font-size: 15px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1683282904538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   display: flex;\r\n   flex-direction: row;\r\n   align-items: center;\r\n   display: flex;\r\n-  justify-content: flex-start;\r\n+  justify-content: s;\r\n   align-items: center;\r\n   letter-spacing: 5px;\r\n }\r\n #containrfldStyle2 {\r\n"
+                },
+                {
+                    "date": 1683283036396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n @media only screen and (max-width: 800px) {\r\n+    \r\n }\r\n a {\r\n   text-decoration: none !important;\r\n }\r\n@@ -17,9 +18,9 @@\n   display: flex;\r\n   flex-direction: row;\r\n   align-items: center;\r\n   display: flex;\r\n-  justify-content: s;\r\n+  justify-content: space-around;\r\n   align-items: center;\r\n   letter-spacing: 5px;\r\n }\r\n #containrfldStyle2 {\r\n"
+                },
+                {
+                    "date": 1683283043369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @media only screen and (max-width: 800px) {\r\n-    \r\n+    #headerlaptop\r\n }\r\n a {\r\n   text-decoration: none !important;\r\n }\r\n"
+                },
+                {
+                    "date": 1683283048869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n @media only screen and (max-width: 800px) {\r\n-    #headerlaptop\r\n+    #headerlaptop{\r\n+        display: non;\r\n+    }\r\n }\r\n a {\r\n   text-decoration: none !important;\r\n }\r\n"
+                },
+                {
+                    "date": 1683283088945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,11 @@\n @media only screen and (max-width: 800px) {\r\n     #headerlaptop{\r\n-        display: non;\r\n+        display: none;\r\n     }\r\n+    #header-phone{\r\n+        \r\n+    }\r\n }\r\n a {\r\n   text-decoration: none !important;\r\n }\r\n"
+                },
+                {
+                    "date": 1683283095264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     #headerlaptop{\r\n         display: none;\r\n     }\r\n     #header-phone{\r\n-        \r\n+        display: none;\r\n     }\r\n }\r\n a {\r\n   text-decoration: none !important;\r\n"
+                },
+                {
+                    "date": 1683283102533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,12 @@\n     #headerlaptop{\r\n         display: none;\r\n     }\r\n     #header-phone{\r\n-        display: none;\r\n+        display: block;\r\n     }\r\n }\r\n+\r\n a {\r\n   text-decoration: none !important;\r\n }\r\n * {\r\n"
+                },
+                {
+                    "date": 1683283108137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,16 @@\n     }\r\n     #header-phone{\r\n         display: block;\r\n     }\r\n+@media only screen and (max-width: 800px) {\r\n+    #headerlaptop{\r\n+        display: none;\r\n+    }\r\n+    #header-phone{\r\n+        display: block;\r\n+    }\r\n }\r\n-\r\n a {\r\n   text-decoration: none !important;\r\n }\r\n * {\r\n"
+                },
+                {
+                    "date": 1683283117300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,12 @@\n     }\r\n     #header-phone{\r\n         display: block;\r\n     }\r\n-@media only screen and (max-width: 800px) {\r\n+}\r\n+@media only screen and (mix-width: 800px) {\r\n     #headerlaptop{\r\n-        display: none;\r\n+        display: block;\r\n     }\r\n     #header-phone{\r\n         display: block;\r\n     }\r\n"
+                },
+                {
+                    "date": 1683283122810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     #headerlaptop{\r\n         display: block;\r\n     }\r\n     #header-phone{\r\n-        display: block;\r\n+        display: none;\r\n     }\r\n }\r\n a {\r\n   text-decoration: none !important;\r\n"
+                },
+                {
+                    "date": 1683283143905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     #headerlaptop{\r\n         display: none;\r\n     }\r\n     #header-phone{\r\n-        display: block;\r\n+        display: flex;\r\n     }\r\n }\r\n @media only screen and (mix-width: 800px) {\r\n     #headerlaptop{\r\n"
+                },
+                {
+                    "date": 1683283173066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n     #header-phone{\r\n         display: flex;\r\n     }\r\n }\r\n-@media only screen and (mix-width: 800px) {\r\n+@media only screen and (min-width: 800px) {\r\n     #headerlaptop{\r\n-        display: block;\r\n+        display: flex;\r\n     }\r\n     #header-phone{\r\n         display: none;\r\n     }\r\n"
+                },
+                {
+                    "date": 1683301797176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n   justify-content: space-around;\r\n   align-items: center;\r\n   letter-spacing: 5px;\r\n }\r\n-#containrfldStyle2 {\r\n+#container-fluid {\r\n   position: relative;\r\n }\r\n .MuiTabPanel-root {\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1683301876510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @media only screen and (max-width: 800px) {\r\n     #headerlaptop{\r\n         display: none;\r\n     }\r\n-    #header-phone{\r\n+    mobile-menu{\r\n         display: flex;\r\n     }\r\n }\r\n @media only screen and (min-width: 800px) {\r\n@@ -35,9 +35,9 @@\n   justify-content: space-around;\r\n   align-items: center;\r\n   letter-spacing: 5px;\r\n }\r\n-#container-fluid {\r\n+.container-fluid {\r\n   position: relative;\r\n }\r\n .MuiTabPanel-root {\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1683301882585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,17 @@\n @media only screen and (max-width: 800px) {\r\n     #headerlaptop{\r\n         display: none;\r\n     }\r\n-    mobile-menu{\r\n+    .mobile-menu{\r\n         display: flex;\r\n     }\r\n }\r\n @media only screen and (min-width: 800px) {\r\n     #headerlaptop{\r\n         display: flex;\r\n     }\r\n-    #header-phone{\r\n+    mobile-menu{\r\n         display: none;\r\n     }\r\n }\r\n a {\r\n"
+                },
+                {
+                    "date": 1683301888196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,12 +6,12 @@\n         display: flex;\r\n     }\r\n }\r\n @media only screen and (min-width: 800px) {\r\n-    #headerlaptop{\r\n+    header{\r\n         display: flex;\r\n     }\r\n-    mobile-menu{\r\n+    .mobile-menu{\r\n         display: none;\r\n     }\r\n }\r\n a {\r\n"
+                },
+                {
+                    "date": 1683301894684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n @media only screen and (max-width: 800px) {\r\n-    #headerlaptop{\r\n+    .header{\r\n         display: none;\r\n     }\r\n     .mobile-menu{\r\n         display: flex;\r\n     }\r\n }\r\n @media only screen and (min-width: 800px) {\r\n-    header{\r\n+    .header{\r\n         display: flex;\r\n     }\r\n     .mobile-menu{\r\n         display: none;\r\n"
+                },
+                {
+                    "date": 1683301963710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   border-radius: 50%;\r\n   margin-bottom: 5px;\r\n   box-shadow: 0 0 20px -5px white;\r\n }\r\n-.mobile-menu {\r\n+.mobile-menu2 {\r\n   display: flex;\r\n   flex-direction: row;\r\n   align-items: center;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1683303475014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,4 +64,13 @@\n }\r\n p {\r\n   font-size: 15px;\r\n }\r\n+.save-patent-btn {\r\n+    padding: 10px 15px;\r\n+    color: black;\r\n+    outline: none;\r\n+    background-color: white;\r\n+    border-radius: 5px;\r\n+    cursor: pointer;\r\n+    border: var(--border-color);\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683303612564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,5 +72,8 @@\n     background-color: white;\r\n     border-radius: 5px;\r\n     cursor: pointer;\r\n     border: var(--border-color);\r\n+  }\r\n+  .row-second-result{\r\n+    \r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683303622080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,6 +74,8 @@\n     cursor: pointer;\r\n     border: var(--border-color);\r\n   }\r\n   .row-second-result{\r\n+    display: flex;\r\n+    flex-direction: row;\r\n     \r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683303849480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @media only screen and (max-width: 800px) {\r\n-    .header{\r\n+    .mheader{\r\n         display: none;\r\n     }\r\n     .mobile-menu{\r\n         display: flex;\r\n@@ -76,6 +76,6 @@\n   }\r\n   .row-second-result{\r\n     display: flex;\r\n     flex-direction: row;\r\n-    \r\n+    justify-content: center;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683304019222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         display: flex;\r\n     }\r\n }\r\n @media only screen and (min-width: 800px) {\r\n-    .header{\r\n+    .mheader{\r\n         display: flex;\r\n     }\r\n     .mobile-menu{\r\n         display: none;\r\n@@ -26,9 +26,9 @@\n   border-radius: 50%;\r\n   margin-bottom: 5px;\r\n   box-shadow: 0 0 20px -5px white;\r\n }\r\n-.mobile-menu2 {\r\n+.mobile-menu {\r\n   display: flex;\r\n   flex-direction: row;\r\n   align-items: center;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1683304043248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n   justify-content: space-around;\r\n   align-items: center;\r\n   letter-spacing: 5px;\r\n }\r\n+.\r\n .container-fluid {\r\n   position: relative;\r\n }\r\n .MuiTabPanel-root {\r\n"
+                },
+                {
+                    "date": 1683304051721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,13 @@\n   justify-content: space-around;\r\n   align-items: center;\r\n   letter-spacing: 5px;\r\n }\r\n-.\r\n+.row{\r\n+    display: flex;\r\n+    flex-direction: row;\r\n+    align-items: center;\r\n+}\r\n .container-fluid {\r\n   position: relative;\r\n }\r\n .MuiTabPanel-root {\r\n"
+                },
+                {
+                    "date": 1683304061248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,11 @@\n     display: flex;\r\n     flex-direction: row;\r\n     align-items: center;\r\n }\r\n+.mobile-menu{\r\n+    \r\n+}\r\n .container-fluid {\r\n   position: relative;\r\n }\r\n .MuiTabPanel-root {\r\n"
+                },
+                {
+                    "date": 1683304073560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,11 @@\n     display: flex;\r\n     flex-direction: row;\r\n     align-items: center;\r\n }\r\n-.mobile-menu{\r\n-    \r\n+.mobile-menu{  align-items: center;\r\n+    letter-spacing: 5px;\r\n+\r\n }\r\n .container-fluid {\r\n   position: relative;\r\n }\r\n"
+                },
+                {
+                    "date": 1683304139446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,19 @@\n @media only screen and (max-width: 800px) {\r\n-    .mheader{\r\n-        display: none;\r\n-    }\r\n-    .mobile-menu{\r\n-        display: flex;\r\n-    }\r\n+  .mheader {\r\n+    display: none;\r\n+  }\r\n+  .mobile-menu {\r\n+    display: flex;\r\n+  }\r\n }\r\n @media only screen and (min-width: 800px) {\r\n-    .mheader{\r\n-        display: flex;\r\n-    }\r\n-    .mobile-menu{\r\n-        display: none;\r\n-    }\r\n+  .mheader {\r\n+    display: flex;\r\n+  }\r\n+  .mobile-menu {\r\n+    display: none;\r\n+  }\r\n }\r\n a {\r\n   text-decoration: none !important;\r\n }\r\n@@ -35,16 +35,21 @@\n   justify-content: space-around;\r\n   align-items: center;\r\n   letter-spacing: 5px;\r\n }\r\n-.row{\r\n+.row {\r\n+  display: flex;\r\n+  flex-direction: row;\r\n+  align-items: center;\r\n+}\r\n+.mobile-menu2 {\r\n     display: flex;\r\n     flex-direction: row;\r\n     align-items: center;\r\n-}\r\n-.mobile-menu{  align-items: center;\r\n+    display: flex;\r\n+    justify-content: space-around;\r\n+    align-items: center;\r\n     letter-spacing: 5px;\r\n-\r\n }\r\n .container-fluid {\r\n   position: relative;\r\n }\r\n@@ -74,17 +79,17 @@\n p {\r\n   font-size: 15px;\r\n }\r\n .save-patent-btn {\r\n-    padding: 10px 15px;\r\n-    color: black;\r\n-    outline: none;\r\n-    background-color: white;\r\n-    border-radius: 5px;\r\n-    cursor: pointer;\r\n-    border: var(--border-color);\r\n-  }\r\n-  .row-second-result{\r\n-    display: flex;\r\n-    flex-direction: row;\r\n-    justify-content: center;\r\n-  }\n\\ No newline at end of file\n+  padding: 10px 15px;\r\n+  color: black;\r\n+  outline: none;\r\n+  background-color: white;\r\n+  border-radius: 5px;\r\n+  cursor: pointer;\r\n+  border: var(--border-color);\r\n+}\r\n+.row-second-result {\r\n+  display: flex;\r\n+  flex-direction: row;\r\n+  justify-content: center;\r\n+}\r\n"
+                },
+                {
+                    "date": 1683304156290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,14 +34,10 @@\n   display: flex;\r\n   justify-content: space-around;\r\n   align-items: center;\r\n   letter-spacing: 5px;\r\n+  margin\r\n }\r\n-.row {\r\n-  display: flex;\r\n-  flex-direction: row;\r\n-  align-items: center;\r\n-}\r\n .mobile-menu2 {\r\n     display: flex;\r\n     flex-direction: row;\r\n     align-items: center;\r\n"
+                },
+                {
+                    "date": 1683304592898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n   display: flex;\r\n   justify-content: space-around;\r\n   align-items: center;\r\n   letter-spacing: 5px;\r\n-  margin\r\n+  margin-top: 5px;\r\n }\r\n .mobile-menu2 {\r\n     display: flex;\r\n     flex-direction: row;\r\n@@ -88,4 +88,5 @@\n   display: flex;\r\n   flex-direction: row;\r\n   justify-content: center;\r\n }\r\n+bookmark-icon\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683304599233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,5 +88,7 @@\n   display: flex;\r\n   flex-direction: row;\r\n   justify-content: center;\r\n }\r\n-bookmark-icon\n\\ No newline at end of file\n+.bookmark-icon{\r\n+    colo\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683304832537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,6 +89,6 @@\n   flex-direction: row;\r\n   justify-content: center;\r\n }\r\n .bookmark-icon{\r\n-    colo\r\n+    color: black !important;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683305738446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,5 +90,5 @@\n   justify-content: center;\r\n }\r\n .bookmark-icon{\r\n     color: black !important;\r\n-}\n\\ No newline at end of file\n+}\r\n"
+                },
+                {
+                    "date": 1683305744384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,7 +88,7 @@\n   display: flex;\r\n   flex-direction: row;\r\n   justify-content: center;\r\n }\r\n-.bookmark-icon{\r\n+.-icon{\r\n     color: black !important;\r\n }\r\n"
+                },
+                {
+                    "date": 1683398576783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n }\r\n a {\r\n   text-decoration: none !important;\r\n }\r\n-* {\r\n+ح{\r\n   color: white;\r\n }\r\n .header-logoResponsive {\r\n   width: 40px;\r\n@@ -88,7 +88,7 @@\n   display: flex;\r\n   flex-direction: row;\r\n   justify-content: center;\r\n }\r\n-.-icon{\r\n+.my-icon{\r\n     color: black !important;\r\n }\r\n"
+                },
+                {
+                    "date": 1683399048829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n }\r\n a {\r\n   text-decoration: none !important;\r\n }\r\n-ح{\r\n+p,div{\r\n   color: white;\r\n }\r\n .header-logoResponsive {\r\n   width: 40px;\r\n@@ -78,9 +78,9 @@\n .save-patent-btn {\r\n   padding: 10px 15px;\r\n   color: black;\r\n   outline: none;\r\n-  background-color: white;\r\n+\r\n   border-radius: 5px;\r\n   cursor: pointer;\r\n   border: var(--border-color);\r\n }\r\n"
+                },
+                {
+                    "date": 1683399179591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n }\r\n a {\r\n   text-decoration: none !important;\r\n }\r\n-p,div{\r\n+p,\r\n+div {\r\n   color: white;\r\n }\r\n .header-logoResponsive {\r\n   width: 40px;\r\n@@ -37,15 +38,15 @@\n   letter-spacing: 5px;\r\n   margin-top: 5px;\r\n }\r\n .mobile-menu2 {\r\n-    display: flex;\r\n-    flex-direction: row;\r\n-    align-items: center;\r\n-    display: flex;\r\n-    justify-content: space-around;\r\n-    align-items: center;\r\n-    letter-spacing: 5px;\r\n+  display: flex;\r\n+  flex-direction: row;\r\n+  align-items: center;\r\n+  display: flex;\r\n+  justify-content: space-around;\r\n+  align-items: center;\r\n+  letter-spacing: 5px;\r\n }\r\n .container-fluid {\r\n   position: relative;\r\n }\r\n@@ -84,11 +85,13 @@\n   cursor: pointer;\r\n   border: var(--border-color);\r\n }\r\n .row-second-result {\r\n+  background-color: white;\r\n   display: flex;\r\n   flex-direction: row;\r\n+  width: fit-content;\r\n   justify-content: center;\r\n }\r\n-.my-icon{\r\n-    color: black !important;\r\n+.my-icon {\r\n+  color: black !important;\r\n }\r\n"
+                },
+                {
+                    "date": 1683399376574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,8 @@\n .row-second-result {\r\n   background-color: white;\r\n   display: flex;\r\n   flex-direction: row;\r\n-  width: fit-content;\r\n   justify-content: center;\r\n }\r\n .my-icon {\r\n   color: black !important;\r\n"
+                },
+                {
+                    "date": 1683402419147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,12 +85,15 @@\n   cursor: pointer;\r\n   border: var(--border-color);\r\n }\r\n .row-second-result {\r\n-  background-color: white;\r\n   display: flex;\r\n   flex-direction: row;\r\n   justify-content: center;\r\n }\r\n .my-icon {\r\n   color: black !important;\r\n }\r\n+display: flex;\r\n+justify-content: center;\r\n+flex-direction: column;\r\n+text-align: center;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683402424692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,9 @@\n   justify-content: center;\r\n }\r\n .my-icon {\r\n   color: black !important;\r\n-}\r\n+}{\r\n display: flex;\r\n justify-content: center;\r\n flex-direction: column;\r\n\\ No newline at end of file\n-text-align: center;\n+text-align: center;}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683402438449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,10 @@\n   justify-content: center;\r\n }\r\n .my-icon {\r\n   color: black !important;\r\n-}{\r\n+}\r\n+.content{\r\n display: flex;\r\n justify-content: center;\r\n flex-direction: column;\r\n text-align: center;}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683538660585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,8 @@\n   margin-bottom: 5px;\r\n   box-shadow: 0 0 20px -5px white;\r\n }\r\n .mobile-menu {\r\n-  display: flex;\r\n   flex-direction: row;\r\n   align-items: center;\r\n   display: flex;\r\n   justify-content: space-around;\r\n@@ -92,9 +91,10 @@\n }\r\n .my-icon {\r\n   color: black !important;\r\n }\r\n-.content{\r\n-display: flex;\r\n-justify-content: center;\r\n-flex-direction: column;\r\n-text-align: center;}\n\\ No newline at end of file\n+.content {\r\n+  display: flex;\r\n+  justify-content: center;\r\n+  flex-direction: column;\r\n+  text-align: center;\r\n+}\r\n"
+                },
+                {
+                    "date": 1683539527267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @media only screen and (max-width: 800px) {\r\n   .mheader {\r\n-    display: none;\r\n+    display: none !important;\r\n   }\r\n   .mobile-menu {\r\n     display: flex;\r\n   }\r\n"
+                },
+                {
+                    "date": 1683539532969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   .mheader {\r\n     display: flex;\r\n   }\r\n   .mobile-menu {\r\n-    display: none;\r\n+    display: none !important;\r\n   }\r\n }\r\n a {\r\n   text-decoration: none !important;\r\n"
+                },
+                {
+                    "date": 1683546380205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,4 +97,5 @@\n   justify-content: center;\r\n   flex-direction: column;\r\n   text-align: center;\r\n }\r\n+Tabs-firstpage\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683546388468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,5 +97,5 @@\n   justify-content: center;\r\n   flex-direction: column;\r\n   text-align: center;\r\n }\r\n-Tabs-firstpage\n\\ No newline at end of file\n+.Tabs-firstpage\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683546394884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,5 +97,7 @@\n   justify-content: center;\r\n   flex-direction: column;\r\n   text-align: center;\r\n }\r\n-.Tabs-firstpage\n\\ No newline at end of file\n+.Tabs-firstpage{\r\n+  \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683546408428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,6 +98,6 @@\n   flex-direction: column;\r\n   text-align: center;\r\n }\r\n .Tabs-firstpage{\r\n-  \r\n+  max-width: ;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683546770095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,7 +97,12 @@\n   justify-content: center;\r\n   flex-direction: column;\r\n   text-align: center;\r\n }\r\n-.Tabs-firstpage{\r\n-  max-width: ;\r\n+.Tabs-firstpage {\r\n+  /* max-width: 80%; */\r\n+  display: flex;\r\n+  flex-direction: column;\r\n+  /* text-align: center; */\r\n+  /* justify-content: center; */\r\n+  align-items: center;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683546775229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,11 +98,8 @@\n   flex-direction: column;\r\n   text-align: center;\r\n }\r\n .Tabs-firstpage {\r\n-  /* max-width: 80%; */\r\n   display: flex;\r\n   flex-direction: column;\r\n-  /* text-align: center; */\r\n-  /* justify-content: center; */\r\n   align-items: center;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683547662382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,5 +101,11 @@\n .Tabs-firstpage {\r\n   display: flex;\r\n   flex-direction: column;\r\n   align-items: center;\r\n-}\n\\ No newline at end of file\n+}\r\n+div.row2{\r\n+  color: black;\r\n+  }\r\n+  #text.row1{\r\n+  color: black;\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683547702289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,5 +107,6 @@\n   color: black;\r\n   }\r\n   #text.row1{\r\n   color: black;\r\n-  }\n\\ No newline at end of file\n+  }\r\n+  .\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683547707480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,5 +108,7 @@\n   }\r\n   #text.row1{\r\n   color: black;\r\n   }\r\n-  .\n\\ No newline at end of file\n+  .row1{\r\n+    ba\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683547715517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,6 +110,6 @@\n   color: black;\r\n   }\r\n   .row1{\r\n     background-color: aliceblue;\r\n-    co\r\n+    color: b;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683893683410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,137 @@\n+@media only screen and (max-width: 800px) {\r\n+  .mheader {\r\n+    display: none !important;\r\n+  }\r\n+  .mobile-menu {\r\n+    display: flex;\r\n+  }\r\n+}\r\n+@media only screen and (min-width: 800px) {\r\n+  .mheader {\r\n+    display: flex;\r\n+  }\r\n+  .mobile-menu {\r\n+    display: none !important;\r\n+  }\r\n+}\r\n+a {\r\n+  text-decoration: none !important;\r\n+}\r\n+p,\r\n+div {\r\n+  color: white;\r\n+}\r\n+.header-logoResponsive {\r\n+  width: 40px;\r\n+  height: 40px;\r\n+  border-radius: 50%;\r\n+  margin-bottom: 5px;\r\n+  box-shadow: 0 0 20px -5px white;\r\n+}\r\n+.mobile-menu {\r\n+  flex-direction: row;\r\n+  align-items: center;\r\n+  display: flex;\r\n+  justify-content: space-around;\r\n+  align-items: center;\r\n+  letter-spacing: 5px;\r\n+  margin-top: 5px;\r\n+}\r\n+.mobile-menu2 {\r\n+  display: flex;\r\n+  flex-direction: row;\r\n+  align-items: center;\r\n+  display: flex;\r\n+  justify-content: space-around;\r\n+  align-items: center;\r\n+  letter-spacing: 5px;\r\n+}\r\n+.container-fluid {\r\n+  position: relative;\r\n+}\r\n+.MuiTabPanel-root {\r\n+  display: flex;\r\n+  justify-content: center;\r\n+}\r\n+.PrivateTabIndicator-colorSecondary-3 {\r\n+  background-color: wheat !important;\r\n+}\r\n+.MuiTabPanel-root {\r\n+  flex-direction: column;\r\n+  padding: 24px;\r\n+}\r\n+.container {\r\n+  padding-bottom: 0px;\r\n+  min-width: 100%;\r\n+}\r\n+body {\r\n+  background-color: rgb(0, 22, 45) !important;\r\n+}\r\n+#BAFirstINPUT {\r\n+  margin: 10px 0px;\r\n+  padding: 0px 5px;\r\n+  color: black;\r\n+}\r\n+p {\r\n+  font-size: 15px;\r\n+}\r\n+.save-patent-btn {\r\n+  padding: 10px 15px;\r\n+  color: black;\r\n+  outline: none;\r\n+\r\n+  border-radius: 5px;\r\n+  cursor: pointer;\r\n+  border: var(--border-color);\r\n+}\r\n+.row-second-result {\r\n+  display: flex;\r\n+  flex-direction: row;\r\n+  justify-content: center;\r\n+}\r\n+.my-icon {\r\n+  color: black !important;\r\n+}\r\n+.content {\r\n+  display: flex;\r\n+  justify-content: center;\r\n+  flex-direction: column;\r\n+  text-align: center;\r\n+}\r\n+.Tabs-firstpage {\r\n+  display: flex;\r\n+  flex-direction: column;\r\n+  align-items: center;\r\n+}\r\n+div.row2{\r\n+  color: black;\r\n+  }\r\n+  #text.row1{\r\n+  color: black;\r\n+  }\r\n+  .row1{\r\n+    background-color: aliceblue;\r\n+    color: black;\r\n+    border-radius: 20px;\r\n+    margin: 20px 10px;\r\n+    padding: 20px 10px ;\r\n+  }\r\n+  .row2 >div {\r\n+    color: black;\r\n+}\r\n+hr {\r\n+  color: black !important;\r\n+}\r\n+.row1 >div>p {\r\n+  color: black;\r\n+}\r\n+div.row2 {\r\n+  color: black;\r\n+  justify-content: center;\r\n+  display: flex;\r\n+  flex-direction: column;\r\n+}\r\n+button.MuiButtonBase-root {\r\n+  background: white;\r\n+  color: black;\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1683218957905,
+            "name": "Commit-0",
+            "content": "@media only screen and (max-width: 600px) {\r\n    body {\r\n      background-color: lightblue;\r\n    }\r\n  }"
+        }
+    ]
+}

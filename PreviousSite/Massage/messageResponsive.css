@@ -1,0 +1,36 @@
+@media  screen and (max-width: 900px){
+   .container .header1 a{
+       display: none;
+    }
+    .container .header1 img{
+      display: none;
+    }
+    .container .header2 a{
+        display: none;
+     }
+    .resHeader {
+      padding-top: 10px;
+      padding-left: 4px;
+     width: 30%;
+     height: 45px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     display:flex;
+     justify-content: flex-start;
+     align-items: center;
+     font-size: 13px;
+     color: white;
+     }
+     .resHeader img{
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+     }
+    }
+    @media  screen and (min-width: 900px){
+        .resHeader{
+           display: none;
+        }
+     }

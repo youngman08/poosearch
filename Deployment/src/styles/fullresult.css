@@ -1,0 +1,58 @@
+.content-full{
+   display: flex;
+   justify-content: start;
+   margin: 20px 0px ;
+   padding: 10px;
+}
+
+.content-fullresult{
+   background-color: white;
+   color: black;
+   margin: 0 10px;
+   padding: 10px;
+}
+
+.content-full{
+   border-radius: 10px;
+}
+
+.rList{
+background: white;
+border-radius: 10px;
+position: fixed !important;
+left: 10px;
+width: 20%;
+}
+
+.listItems{
+   color: black;
+   fontSize:0.8em;
+}
+.listItems .MuiListItemText-primary{
+   font-size: 0.8em;
+}
+.content-full .MuiList-padding {
+   padding: 10px;
+}
+.link-smooth{
+   color:black ;
+   font-size: 0.9em;
+}
+.link-smooth:hover{
+   color:black ;
+}
+button.dbutton {
+   background:  rgb(0, 22, 45) ;
+   color: white;
+    width: 90%;
+    margin: 5px 0px;
+    font-size: 0.8em;
+}
+button.dbutton:hover {
+   color: black;
+
+}
+.description {
+   width: 100%;
+   text-align: justify;
+}

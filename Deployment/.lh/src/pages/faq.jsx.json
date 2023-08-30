@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/pages/faq.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1690447777508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690447790945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import ListItem from '@mui/material/ListItem';\r\n import ListItemText from '@mui/material/ListItemText';\r\n import Divider from '@mui/material/Divider';\r\n \r\n-const MyComponent = () => {\r\n+const FAQ = () => {\r\n   const [drawerOpen, setDrawerOpen] = useState(false);\r\n \r\n   const toggleDrawer = (open) => (event) => {\r\n     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {\r\n@@ -42,5 +42,5 @@\n     </div>\r\n   );\r\n }\r\n \r\n-export default MyComponent;\r\n+export default FAQ;\r\n"
+                },
+                {
+                    "date": 1690447896104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import ListItem from '@mui/material/ListItem';\r\n import ListItemText from '@mui/material/ListItemText';\r\n import Divider from '@mui/material/Divider';\r\n \r\n-const FAQ = () => {\r\n+const Sidebar = () => {\r\n   const [drawerOpen, setDrawerOpen] = useState(false);\r\n \r\n   const toggleDrawer = (open) => (event) => {\r\n     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {\r\n@@ -42,5 +42,5 @@\n     </div>\r\n   );\r\n }\r\n \r\n-export default FAQ;\r\n+export default Sidebar;\r\n"
+                }
+            ],
+            "date": 1690447777508,
+            "name": "Commit-0",
+            "content": "import React, { useState } from 'react';\r\nimport Drawer from '@mui/material/Drawer';\r\nimport Button from '@mui/material/Button';\r\nimport List from '@mui/material/List';\r\nimport ListItem from '@mui/material/ListItem';\r\nimport ListItemText from '@mui/material/ListItemText';\r\nimport Divider from '@mui/material/Divider';\r\n\r\nconst MyComponent = () => {\r\n  const [drawerOpen, setDrawerOpen] = useState(false);\r\n\r\n  const toggleDrawer = (open) => (event) => {\r\n    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {\r\n      return;\r\n    }\r\n    setDrawerOpen(open);\r\n  };\r\n\r\n  const list = () => (\r\n    <div\r\n      role=\"presentation\"\r\n      onClick={toggleDrawer(false)}\r\n      onKeyDown={toggleDrawer(false)}\r\n    >\r\n      <List>\r\n        {['About', 'Services', 'Clients', 'Contact'].map((text, index) => (\r\n          <ListItem button key={text}>\r\n            <ListItemText primary={text} />\r\n          </ListItem>\r\n        ))}\r\n      </List>\r\n      <Divider />\r\n    </div>\r\n  );\r\n\r\n  return (\r\n    <div>\r\n      <Button onClick={toggleDrawer(true)}>Open Sidebar</Button>\r\n      <Drawer anchor={'left'} open={drawerOpen} onClose={toggleDrawer(false)}>\r\n        {list()}\r\n      </Drawer>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default MyComponent;\r\n"
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+@media  screen and (min-width: 900px){
+   .resHeader{
+      display: none;
+   }
+}
+@media  screen and (max-width: 900px){
+    .container .header1,.header2{
+        display: none;
+     }
+     .container .header2{
+         display: none;
+      }
+     .resHeader {
+       padding-top: 10px;
+       padding-left: 4px;
+      width: 30%;
+      height: 45px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display:flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 13px;
+      color: white;
+      }
+      .resHeader img{
+       width: 25px;
+       height: 25px;
+       border-radius: 50%;
+       margin-bottom: 10px;
+      }
+    .container .header1{
+        font-size: 10px;
+    }
+    .container .header1 img{
+        width: 10px;
+        height: 10px;
+    }
+    .container .header2 a{
+        display: none;
+    }
+    .container .header1 a{
+        display: none;
+    }
+    .secondContainer .theNameOfPage{
+        font-size: 12px;
+    }
+    .MyBody .PasswordBox .passwordContent1 i{
+        font-size: 15px;
+    }
+    .MyBody .PasswordBox .passwordContent1 label{
+        font-size:10px;
+    }
+   
+    .MyBody .PasswordBox .passwordContent1 button{
+        font-size:10px;
+        margin-left:0;
+    }
+   
+    .MyBody .PasswordBox .passwordContent1{
+        padding-left: 30px;
+    }
+}
+@media  screen and (max-width: 1200px){
+    .MyBody .MyProfileBox{
+        width: 23%;
+    }
+    .MyBody .PasswordBox{
+        width: 45%;
+    }
+}
+@media  screen and (max-width: 1000px){
+    .MyBody .MyProfileBox{
+        width: 28%;
+    }
+    .MyBody .PasswordBox{
+        width: 50%;
+    }
+}
+@media  screen and (max-width: 600px){
+    .MyBody{
+        height: 675px;
+        flex-direction: column;
+    }
+    .MyBody .MyProfileBox{
+        width: 30%;
+        height: 40%;
+        
+    }
+    .MyBody .PasswordBox{
+        width: 55%;
+        height: 40%;
+    }
+    .MyBody .PasswordBox .passwordContent1 i{
+        font-size: 10px;
+    }
+    .MyBody .PasswordBox .passwordContent1 label{
+        font-size:10px;
+    }
+    .MyBody .PasswordBox .passwordContent1 button{
+        width: 80%;
+        font-size: 10px;
+        height: 20px;
+    }
+}
+@media  screen and (max-width: 450px){
+    .MyBody .MyProfileBox{
+        width: 40%;
+    }
+    .MyBody .PasswordBox{
+        width: 62%;
+    }
+    .MyBody .PasswordBox .passwordContent1 i{
+        font-size: 8px;
+    }
+    .MyBody .PasswordBox .passwordContent1 input{
+        height:2px ;
+        padding:8px;
+    }
+    .MyBody .PasswordBox .passwordContent1 label{
+        font-size:10px;
+    }
+    .MyBody .PasswordBox .passwordContent1 button{
+        width: 80%;
+        font-size: 10px;
+        height: 20px;
+    }
+
+}
+@media  screen and (max-width: 360px){
+    .MyBody .PasswordBox .passwordContent1 input{
+        height:2px ;
+        padding:6px;
+        font-size: 5px;
+    }
+    .MyBody .PasswordBox .passwordContent1 label{
+        font-size:6px;
+    }
+    .MyBody .PasswordBox .passwordContent1 button{
+        width: 80%;
+        font-size: 6px;
+        height: 15px;
+    }
+    .MyBody .PasswordBox .passwordContent2 img{
+        width: 60%;
+        height: 60%;
+    }
+}
+

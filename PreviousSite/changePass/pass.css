@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+   background-color: rgb(0,22,45); 
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .header1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+   
+}
+.container .header1 img{
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.container .header1 a{
+    color:#ffffff;
+     margin-left: 2em;
+     font-size:15px;
+     font-weight: 300;
+     letter-spacing: 1.5px;
+}
+.container .header1 a:hover{
+    font-size: 17px;
+     transition: 0.5s;
+     margin-left: 1.7em;
+     cursor: pointer;
+}
+/* style the dropdown */
+.dropdown {
+    position: relative;
+  }
+.dropdown-content {
+    display: none;
+  flex-direction: column;
+  position: absolute;
+  
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: -3px 5px 16px 0px rgba(255, 255, 255, 0.507);
+ padding: 5px;
+  z-index: 1;
+  border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+    color: #000000 !important;
+    margin: 5px 5px 5px 9px !important;
+    text-decoration: none !important;
+  }
+  
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  
+  
+.container .header2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;color: white;
+}
+.container .header2 a{
+    margin-right:20px;
+    cursor: pointer;
+    
+}
+.secondContainer{
+    height: 80px;
+    background-color: rgb(0,22,45); 
+}
+.secondContainer .theNameOfPage{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    height: 100%; 
+     color: white;
+    font-size: 17px;
+    padding-left: 20px;
+}
+.MyBody{
+    height: 575px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.MyBody .MyProfileBox{
+    width: 17%;
+    height: 80%;
+    background-color:white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 1) 0px 0.125em 0.5em, rgba(255, 255, 255, 1) 0px 0px 0px 1px inset;
+}
+.MyBody .PasswordBox{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 1) 0px 0.125em 0.5em, rgba(255, 255, 255, 1) 0px 0px 0px 1px inset;
+}
+.MyBody .PasswordBox .passwordContent1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 60%;
+    height: 90%;
+    padding-left: 45px;
+    padding-top: 10px;
+}
+.MyBody .PasswordBox .passwordContent1 i{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.MyBody .PasswordBox .passwordContent1 label{
+    font-size: 15px;
+    color: rgb(148, 148, 148);
+}
+.MyBody .PasswordBox .passwordContent1 input{
+    width: 80%;
+    height: 16px;
+    border-radius: 7px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid rgb(78, 78, 78);
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 1) 0px 0.125em 0.5em, rgba(255, 255, 255, 1) 0px 0px 0px 1px inset;
+}
+.MyBody .PasswordBox .passwordContent1 button{
+    width: 40%;
+    height: 30px;
+    background-color: rgb(0,22,45);
+    margin-left:60px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 3px rgb(0,22,45);
+    border:none;
+    font-size: 15px;
+}
+.MyBody .PasswordBox .passwordContent2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+}
+.MyBody .PasswordBox .passwordContent2 img{
+    width: 70%;
+    height:100%;
+}
+.footer{
+    height: 30px;
+    background-color: rgb(0,22,45); 
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+}
+.footer div{
+    width: 2px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+  }
+  .footer p{
+    font-size: 10px;
+   color: #fff;
+   letter-spacing:1px;
+   margin-top: 15px;
+  }
+  

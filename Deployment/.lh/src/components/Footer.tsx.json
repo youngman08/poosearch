@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/Footer.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1682693583711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682693590911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,51 +1,9 @@\n import React from \"react\";\r\n \r\n const Footer = () => {\r\n   return (\r\n-    <FooterContainer>\r\n-      <FooterWrap>\r\n-        <FooterLinksContainer>\r\n-          <FooterLinksWrapper>\r\n-            <FooterLinksItem>\r\n-            <FooterLinksItem>\r\n-              <NavLinkss to=\"home\" >خانه</NavLinkss>\r\n-              <NavLinkss to=\"About\">درباره ی ما</NavLinkss>\r\n-              <NavLinkss to=\"About1\">تیم ما</NavLinkss>\r\n-              <NavLinkss to=\"Blog\">بلاگ</NavLinkss>\r\n-              <NavLinkss to=\"Projects\">شرکت ها</NavLinkss>\r\n-\r\n-              \r\n-            </FooterLinksItem>\r\n-            </FooterLinksItem>\r\n-            <FooterLinksItem>\r\n-\r\n-            </FooterLinksItem>\r\n-          </FooterLinksWrapper>\r\n-          \r\n-        </FooterLinksContainer>\r\n-        <SocialMediaContainer>\r\n-          <SocialMediaWrap>\r\n-            <SocialLogo>آشپزباشی</SocialLogo>\r\n-            <WebsitesRights>تمامی حقوق مخصوص این سایت می باشد</WebsitesRights>\r\n-            <SocialIcons>\r\n-              <SocialIconLinks>\r\n-                <FaFacebook />\r\n-              </SocialIconLinks>\r\n-              <SocialIconLinks>\r\n-                <FaYoutube />\r\n-              </SocialIconLinks>\r\n-              <SocialIconLinks>\r\n-                <FaTwitter />\r\n-              </SocialIconLinks>\r\n-              <SocialIconLinks>\r\n-                <FaInstagram />\r\n-              </SocialIconLinks>\r\n-            </SocialIcons>\r\n-          </SocialMediaWrap>\r\n-        </SocialMediaContainer>\r\n-      </FooterWrap>\r\n-    </FooterContainer>\r\n+  <></>\r\n   );\r\n };\r\n \r\n export default Footer;\r\n"
+                }
+            ],
+            "date": 1682693583711,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\nconst Footer = () => {\r\n  return (\r\n    <FooterContainer>\r\n      <FooterWrap>\r\n        <FooterLinksContainer>\r\n          <FooterLinksWrapper>\r\n            <FooterLinksItem>\r\n            <FooterLinksItem>\r\n              <NavLinkss to=\"home\" >خانه</NavLinkss>\r\n              <NavLinkss to=\"About\">درباره ی ما</NavLinkss>\r\n              <NavLinkss to=\"About1\">تیم ما</NavLinkss>\r\n              <NavLinkss to=\"Blog\">بلاگ</NavLinkss>\r\n              <NavLinkss to=\"Projects\">شرکت ها</NavLinkss>\r\n\r\n              \r\n            </FooterLinksItem>\r\n            </FooterLinksItem>\r\n            <FooterLinksItem>\r\n\r\n            </FooterLinksItem>\r\n          </FooterLinksWrapper>\r\n          \r\n        </FooterLinksContainer>\r\n        <SocialMediaContainer>\r\n          <SocialMediaWrap>\r\n            <SocialLogo>آشپزباشی</SocialLogo>\r\n            <WebsitesRights>تمامی حقوق مخصوص این سایت می باشد</WebsitesRights>\r\n            <SocialIcons>\r\n              <SocialIconLinks>\r\n                <FaFacebook />\r\n              </SocialIconLinks>\r\n              <SocialIconLinks>\r\n                <FaYoutube />\r\n              </SocialIconLinks>\r\n              <SocialIconLinks>\r\n                <FaTwitter />\r\n              </SocialIconLinks>\r\n              <SocialIconLinks>\r\n                <FaInstagram />\r\n              </SocialIconLinks>\r\n            </SocialIcons>\r\n          </SocialMediaWrap>\r\n        </SocialMediaContainer>\r\n      </FooterWrap>\r\n    </FooterContainer>\r\n  );\r\n};\r\n\r\nexport default Footer;\r\n"
+        }
+    ]
+}

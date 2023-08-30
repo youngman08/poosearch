@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container{
+    height: 45px;
+    background-color: rgb(0,22,45); 
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .header1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+   padding-left: 50px;
+}
+.container .header1 img{
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.container .header1 a{
+    color:#ffffff;
+     margin-left: 2em;
+     font-size:15px;
+     font-weight: 300;
+     letter-spacing: 1.5px;
+}
+.container .header1 a:hover{
+    font-size: 17px;
+     transition: 0.5s;
+     margin-left: 1.7em;
+     cursor: pointer;
+}
+/* style the dropdown */
+.dropdown {
+    position: relative;
+  }
+.dropdown-content {
+    display: none;
+  flex-direction: column;
+  position: absolute;
+  
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: -3px 5px 16px 0px rgba(255, 255, 255, 0.507);
+ padding: 5px;
+  z-index: 1;
+  border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+    color: #000000 !important;
+    margin: 5px 5px 5px 9px !important;
+    text-decoration: none !important;
+  }
+  
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  
+  
+.container .header2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;color: white;
+}
+.container .header2 a{
+    margin-right:20px;
+    cursor: pointer;
+    
+}
+.container .header2 a:hover{
+    font-size: 17px;
+    transition: 0.5s;
+   
+    cursor: pointer;
+}
+.buttomHeader{
+    height:130px;
+    background-color:rgb(0,22,45);
+    padding-top: 70px;
+    padding-left:70px;
+}
+.buttomHeader i{
+    color: white;
+    font-size: 20px;
+    
+}
+body{
+    position: relative;
+}
+.Body{
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.myprofilebox{
+    height:500px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.messagebox{
+    height:660px;
+    margin-right: 50px;
+   display: flex;
+   flex-direction: column;
+  justify-content:flex-start;
+  align-items:center;
+ 
+}
+ .myprofilebox .myprofilecontent{
+    width: 70%;
+    height:85%;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 1) 0px 0.125em 0.5em, rgba(255, 255, 255, 1) 0px 0px 0px 1px inset;
+} 
+.inboxsentText{
+    display: flex;
+   flex-direction:row ;
+}
+.messagebox .inboxsentText button{
+    border: none;
+    border-bottom: 4px solid black;
+    margin-left: 20px;
+    font-size: 20px;
+    background-color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.messagebox .boxContent1{
+width: 90%;
+height:50px;
+border: 1px solid black;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+border-radius: 30px;
+box-shadow: 0 0 10px 1px black;
+margin-top: 10px;
+}
+.messagebox .boxContent1 .envelopOfMessage{
+    width: 19%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.messagebox .boxContent1 .envelopOfMessage i{
+    font-size: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 7px;
+    border-radius: 50%;
+}
+.messagebox .boxContent1 .nameOfMessage{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.messagebox .boxContent1 .timeOfMessage{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.messagebox .boxContent1 .dateOfMessage{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.messagebox .boxContent1 .opencloseIconOfMessage{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+ .thecontentofenvelop{
+    width: 85%;
+    height:100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 3px 10px 1px black;
+    font-size: 15px;
+    padding: 10px;
+    display: none;
+    margin-bottom: 4px;
+}
+.thecontentofenvelop2{
+    display: block !important;
+    height: 100px  !important;
+    width: 85%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 3px 10px 1px black;
+    font-size: 15px;
+    padding: 10px;
+}
+.boxContent1 .opencloseIconOfMessage i:hover{
+font-size: 28px;
+}
+.fullResultFooter{
+    height: 25px;
+    background-color:rgb(0,22,45) ;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 20px;
+   }
+   .fullResultFooter div{
+     width: 2px;
+     height: 100%;
+     background-color: rgb(255, 255, 255);
+     margin: 5px;
+   }
+   .fullResultFooter p{
+     font-size: 10px;
+    color: #fff;
+    letter-spacing:1px;
+    margin-top: 15px;
+   }
+   

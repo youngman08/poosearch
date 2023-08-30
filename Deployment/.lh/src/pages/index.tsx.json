@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/pages/index.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1682694009715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682694047136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React, { useState } from \"react\";\r\n-import Header from \"../components/Header.\";\r\n+import Header from \"../components/Header.tsx\";\r\n const Home = () => {\r\n   const [isOpen, setIsOpen] = useState(false);\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1682694083927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React, { useState } from \"react\";\r\n-import Header from \"../components/Header.tsx\";\r\n+import Header from \"../components/Header\";\r\n const Home = () => {\r\n   const [isOpen, setIsOpen] = useState(false);\r\n \r\n   return (\r\n"
+                }
+            ],
+            "date": 1682694009715,
+            "name": "Commit-0",
+            "content": "import React, { useState } from \"react\";\r\nimport Header from \"../components/Header.\";\r\nconst Home = () => {\r\n  const [isOpen, setIsOpen] = useState(false);\r\n\r\n  return (\r\n    <>\r\n    <p> hello ali</p>\r\n    <Header/>\r\n    </>\r\n  );\r\n};\r\n\r\nexport default Home;\r\n"
+        }
+    ]
+}

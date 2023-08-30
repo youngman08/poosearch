@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/full result/fulResult.css" />
+    <link rel="stylesheet" href="fullResultResponsivHeader.css">
+    <link rel="stylesheet" href="/PackagesPrices/Hambergur.css">
+    <!-- fontawesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>  <!-- header -->
+  <div class="container col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12">
+    <div class="header1">
+      <img class="fullResultHeaderLogo" src="/img/Myearth2.png" alt="" />
+      <div class="dropdown">
+        <a class="dropbtn">Menu</a>
+        <div class="dropdown-content">
+          <a href="#">Contact Us</a>
+          <a href="#">F&Q</a>
+          <a href="#">Packages&Prices</a>
+        </div>
+      </div>
+    </div>
+    <div class="header2">
+      <a>Signin</a>
+      <a>Bookmarks</a>
+    </div>
+  </div>
+  <!-- header in responsive -->
+  <div class="resHeader">
+    <p class="KNp1">KN</p>
+    <img src="/img/Myearth2.png" alt="" />
+    <p class="ledjeographyp2">WLEDGEOGRAPHY</p>
+  </div>
+  <!-- hambergur menu -->
+  <!-- sidenav -->
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()"> <i class="fa fa-bars"></i></span>
+    
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+    
+    </div>
+
+  <!-- end of the header -->
+  </div>
+<!-- body -->
+<div class="fullResultContainer">
+  <div class="fullResultBodyMenu col-lg-2 col-2 col-md-2 col-sm-2 col-xl-3 ">
+    <div class="fullResultBodyMenuLine"></div>
+    <i id="fullResultBodyMenuIcon" class="fas fa-play  fullResultBodyMenuIcon"></i>
+    <div class="fullResultBodyMenuItems ">
+      <a href="#ABSTRACT" class="abstract1" id="1">ABSTRACT</a>
+      <a href="#CLASSIFICATION" id="2">CLASSIFICATION</a>
+      <a href="#DESCRIPTION" id="3">DESCRIPTION</a>
+      <a href="#SUMMARY" id="4">SUMMARY</a>
+      <a href="#Claims" id="5">Claims</a>
+      <a href="" id="6">DETAILED DESCRIPTION <br>(Glossary of Terms)</a>
+      <a href="" id="7">System for <br> Validation of Transactions</a>
+      <a href="" id="8">Exemplary Method</a>
+      <a href="" id="9">Computer System <br> Architecture</a>
+      <a href="" id="10">Patent Citations (16)</a>
+      <a href="" id="11">Priority And <br>Related Applications</a>
+      
+    </div>
+    
+    <div class="buttonDownLoadInFullResultMenu col-4 col-sm-3 col-md-3  col-lg-2 col-xl-2" ><button>Download</button></div>
+    <div class="buttonBackInFullResultMenu col-4 col-sm-3 col-md-3  col-lg-2 col-xl-2"><button>Back to search result</button></div>
+    <div class="buttonSaveInFullResultMenu col-4 col-sm-3 col-md-3  col-lg-2 col-xl-2"><button>save</button></div>
+  </div> 
+  <div class="fullResultBodyResult col-lg-7 col-7 col-md-7 col-sm-7 col-xl-8">
+   <div class="fullResultBodyResultText1">Method and system for processing of a blockchain transaction in a transaction processing network 
+  </div>
+  <div id="ABSTRACT" class="fullResultBodyResultAbstract"><p>ABSTRACT</p>
+    <p>A method for validating blockchain transactions using a transaction processing network includes: storing one or more authentication rules configured to authenticate an electronic transaction and one or more verification rules configured to verify a blockchain transaction; receiving a transaction message including a message type indicator and a plurality of data elements including at least first data elements configured to store blockchain data and additional data elements configured to store transaction data values; identifying an authentication score based on application of at least one or more authentication rules to the transaction data values; identifying a verification score based on application of one or more verification rules to the blockchain data; generating a data message, the data message including the blockchain data stored in the first data elements, the identified authentication score, and the identified verification score; and electronically transmitting the generated data message to a blockchain network.</p>
+  </div>
+  <div id="CLASSIFICATION" class="fullResultBodyResultClassifications"><p>CLASSIFICATION</p>
+    <p>H04L9/50 Cryptographic mechanisms or cryptographic arrangements for secret or secure communications; Network security protocols using hash chains, e.g. blockchains or hash trees 
+      View 4 more classifications.
+      </p>
+  </div>
+  <div id="DESCRIPTION" class="fullResultBodyResultDescription"><p>DESCRIPTION</p>
+    <p>FIELD [0001] The present disclosure relates to the use of a blockchain in conjunction with a transaction processing network, specifically the posting of transaction message data in a blockchain verified using a transaction processing network and the verification and transmission of blockchain transaction data using a transaction processing network.
+      BACKGROUND [0002] Transaction processing networks, also known as payment networks, involve significant hardware and infrastructure that are specifically configured to quickly process payment transactions from anywhere in the world using a vast, interconnected network. Transaction processing networks often operate using detailed rules and standards, to ensure accuracy, security, efficiency, and otherwise maintain order in the processing of potentially trillions of transactions every year. While such networks are often highly sophisticated, transaction processors are often constantly developing new technologies to further increase the sophistication of these networks, to provide for even more security to protect against fraud and to provide peace of mind to consumers.
+      [0003] Thus, there is a need for a technical solution to further increase the security involved in the processing of payment transactions using a transaction processing network. The use of blockchains as an alternative for transaction processing has become more desirable in recent years, due to privacy and security concerns, where some consumers value the seemingly complete confidentiality and anonymity of blockchain transactions over an established, centralized processing network. The decentralized nature of a blockchain may be detrimental for a number of consumers, for example, such as due to the lack of security of digital wallets, the instability of blockchain currency, lack of processing speed, etc. However, it may be useful when used in conjunction with a transaction processing network to provide for added verification of traditionally processed transactions, and for increased performance and processing speed of blockchain transactions. Thus, there is a need for a technical solution where a payment transaction network may be used in conjunction with a blockchain network for increased processing of both types of transactions.
+      </p>
+  </div>
+  <div id="SUMMARY" class="fullResultBodyResultSUMMARY"><p>SUMMARY</p>
+    <p>The present disclosure provides a description of systems and methods for validating blockchain transactions using a transaction processing network.
+      [0005] 
+      A method for validating blockchain transactions using a transaction processing network includes: storing, in a rules database of a processing server, a plurality of transaction rules including at least one or more authentication rules configured to authenticate an electronic transaction and one or more verification rules configured to verify a blockchain transaction; receiving, by a receiving device of the processing server, a transaction message, wherein the transaction message is associated with an electronic transaction, is formatted based on one or more standards, and includes at least a message type indicator indicative of a type of transaction and a plurality of data elements including at least one or more first data elements configured to store blockchain data and a plurality of additional data elements configured to store transaction data values; identifying, by an authentication module of the processing server, an authentication score for the electronic transaction based on application of at least one of the one or more authentication rules to the transaction data values stored in the plurality of additional data elements included in the received transaction message; identifying, by a verification module of the processing server, a verification score for the electronic transaction based on application of at least one of the one or more verification rules to the blockchain data stored in the one or more first data elements included in the received transaction message; generating, by a generation module of the processing server, a data message, wherein the data message includes at least the blockchain data stored in the one or more first data elements included in the received transaction message, the identified authentication score, and the identified verification score; and electronically transmitting, by a transmitting device of the processing server, the generated data message to a blockchain network associated with the blockchain data stored in the one or more first data elements included in the received transaction message.
+      </p>
+  </div>
+  <div id="Claims" class="fullResultBodyResultClaims"><p>Claims</p>
+    <p>Hide Dependent 
+      What is claimed is: 1. A method for validating blockchain transactions using a transaction processing network, comprising: storing, in a rules database of a processing server, a plurality of transaction rules including at least one or more authentication rules configured to authenticate an electronic transaction and one or more verification rules configured to verify a blockchain transaction;
+      receiving, by a receiving device of the processing server, a transaction message, wherein the transaction message is associated with an electronic transaction, is formatted based on one or more standards, and includes at least a message type indicator indicative of a type of transaction and a plurality of data elements including at least one or more first data elements configured to store blockchain data and a plurality of additional data elements configured to store transaction data values;
+      identifying, by an authentication module of the processing server, an authentication score for the electronic transaction based on application of at least one of the one or more authentication rules to the transaction data values stored in the plurality of additional data elements included in the received transaction message;
+      identifying, by a verification module of the processing server, a verification score for the electronic transaction based on application of at least one of the one or more verification rules to the blockchain data stored in the one or more first data elements included in the received transaction message;
+      generating, by a generation module of the processing server, a data message, wherein the data message includes at least the blockchain data stored in the one or more first data elements included in the received transaction message, the identified authentication score, and the identified verification score; and
+      electronically transmitting, by a transmitting device of the processing server, the generated data message to a blockchain network associated with the blockchain data stored in the one or more first data elements included in the received transaction message.
+      2. The method of claim 1, wherein the blockchain data includes at least one of: a network identifier, a network address, a sender address, a recipient address, and a currency amount.
+      3. The method of claim 2, wherein the blockchain network is associated with the network identifier included in the blockchain data.
+      4. The method of claim 1, wherein the type of transaction is an authorization request.
+      5. The method of claim 1, wherein the one or more standards includes the ISO 8583 standard.
+      6. The method of claim 1, wherein the transaction data values include at least one of: transaction amount, transaction time, transaction date, primary account number, merchant identifier, issuer identifier, acquirer identifier, processor identifier, and geographic location.
+      7. The method of claim 1, wherein the plurality of additional data elements includes a transaction identifier, and
+      the generated data message further includes the transaction identifier.
+      8. The method of claim 1, wherein the generated data message is electronically transmitted via superimposition in an electronically transmitted data signal.
+      9. The method of claim 1, wherein the at least one of the one or more authentication rules includes authentication of at least one of: a primary account number, personal identification number, merchant identifier, and geographic location included in the transaction data values.
+      10. The method of claim 1, wherein the at least one of the one or more verification rules includes verification of at least one of: a sending address, a recipient address, a blockchain address, and a currency amount included in the blockchain data.
+      11. A system for validating blockchain transactions using a transaction processing network, comprising: a rules database of a processing server configured to store a plurality of transaction rules including at least one or more authentication rules configured to authenticate an electronic transaction and one or more verification rules configured to verify a blockchain transaction;
+      a receiving device of the processing server configured to receive a transaction message, wherein the transaction message is associated with an electronic transaction, is formatted based on one or more standards, and includes at least a message type indicator indicative of a type of transaction and a plurality of data elements including at least one or more first data elements configured to store blockchain data and a plurality of additional data elements configured to store transaction data values;
+      an authentication module of the processing server configured to identify an authentication score for the electronic transaction based on application of at least one of the one or more authentication rules to the transaction data values stored in the plurality of additional data elements included in the received transaction message;
+      a verification module of the processing server configured to identify a verification score for the electronic transaction based on application of at least one of the one or more verification rules to the blockchain data stored in the one or more first data elements included in the received transaction message;
+      a generation module of the processing server configured to generate a data message, wherein the data message includes at least the blockchain data stored in the one or more first data elements included in the received transaction message, the identified authentication score, and the identified verification score; and
+      a transmitting device of the processing server configured to electronically transmit the generated data message to a blockchain network associated with the blockchain data stored in the one or more first data elements included in the received transaction message.
+      12. The system of claim 11, wherein the blockchain data includes at least one of: a network identifier, a network address, a sender address, a recipient address, and a currency amount.
+      13. The system of claim 12, wherein the blockchain network is associated with the network identifier included in the blockchain data.
+      14. The system of claim 11, wherein the type of transaction is an authorization request.
+      15. The system of claim 11, wherein the one or more standards includes the ISO 8583 standard.
+      16. The system of claim 11, wherein the transaction data values include at least one of: transaction amount, transaction time, transaction date, primary account number, merchant identifier, issuer identifier, acquirer identifier, processor identifier, and geographic location.
+      17. The system of claim 11, wherein the plurality of additional data elements includes a transaction identifier, and
+      the generated data message further includes the transaction identifier.
+      18. The system of claim 11, wherein the generated data message is electronically transmitted via superimposition in an electronically transmitted data signal.
+      19. The system of claim 11, wherein the at least one of the one or more authentication rules includes authentication of at least one of: a primary account number, personal identification number, merchant identifier, and geographic location included in the transaction data values.
+      20. The system of claim 11, wherein the at least one of the one or more verification rules includes verification of at least one of: a sending address, a recipient address, a blockchain address, and a currency amount included in the blockchain data.
+      </p>
+  </div>
+ 
+
+
+
+  </div>
+</div>
+<!-- footer -->
+<div class="col-12 col-md-12 col-sm-12 col-xl-12 col-lg-12 fullResultFooter">
+   
+   <p>Privacy Policy</p> 
+    <div></div>
+    <p>Terms Of Services</p>
+ 
+ 
+</div>
+ <!-- end of the footer -->
+</body>
+<!-- bootstrap scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<!-- end of bootstrap scripts -->
+
+<script src="fullResult.js"></script>
+</html>

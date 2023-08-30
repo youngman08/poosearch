@@ -1,0 +1,279 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  height: 45px;
+  background-color: rgb(0,22,45); 
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .header1{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+ padding-left: 50px;
+}
+.container .header1 img{
+  width:45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.container .header1 a{
+  color:#ffffff;
+   margin-left: 2em;
+   font-size:15px;
+   font-weight: 300;
+   letter-spacing: 1.5px;
+}
+.container .header1 a:hover{
+  font-size: 17px;
+   transition: 0.5s;
+   margin-left: 1.7em;
+   cursor: pointer;
+}
+/* style the dropdown */
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+flex-direction: column;
+position: absolute;
+
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: -3px 5px 16px 0px rgba(255, 255, 255, 0.507);
+padding: 5px;
+z-index: 1;
+border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: #000000 !important;
+  margin: 5px 5px 5px 9px !important;
+  text-decoration: none !important;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+
+.container .header2{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;color: white;
+}
+.container .header2 a{
+  margin-right:20px;
+  cursor: pointer;
+  
+}
+.container .header2 a:hover{
+  font-size: 17px;
+  transition: 0.5s;
+ 
+  cursor: pointer;
+}
+ /* style the body */
+ .fullResultContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    position: relative;
+ }
+ .fullResultContainer .fullResultBodyMenu{
+height: 400px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+position: relative;
+padding-left: 90px;
+ }
+ 
+ .fullResultContainer .fullResultBodyMenu .fullResultBodyMenuLine{
+   width: 2px;
+   height: 450px;
+   background-color: cadetblue;
+   position: fixed;
+   left: 105px;
+   top:60px;
+ }
+ .fullResultContainer .fullResultBodyMenu  .fullResultBodyMenuIcon{
+   font-size: 23px;
+   top:3.9rem;
+  background-color: #ffffff;
+   left:5.9rem;
+   transition: 1.9s;
+   padding: 5px;
+   position: fixed;
+ }
+ .fullResultBodyMenuItems{
+   width: 300px;
+   height: 420px;
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: flex-start;
+   padding-left: 30px;
+   position: fixed;
+   cursor: pointer;
+   top: 80px;
+ }
+ .fullResultBodyMenuItems a{
+   margin-bottom:10px;
+   transition: 0.5s;
+   font-size: 15px;
+  color: black;
+ }
+ .fullResultBodyMenuItems a:hover{
+ text-decoration: none;
+ color: black;
+ }
+ 
+ .fullResultBodyResult{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .fullResultBodyResult .fullResultBodyResultText1{
+   font-size: 21px;
+   color: black;
+   margin-bottom: 100px;
+ }
+ .fullResultBodyResult .fullResultBodyResultAbstract{
+   padding-right: 20px;
+   margin-bottom: 90px;
+ }
+ .fullResultBodyResult .fullResultBodyResultClassifications{
+   padding-right: 20px;
+   margin-bottom: 90px;
+ }
+ .fullResultBodyResult .fullResultBodyResultDescription{
+   padding-right: 20px;
+   margin-bottom: 90px;
+ }
+ .fullResultBodyResult .fullResultBodyResultSUMMARY{
+   padding-right: 20px;
+   margin-bottom: 90px;
+ }
+ .fullResultBodyResult .fullResultBodyResultClaims{
+   padding-right: 20px;
+   margin-bottom: 90px;
+ }
+ 
+ .activeFontsizeInMenu{
+  font-size: 25px;
+ }
+ .fullResultContainer .fullResultBodyMenu .buttonDownLoadInFullResultMenu{
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 530px;
+ }
+ .fullResultContainer .fullResultBodyMenu .buttonDownLoadInFullResultMenu button{
+  width: 100%;
+  height: 30px;
+  background-color:rgb(0,22,45) ;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+ }
+ .fullResultContainer .fullResultBodyMenu .buttonBackInFullResultMenu{
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 560px;
+ }
+ .fullResultContainer .fullResultBodyMenu .buttonBackInFullResultMenu button{
+  width: 100%;
+  height: 30px;
+  background-color:rgb(0,22,45) ;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+ }
+ .fullResultContainer .fullResultBodyMenu .buttonSaveInFullResultMenu{
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top:590px;
+ }
+ .fullResultContainer .fullResultBodyMenu .buttonSaveInFullResultMenu button{
+  width: 100%;
+  height: 30px;
+  background-color:rgb(0,22,45) ;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+ }
+ .fullResultContainer .fullResultBodyMenu .buttonSaveInFullResultMenu button:hover{
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 16px inset;
+ }
+ .fullResultContainer .fullResultBodyMenu .buttonSaveInFullResultMenu button:active{
+  box-shadow: rgb(255, 255, 255) 0px 0px 5px inset;
+ }
+ .fullResultContainer .fullResultBodyMenu .buttonBackInFullResultMenu button:hover{
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 16px inset;
+ }
+ .fullResultContainer .fullResultBodyMenu .buttonBackInFullResultMenu button:active{
+  box-shadow: rgb(255, 255, 255) 0px 0px 5px inset;
+ }
+ .fullResultContainer .fullResultBodyMenu .buttonDownLoadInFullResultMenu button:hover{
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 16px inset;
+ }
+ .fullResultContainer .fullResultBodyMenu .buttonDownLoadInFullResultMenu button:active{
+  box-shadow: rgb(255, 255, 255) 0px 0px 5px inset;
+ }
+
+/* footer */
+ .fullResultFooter{
+   height: 25px;
+   background-color:rgb(0,22,45) ;
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+  }
+  .fullResultFooter div{
+    width: 2px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+  }
+  .fullResultFooter p{
+    font-size: 10px;
+   color: #fff;
+   letter-spacing:1px;
+   margin-top: 15px;
+  }
+  

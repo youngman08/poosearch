@@ -1,0 +1,662 @@
+/* rgb(0,22,45)
+#00162d
+#001530
+rgb(0,21,48)
+linear-gradient(to right,rgb(167,185,199),rgb(83,71,95),rgb(185,218,237))
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerm-fluid {
+  width: 100%;
+  height: 610px;
+  background-color: rgb(0, 22, 45);
+}
+.mheader {
+  padding-top: 10px;
+  width: 100%;
+  height: 9%;
+  background-color: rgb(0, 22, 45);
+  justify-content: space-around;
+  align-items: center;
+}
+.header-item1,
+.header-item2 {
+  display: flex;
+  align-items: center;
+}
+.header-item1 {
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+  padding-left: 4em;
+}
+.header-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  box-shadow: 0 0 20px -5px white;
+}
+.header-item2 {
+  width: 50%;
+  height: 100%;
+  justify-content: flex-end;
+  padding-right: 2em;
+}
+.headerDayNight {
+  width: 70px;
+  height: 30px;
+  background-color: rgb(207, 207, 207);
+  margin-left: 20px;
+  margin-bottom: 2px;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: inset 0 8px 60px rgba(212, 212, 212, 0.733),
+    inset 0 8px 8px rgba(255, 255, 255, 0.555),
+    inset 0 -4px 4px rgba(221, 221, 221, 0.575);
+  transition: 0.5s;
+}
+.darkmood {
+  width: 32px;
+  height: 34px;
+  border-radius: 50px;
+  border: none;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  border: none;
+  background-color: rgb(0, 22, 45);
+
+  transition: 0.5s;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.darkmood .iconOfImg {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-position: center;
+}
+.iconOfImgInDayy {
+  background-image: url("../images/moon.png") !important;
+}
+.lightmood {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  border: none;
+  position: absolute;
+  bottom: 1px;
+  left: 39px;
+  background-color: rgb(0, 22, 45);
+
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+    inset 0 4px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+  background-image: url("../images/download.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.passLink,
+.passLink:hover {
+  color: #001530 !important;
+}
+.firstLink {
+  color: #ffff;
+  margin-left: 2em;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+.firstLink:hover {
+  font-size: 17px;
+  transition: 0.5s;
+  margin-left: 1.7em;
+  cursor: pointer;
+}
+/* style the dropdown menue */
+.dropdownMenu {
+  position: relative;
+}
+.dropdown-content a {
+  color: #000000;
+  margin: 5px 5px 5px 9px;
+  text-decoration: none;
+}
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: 10px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: -3px 5px 16px 0px rgba(255, 255, 255, 0.507);
+  padding: 5px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdownMenu:hover .dropdown-content {
+  display: flex;
+}
+
+.containerm .body1 {
+  background-color: rgb(0, 22, 45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body1-NameLogo {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 22, 45);
+  margin-bottom: 40px;
+  padding-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+.earthimg {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 40px -10px white;
+  border-radius: 50%;
+}
+.body1-AdvancedSearchBar {
+  height: 40px;
+  width: 60%;
+  background-color: rgb(236, 236, 236);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 6px 0px rgb(243, 243, 243);
+}
+.result-AdvancedSearchBar {
+  height: 40px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.AdvancedInputSearchDiv {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 3s;
+  transition-delay: 2s;
+}
+.resultSearchDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .AdvancedInputSearchDivInAnimation{
+     width:75% !important ;
+   } */
+.AdvancedInputSearchDiv input {
+  width: 94%;
+  height: 82%;
+  border: none;
+  box-shadow: 0px 0px 10px -5px black inset;
+  border-radius: 3px;
+  padding-left: 25px;
+  font-size: 17px;
+  background-color: rgba(15, 39, 65, 0.144);
+  color: rgb(0, 22, 45);
+}
+.AdvancedInputSearchDiv input:focus {
+  outline: none;
+}
+.BasicButtonDiv {
+  width: 25%;
+  height: 100%;
+  border-left: 2px dashed black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resultButtonDiv {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.BasicSearchBtn {
+  height: 30px;
+  margin: 0 5px;
+  padding: 0 5px;
+  border: none;
+  background-color: rgb(15, 39, 65);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 13px;
+  box-shadow: 0 0 5px 0 rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.BasicSearchBtn:active {
+  box-shadow: 0 0 5px 0 rgb(255, 255, 255) inset;
+}
+.AdvancedButtonDiv {
+  width: 25%;
+  height: 100%;
+  border-left: 2px dashed black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AdvancedSearchBtn {
+  height: 30px;
+  white-space: nowrap;
+  margin: 0 5px;
+  padding: 0 5px;
+  border: none;
+  background-color: rgb(15, 39, 65);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 13px;
+  box-shadow: 0 0 5px 0 rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.AdvancedSearchBtn:active {
+  box-shadow: 0 0 5px 0 rgb(255, 255, 255) inset;
+}
+/* style of body2 */
+.containerm .body2 {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 22, 45);
+}
+.tab {
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgb(224, 224, 224);
+  padding: 0px 16px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  font-size: 13px;
+  transition-property: font-size;
+  transition-duration: 0.6s;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(214, 214, 214);
+  text-decoration-style: solid;
+}
+/* style the tabcontent */
+.containerm .body3 {
+  background-color: rgb(0, 22, 45);
+}
+.tabcontent {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  border-top: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.searchInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 400px;
+  position: relative;
+  width: 900px;
+  height: 450px;
+  margin: auto;
+}
+.inputBox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+.inputBox input,
+textarea {
+  width: 97%;
+  padding-left: 20px;
+  height: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: rgb(214, 214, 214);
+  border-radius: 5px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 25px;
+  bottom: 1em;
+  padding-bottom: 17px;
+  padding-left: 5px;
+  pointer-events: none;
+  font-size: 0.8em;
+  color: rgb(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.searchSummary {
+  height: 100px;
+  resize: none;
+  padding: 5px;
+}
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span {
+  color: rgb(0, 0, 0);
+  transform: translateX(10px) translateY(-35px);
+  padding: 2px 10px;
+  font-size: 10px;
+  background: rgb(214, 214, 214);
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  letter-spacing: 0.2em;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: rgb(0, 0, 0);
+  transform: translateX(10px) translateY(-35px);
+  padding: 2px 10px;
+  font-size: 10px;
+  background: rgb(214, 214, 214);
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  letter-spacing: 0.2em;
+}
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 1px solid #000000;
+}
+/* the style of body4 and footer */
+.containerm .body4 {
+  width: 100%;
+  height: 325px;
+  background-color: rgb(0, 22, 45);
+}
+.containerm .body4 img {
+  width: 100%;
+  height: 100%;
+}
+.BA-Footer {
+  background-color: rgb(0, 22, 45);
+  width: 100%;
+  height: 40px;
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  border-top: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.BA-Footer div {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+}
+
+/* ******style in switch button********  */
+
+/* rgb(83,71,95) */
+/* change the style of header */
+.HEADERDAYBA {
+  background-image: linear-gradient(
+    to right,
+    rgb(167, 185, 199),
+    rgb(167, 167, 167),
+    rgb(185, 218, 237)
+  ) !important;
+}
+.BODY1NAMELOGODAYBA {
+  background-image: linear-gradient(
+    to right,
+    rgb(167, 185, 199),
+    rgb(167, 167, 167),
+    rgb(185, 218, 237)
+  ) !important;
+}
+.BODY1DAYBA {
+  background-image: linear-gradient(
+    to right,
+    rgb(167, 185, 199),
+    rgb(167, 167, 167),
+    rgb(185, 218, 237)
+  ) !important;
+}
+.BODY1ADVANCEDSEARCHBARDAYBA {
+  background-color: rgb(0, 22, 45) !important;
+  box-shadow: 0 0 15px 0px rgb(15, 15, 15) !important;
+}
+.INPUTINSEARCHBAR {
+  background-color: rgb(255, 255, 255) !important;
+}
+.BASICBUTTONDIVDAYBA {
+  border-left: 2px dashed white !important;
+}
+.BASICSEARCHDAYBA {
+  background-color: rgb(236, 236, 236) !important;
+  color: black !important;
+}
+.ADVANCEDBUTTONDIVDAYBA {
+  border-left: 2px dashed white !important;
+}
+.ADVANCEDSEARCHDAYBA {
+  background-color: rgb(236, 236, 236) !important;
+  color: black !important;
+}
+.BODY2DAYBA {
+  background-image: linear-gradient(
+    to right,
+    rgb(167, 185, 199),
+    rgb(167, 167, 167),
+    rgb(185, 218, 237)
+  ) !important;
+}
+.BODY3DAYBA {
+  background-image: linear-gradient(
+    to right,
+    rgb(167, 185, 199),
+    rgb(167, 167, 167),
+    rgb(185, 218, 237)
+  ) !important;
+}
+.BODY4DAYBA {
+  background-image: linear-gradient(
+    to right,
+    rgb(167, 185, 199),
+    rgb(167, 167, 167),
+    rgb(185, 218, 237)
+  ) !important;
+}
+.BAFOOTERDAYBA {
+  background-image: linear-gradient(
+    to right,
+    rgb(167, 185, 199),
+    rgb(167, 167, 167),
+    rgb(185, 218, 237)
+  ) !important;
+  border-top: 2px solid black !important;
+}
+.headerlinkDay {
+  color: rgb(0, 22, 45) !important;
+}
+.divInDayMood {
+  background-color: rgb(0, 22, 45) !important ;
+}
+.bgBlack {
+  color: black;
+}
+a:hover {
+  color: #ffff !important;
+}
+button#basicsearchdayba {
+  width: 100%;
+}
+button#advancedsearchdayba {
+  width: 100%;
+}
+.image-container-f {
+  width: 100%;
+  height: 325px;
+}
+.image-container-f img {
+  width: 100%;
+  height: 100%;
+}
+/* .input-content .input-b .MuiOutlinedInput-root {
+  background-color: white;
+  border-color: black;
+} */
+
+.input-b .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: black;
+}
+.input-blogin
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #031524;
+}
+.input-blogin .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #031524;
+}
+.input-blogin .MuiFormLabel-root,
+.input-blogin .MuiFormLabel-root.Mui-focused {
+  color: #031524;
+}
+
+button.m-tab {
+  margin-right: 10px;
+}
+
+.m2-tab .MuiButtonBase-root {
+  margin-right: 60px;
+}
+
+.input-content label.MuiInputLabel-outlined {
+  color: #000000;
+  background-color: white;
+}
+
+.input-content .Tabs-firstpage .MuiTabs-indicator {
+  background-color: #fff;
+}
+
+.input-b.MuiTextField-root {
+  margin: 0.5em 0em;
+}
+.input-blogin.MuiTextField-root {
+  margin: 0.5em 0em;
+}
+#BAFirstINPUT {
+  font-size: 20px;
+  height: 40px;
+}
+
+.input-serchText .MuiOutlinedInput-root {
+  height: 100px;
+}
+
+/* .link-smooth {
+  color: #35af2a !important;
+}
+
+.link-smooth.active {
+  color: #f00 !important; 
+} */
+.profile-container .MuiInputBase-root {
+  height: 3em;
+}
+
+.butten-selected:hover,
+.dash-buttons {
+  background: #fff !important;
+  color: #001530 !important;
+  margin: 1em 0em !important;
+    justify-content: start !important;
+    column-gap: 1em !important;
+}
+
+.dash-buttons:hover,
+.butten-selected {
+  color: #fff !important;
+  background: #001530 !important;
+  margin: 1em 0em !important;
+    justify-content: start !important;
+    column-gap: 1em !important;
+  }
+  
+  .butten-selected {
+}

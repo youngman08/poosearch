@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+    <link rel="stylesheet" href="./css/save patent.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="info-content">
+      <div class="content">
+        <h2>My account</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3"></div>
+
+        <div class="col-12 col-md-9">
+            <!--box right-->
+          <div class="section-search-right">
+            <!--title for section-->
+            <!--<div class="title-search">-->
+            <h3 class="title-search">Bookmark patent</h3>
+   
+            <!--section content-->
+            <div class="main-content-search" id="main-content-search-1">
+              <div class="compare">
+                <div>
+                  <div class="row" style="align-items: baseline;">
+                    <div class="col-12 col-lg-4 col-md-6">
+                      <div id="content-search-1" class="content-search">
+                        <h1 style="font-size: 20px;">Title</h1>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-7 col-md-6">
+                      <div id="content-search-2" class="content-search">
+                        <h2>Date search :2022-3-21</h2>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-1 col-md-6" style="display: flex; align-items: end;">
+                      <div onclick="showNoteSection()" id="icon-2" style="font-size: 18px; cursor: pointer">
+                        <i class="fa fa-pen-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+           
+                </div>
+
+                <div class="row" style="align-items: center;">
+                  <div class="col-12 col-md-11">
+                    <p>unreasonable search, a violation of the Fourth Amendment. The Supreme Court concluded that the cell phones contained personal information different than trivial items, and went beyond to state that information stored on the cloud was not necessarily a form of</p>
+                  </div>
+
+                  <div class="col-12 col-md-1">
+                    <div onclick="removePatent()" id="icon-1" class="mr-4" style="font-size: 22px; cursor: pointer">
+                      <i class="fa fa-multiply"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-main my-3">
+                  <a>
+                    <span>
+                      Detail
+                    </span>
+                  </a>
+            
+                  <a>more</a>
+                </div>   
+                
+                <div class="noteForPatent display-none my-3" id="note">
+                  <small class="mx-2">Write Your Note For This Pattent ….</small>
+
+                  <hr color="rgb(10 30 55)" class="mt-1 mb-0" />
+
+                  <textarea class="note" rows="4"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!--pagina-->
+            <div style="display: flex; justify-content: center;" class="mx-auto">
+              <div class="pagination">
+                <a class="btn1" onclick="backBtn()"><img id="dark-arrow" src="./icons8-previous-dark.png"></a>      
+                <ul>
+                  <li class="link active my-1" value="1" onclick="activeLink()" >1</li>
+                  <li class="link my-1" value="2" onclick="activeLink()" >2</li>
+                  <li class="link my-1" value="3" onclick="activeLink()" >3</li>
+                  <li class="link my-1" value="4" onclick="activeLink()" >4</li>
+                  <li class="link my-1" value="5"  onclick="activeLink()" >5</li>
+                  <li class="link my-1" value="6"  onclick="activeLink()" >6</li>
+                </ul>
+                <a class="btn2" onclick="nextBtn()"><img id="dark-arrow-next" src="./icons8-next-dark.png"></a>
+              </div>
+            </div>
+            <!--go to top-->
+            <a id="go-to-top" onclick="scrollToTop()">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+         </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showNoteSection() {
+        const note = document.getElementById('note');
+        note.classList.toggle('display-none')
+        // document.getElementById('note').classList.add('display-initial')
+      }
+      let link= document.getElementsByClassName("link");
+      let currentValue = 1;
+      function activeLink(){
+          for(l of link){
+              l.classList.remove("active");
+          }
+          event.target.classList.add("active");
+          currentValue=even.target.Value;
+      }
+      function backBtn(){
+          if(currentValue > 1){
+              for(l of link){
+              l.classList.remove("active");
+              }
+              currentValue--;
+              link[currentValue-1].classList.add("active");
+          }
+      }
+      function nextBtn(){
+          if(currentValue < 6){
+              for(l of link){
+              l.classList.remove("active");
+          }
+          currentValue++;
+          link[currentValue-1].classList.add("active");
+          }
+      }
+      function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
+    }
+    function removePatent() {
+      const patent = document.getElementById('main-content-search-1');
+      patent.classList.add('display-none')
+    }
+     window.onload = (event) => {
+     };
+    </script>
+  </body>
+</html>

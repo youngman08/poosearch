@@ -1,0 +1,476 @@
+body {
+  font-style: italic;
+}
+  /* ////////////////////////////////header////////////////////////////////////// */
+  .container-header{
+    height: 45px;
+    background-color: rgb(0,22,45); 
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-header .header1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+   padding-left: 50px;
+}
+.container-header .header1 img{
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.container-header .header1 a{
+    color:#ffffff;
+     margin-left: 2em;
+     font-size:15px;
+     font-weight: 300;
+     letter-spacing: 1.5px;
+}
+.container-header .header1 a:hover{
+    font-size: 17px;
+     transition: 0.5s;
+     margin-left: 1.7em;
+     cursor: pointer;
+}
+/* style the dropdown */
+.dropdown {
+    position: relative;
+  }
+.dropdown-content {
+    display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: -3px 5px 16px 0px rgba(255, 255, 255, 0.507);
+ padding: 5px;
+  z-index: 1;
+  border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+    color: #000000 !important;
+    margin: 5px 5px 5px 9px !important;
+    text-decoration: none !important;
+  }
+  
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  
+  
+.container-header .header2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;color: white;
+}
+.container-header .header2 a{
+    margin-right:20px;
+    cursor: pointer;
+    
+}
+.container-header .header2 a:hover{
+    font-size: 17px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.custom-control-input:checked~.custom-control-label.red::before {
+  background-color: red;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Login and register modal */
+a {
+  font-size: inherit !important;
+}
+span {
+  position: inherit !important;
+}
+.button-disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+#login-form {
+  display: none;
+}
+.form-box {
+  width: 480px;
+  height: 650px;
+  position: relative;
+  margin: 2% auto;
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  overflow: hidden;
+}
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+}
+.button-box button .toggle-btn {
+  height: 3px;
+  width: 100%;
+  background-color: #031524;
+  left: 0;
+  bottom: -10px;
+  padding: 0 10px;
+}
+
+.toggle-btn {
+  color: black;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.toggle-btn:hover {
+  color: black;
+}
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  /*background: #F3C693;*/
+
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.button-box .toggle-btn {
+  color: rgb(3, 3, 3);
+}
+.input-group-login {
+  top: 150px;
+  transition: 0.5s;
+}
+.input-group-register {
+  top: 120px;
+  transition: 0.5s;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  box-shadow: 0px 1px 4px 3px #868993;
+  outline: none;
+  background: transparent;
+}
+.Icon-inside {
+  position: relative;
+}
+.Icon-inside i {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  padding: 10px 10px;
+  color: #001530;
+}
+
+.submit-btn {
+  width: 60%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  /*background: #F3C693;*/
+  background: rgb(0, 21, 48);
+  color: white;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+.close-btn {
+  border: 3px solid;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #031524;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+.check-box {
+  margin: 30px 10px 34px 0;
+}
+span {
+  color: #777;
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+#login {
+  left: 50px;
+}
+#login input {
+  font-size: 15;
+}
+#register {
+  left: 450px;
+}
+#register input {
+  font-size: 15;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: black;
+  background-color: white;
+  border-radius: 0;
+  border-bottom: 4px double black;
+}
+.input-group-login .form-element {
+  margin: 15px 8px;
+}
+.input-group-login .form-element label {
+  font-size: 14px;
+  color: #222;
+}
+.input-group-login .form-element input[type="text"],
+.input-group-login .form-element input[type="email"],
+.input-group-login .form-element input[type="password"] {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 1px solid #031524;
+  padding-left: 32px;
+  border-radius: 18px;
+}
+.input-group-login .form-element input[type="checkbox"] span {
+  margin-right: 5px;
+  margin-bottom: 30px;
+}
+.input-group-login .form-element button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #222;
+  color: #f5f5f5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.input-group-login .form-element a {
+  display: block;
+  text-align: right;
+  font-size: 15px;
+  color: #1a79ca;
+  text-decoration: none;
+  font-weight: 600;
+}
+/*-*/
+.input-group-register .form-element {
+  margin: 15px 8px;
+}
+.input-group-register .form-element label {
+  font-size: 14px;
+  color: #222;
+}
+.input-group-register .form-element input[type="text"],
+.input-group-register .form-element input[type="email"],
+.input-group-register .form-element input[type="password"] {
+  margin-top: 5px;
+  display: block;
+  padding-left: 32px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #031524;
+  border-radius: 20px;
+}
+.input-group-register .form-element input[type="checkbox"] {
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+.input-group-register .form-element button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #222;
+  color: #f5f5f5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.input-group-register .form-element a {
+  display: block;
+  text-align: right;
+  font-size: 15px;
+  color: #1a79ca;
+  text-decoration: none;
+  font-weight: 600;
+}
+.form-element a {
+  display: inline-block;
+}
+#toggleRegisterPass, #toggleLoginPass, #toggleConfirmPass {
+  cursor: pointer;
+}
+/* ///////////////////Responsive//////////////////////////// */
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.nav-responsive{
+  color: white;
+  position: absolute;
+  right: 15px;
+  top:10px;
+  
+}
+@media  screen and (min-width: 900px){
+  .nav-responsive{
+      display: none;
+  }
+}
+@media  screen and (max-width: 900px){
+  .container-header .header1,.header2{
+     display: none;
+  }
+  .container-header .header2{
+      display: none;
+   }
+  .resHeader {
+    padding-top: 10px;
+    padding-left: 4px;
+   width: 30%;
+   height: 45px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display:flex;
+   justify-content: flex-start;
+   align-items: center;
+   font-size: 13px;
+   color: white;
+   }
+   .resHeader img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+   }
+
+}
+@media  screen and (min-width: 900px){
+ .resHeader{
+    display: none;
+ }
+}
+@media  screen and (max-width: 992px){
+  .table{
+    display: block !important;
+    width: 100%;
+    overflow-x: auto !important;
+  }
+ }
+ @media  screen and (min-width: 767px){
+  .res-nav {
+    display: none;
+  }
+ }
+ @media  screen and (max-width: 767px){
+  .res-nav {
+    display: -webkit-inline-box;
+  }
+  .nav-tab{
+    display: none;
+  }
+ }
+ @media  screen and (min-width: 1200px){
+  .align-stretch{
+    align-items: stretch
+  }
+ }
+ @media  screen and (max-width: 1200px){
+  .align-stretch{
+    align-items: start !important;
+  }
+ }
+ @media screen and (min-width: 700px) {
+  .modal-content {
+    width: 650px;
+  }
+}
+@media (min-width: 576px) and (max-width: 700px) {
+  .modal-content {
+    width: 530px;
+  }
+}
+@media (max-width: 574px) {
+  .modal-dialog {
+    display: block;
+  }
+}
+@media (min-width: 575px) {
+  .modal-dialog {
+    display: table;
+  }
+}

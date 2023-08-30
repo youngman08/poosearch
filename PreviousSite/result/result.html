@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/result2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="section">
+        <div class="row mt-3" style="justify-content: start">
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-sun"
+                >
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-moon"
+                >
+                  <path
+                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                  ></path>
+                </svg>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="row mt-4" style="justify-content: center">
+          <div class="col-12 col-sm-10">
+            <div class="search_wrap">
+              <div class="search_box">
+                <input type="text" class="input" placeholder="search..." />
+
+                <div class="btn btn_common">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4" style="justify-content: center">
+          <button
+            class="save-patent-btn"
+            data-dismiss="modal"
+            aria-label="Close"
+            aria-hidden="true"
+            data-toggle="modal"
+            data-target="#confirmModal"
+          >
+            <i class="fa fa-bookmark mr-2"></i>
+            save all searches
+          </button>
+        </div>
+
+        <div class="row mt-4" id="all-box">
+          <div class="col col-lg-12">
+            <div id="box-1" class="box">
+              <div
+                class="row mb-1"
+                style="justify-content: end; align-items: end"
+              >
+                <div class="rating-wrapper mt-1">
+                  <!-- star 5 -->
+                  <input
+                    type="radio"
+                    id="5-star-rating"
+                    name="star-rating"
+                    value="5"
+                  />
+                  <label for="5-star-rating" class="star-rating mb-0">
+                    <i class="fa fa-star d-inline-block"></i>
+                  </label>
+
+                  <!-- star 4 -->
+                  <input
+                    type="radio"
+                    id="4-star-rating"
+                    name="star-rating"
+                    value="4"
+                  />
+                  <label for="4-star-rating" class="star-rating star mb-0">
+                    <i class="fa fa-star d-inline-block"></i>
+                  </label>
+
+                  <!-- star 3 -->
+                  <input
+                    type="radio"
+                    id="3-star-rating"
+                    name="star-rating"
+                    value="3"
+                  />
+                  <label for="3-star-rating" class="star-rating star mb-0">
+                    <i class="fa fa-star d-inline-block"></i>
+                  </label>
+
+                  <!-- star 2 -->
+                  <input
+                    type="radio"
+                    id="2-star-rating"
+                    name="star-rating"
+                    value="2"
+                  />
+                  <label for="2-star-rating" class="star-rating star mb-0">
+                    <i class="fa fa-star d-inline-block"></i>
+                  </label>
+
+                  <!-- star 1 -->
+                  <input
+                    type="radio"
+                    id="1-star-rating"
+                    name="star-rating"
+                    value="1"
+                  />
+                  <label for="1-star-rating" class="star-rating star mb-0">
+                    <i class="fa fa-star d-inline-block"></i>
+                  </label>
+                </div>
+
+                <div class="bookmark mr-2">
+                  <input
+                    type="checkbox"
+                    id="bookmark1"
+                    name="bookmark1"
+                    value="bookmark1"
+                  />
+
+                  <label for="bookmark1" class="star-rating mb-0">
+                    <i class="fa fa-bookmark d-inline-block"></i>
+                  </label>
+                </div>
+              </div>
+
+              <div class="content">
+                <h6 style="font-weight: 700" class="mb-2">
+                  The title of the patent
+                </h6>
+
+                <div id="text">
+                  <div class="row1">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                  <div>
+                    <hr />
+
+                    <div class="row2">
+                      <div class="col-12 col-lg-4">
+                        <span>
+                          kind:
+                          <strong> kind </strong>
+                        </span>
+                      </div>
+
+                      <div class="col-12 col-lg-4">
+                        <span>
+                          num_claims:
+                          <strong> num_claims </strong>
+                        </span>
+                      </div>
+
+                      <div class="col-12 col-lg-4">
+                        <span>
+                          country:
+                          <strong> country </strong>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="row my-2">
+                      <div class="col-12 col-lg-4">
+                        <span>
+                          date:
+                          <strong> date </strong>
+                        </span>
+                      </div>
+
+                      <div class="col-12 col-lg-4">
+                        <span>
+                          type:
+                          <strong> type </strong>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="button-main mt-3">
+                  <a id="moreNdLessBtn" onclick="toggleText()">
+                    <span> Detail </span>
+                  </a>
+
+                  <a>more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--pagina-->
+        <div style="display: flex; justify-content: center" class="mx-auto">
+          <div class="pagination">
+            <a class="btn1" onclick="backBtn()"
+              ><img id="dark-arrow" src="./icons8-previous-dark.png" /><img
+                id="light-arrow"
+                src="./icons8-previous-light.png"
+            /></a>
+            <ul>
+              <li class="link active" value="1" onclick="activeLink()">1</li>
+              <li class="link" value="2" onclick="activeLink()">2</li>
+              <li class="link" value="3" onclick="activeLink()">3</li>
+              <li class="link" value="4" onclick="activeLink()">4</li>
+              <li class="link" value="5" onclick="activeLink()">5</li>
+              <li class="link" value="6" onclick="activeLink()">6</li>
+            </ul>
+            <a class="btn2" onclick="nextBtn()"
+              ><img id="dark-arrow-next" src="./icons8-next-dark.png" /><img
+                id="light-arrow-next"
+                src="./icons8-next-light.png"
+            /></a>
+          </div>
+        </div>
+        <!--go to top-->
+        <a id="go-to-top" onclick="scrollToTop()">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </div>
+    </div>
+    <!-- //////////////confirm modal//////////////////// -->
+    <div
+      class="modal fade"
+      id="confirmModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="confirmModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content px-3" style="border-radius: 26px">
+          <div class="mt-3" style="display: flex; justify-content: end">
+            <div
+              type="button"
+              class="close-btn"
+              data-dismiss="modal"
+              aria-label="Close"
+              aria-hidden="true"
+            >
+              &times;
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <h6 class="text-center">
+              Are you sure you want to save all searches?
+            </h6>
+            <div class="mt-3" style="display: flex; justify-content: center">
+              <button class="cofirm-modal-btns mr-1 mt-3">yes</button>
+
+              <button
+                type="button"
+                class="cofirm-modal-btns mt-3 ml-1"
+                data-dismiss="modal"
+                aria-label="Close"
+                aria-hidden="true"
+              >
+                no
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //////////////end of confirm modal//////////////////// -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+      let link = document.getElementsByClassName("link");
+      let currentValue = 1;
+      function activeLink() {
+        for (l of link) {
+          l.classList.remove("active");
+        }
+        event.target.classList.add("active");
+        currentValue = even.target.Value;
+      }
+      function backBtn() {
+        if (currentValue > 1) {
+          for (l of link) {
+            l.classList.remove("active");
+          }
+          currentValue--;
+          link[currentValue - 1].classList.add("active");
+        }
+      }
+      function nextBtn() {
+        if (currentValue < 6) {
+          for (l of link) {
+            l.classList.remove("active");
+          }
+          currentValue++;
+          link[currentValue - 1].classList.add("active");
+        }
+      }
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      }
+      /////////////Dark and light mode////////////////////
+      // Get the theme toggle input
+      const themeToggle = document.querySelector(
+        '.theme-switch input[type="checkbox"]'
+      );
+
+      const darkArrow = document.getElementById("dark-arrow");
+      const darkNextArrow = document.getElementById("dark-arrow-next");
+      const lightArrow = document.getElementById("light-arrow");
+      const lightNextArrow = document.getElementById("light-arrow-next");
+
+      // Get the current theme from local storage
+      const currentTheme = localStorage.getItem("theme");
+
+      // If the current local storage item can be found
+      if (currentTheme) {
+        // Set the body data-theme attribute to match the local storage item
+        document.documentElement.setAttribute("data-theme", currentTheme);
+
+        // If the current theme is dark, check the theme toggle
+        if (currentTheme === "dark") {
+          themeToggle.checked = true;
+          darkNextArrow.style.display = "none";
+          darkArrow.style.display = "none";
+          lightNextArrow.style.display = "inline";
+          lightArrow.style.display = "inline";
+        } else {
+          darkNextArrow.style.display = "inline";
+          darkArrow.style.display = "inline";
+          lightNextArrow.style.display = "none";
+          lightArrow.style.display = "none";
+        }
+      }
+
+      // Function that will switch the theme based on the if the theme toggle is checked or not
+      function switchTheme(e) {
+        if (e.target.checked) {
+          darkNextArrow.style.display = "none";
+          darkArrow.style.display = "none";
+          lightNextArrow.style.display = "inline";
+          lightArrow.style.display = "inline";
+          document.documentElement.setAttribute("data-theme", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          darkNextArrow.style.display = "inline";
+          darkArrow.style.display = "inline";
+          lightNextArrow.style.display = "none";
+          lightArrow.style.display = "none";
+          document.documentElement.setAttribute("data-theme", "light");
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      // Add an event listener to the theme toggle, which will switch the theme
+      themeToggle.addEventListener("change", switchTheme, false);
+
+      //////////save patent btn ////////////////
+      function showSavingPatentBox() {
+        const box = document.querySelector(".inputBox");
+        box.classList.add("display-block");
+      }
+      //////////////show more and less///////////////////
+      const fullText = document.getElementById("text").innerHTML.trim();
+      const letter = 350;
+      const truncatedText = fullText.substring(0, letter) + "...";
+      document.getElementById("text").innerHTML = truncatedText;
+
+      let isExpanded = false;
+
+      function toggleText() {
+        const text = document.getElementById("text");
+        const btn = document.getElementById("moreNdLessBtn");
+
+        if (!isExpanded) {
+          // If text is collapsed, expand it and change button text
+          text.innerHTML = fullText;
+          btn.innerHTML = "no Detail";
+          isExpanded = true;
+        } else {
+          // If text is expanded, collapse it and change button text
+          text.innerHTML = truncatedText;
+          btn.innerHTML = "Detail";
+          isExpanded = false;
+        }
+      }
+    </script>
+  </body>
+</html>

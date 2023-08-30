@@ -1,0 +1,118 @@
+@media  screen and (max-width: 900px) {
+    .container .header1,.header2{
+        display: none;
+     }
+     .container .header2{
+         display: none;
+      }
+     .resHeader {
+       padding-top: 10px;
+       padding-left: 4px;
+      width: 30%;
+      height: 45px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display:flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 13px;
+      color: white;
+      }
+      .resHeader img{
+       width: 25px;
+       height: 25px;
+       border-radius: 50%;
+       margin-bottom: 10px;
+      }
+    .fullResultBodyMenuItems a{
+        font-size: 7px;
+    }
+    .fullResultContainer .fullResultBodyMenu .fullResultBodyMenuLine{
+     left: 15px;
+     top: 60px;
+    }
+    .fullResultContainer .fullResultBodyMenu  .fullResultBodyMenuIcon{
+        left:8px;
+        font-size: 14px;
+    }
+    .fullResultBodyMenuItems{
+        left:10px;
+        top:0;
+    }
+    .fullResultBodyResult .fullResultBodyResultText1{
+        font-size: 10px;
+    }
+    .fullResultBodyResult .fullResultBodyResultAbstract{
+        font-size: 10px;
+    }
+    .fullResultBodyResult .fullResultBodyResultClassifications{
+        font-size: 10px;
+    }
+    .fullResultBodyResult .fullResultBodyResultDescription{
+        font-size: 10px;
+    }
+    .fullResultBodyResult .fullResultBodyResultSUMMARY{
+        font-size: 10px;
+    }
+    .fullResultBodyResult .fullResultBodyResultClaims{
+        font-size: 10px;
+    }
+    .fullResultContainer .fullResultBodyMenu .fullResultBodyMenuLine{
+        height:300px ;
+    }
+    .fullResultContainer .fullResultBodyMenu .buttonDownLoadInFullResultMenu{
+       left: 0;
+       top: 390px;
+       
+    }
+    .fullResultContainer .fullResultBodyMenu .buttonBackInFullResultMenu{
+        left: 0;
+        top: 420px;
+        
+     }
+     .fullResultContainer .fullResultBodyMenu .buttonSaveInFullResultMenu{
+        left: 0;
+        top: 450px;
+        
+     }
+     .fullResultContainer .fullResultBodyMenu .buttonSaveInFullResultMenu button{
+        font-size:10px;
+        height:22px;
+       
+     }
+     .fullResultContainer .fullResultBodyMenu .buttonBackInFullResultMenu button{
+        font-size:10px; 
+        height:22px;
+     }
+     .fullResultContainer .fullResultBodyMenu .buttonDownLoadInFullResultMenu button{
+        font-size:10px;
+        height:22px;
+     }
+     
+}
+@media  screen and (min-width: 900px){
+   .resHeader{
+      display: none;
+   }
+}
+@media screen and (max-width: 600px){
+     .headerInResonsive{
+        display:none;
+     }
+    .container-fluid .fullResultHeader{
+        height: 20px;
+    }
+    .container-fluid .fullResultHeader .fullResultH1{
+        display: none;
+    }
+    .container-fluid .fullResultHeader .fullResultH2{
+        display: none;
+    }
+    .openMenuInresponsive{
+        display: flex;
+      }
+      
+    
+}
+

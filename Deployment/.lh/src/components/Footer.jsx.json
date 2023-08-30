@@ -1,0 +1,74 @@
+{
+    "sourceFile": "src/components/Footer.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 14,
+            "patches": [
+                {
+                    "date": 1682705757183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1682705765736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\r\n \r\n const Footer = () => {\r\n-  return (\r\n+  return (<>\r\n     <div id=\"bafooterdayba\" class=\"BA-Footer\">\r\n     <p id=\"PrivacyPolicyInDaymood\">Privacy Policy</p>\r\n     <div id=\"divInfooterInDaymood\"></div>\r\n     <p id=\"TermsOfInDaymood\">Terms Of Services</p>\r\n"
+                },
+                {
+                    "date": 1682705778113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,14 +6,11 @@\n     <p id=\"PrivacyPolicyInDaymood\">Privacy Policy</p>\r\n     <div id=\"divInfooterInDaymood\"></div>\r\n     <p id=\"TermsOfInDaymood\">Terms Of Services</p>\r\n   </div>\r\n-  <!-- end of the footer -->\r\n \r\n-  </div>\r\n  \r\n  \r\n- \r\n   <!-- Top Navigation Menu -->\r\n   <div id=\"mySidenav\" class=\"sidenav\">\r\n     <a href=\"javascript:void(0)\" class=\"closebtn\" onclick=\"closeNav()\"\r\n       >&times;</a\r\n@@ -24,8 +21,9 @@\n     <a href=\"#\">Signin</a>\r\n     <a href=\"#\">Bookmarks</a>\r\n     <div class=\"header-DayNight\"></div>\r\n   </div>\r\n+  </>\r\n   );\r\n };\r\n \r\n export default Footer;\r\n"
+                },
+                {
+                    "date": 1682705788557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,22 +7,8 @@\n     <div id=\"divInfooterInDaymood\"></div>\r\n     <p id=\"TermsOfInDaymood\">Terms Of Services</p>\r\n   </div>\r\n \r\n- \r\n- \r\n-  <!-- Top Navigation Menu -->\r\n-  <div id=\"mySidenav\" class=\"sidenav\">\r\n-    <a href=\"javascript:void(0)\" class=\"closebtn\" onclick=\"closeNav()\"\r\n-      >&times;</a\r\n-    >\r\n-    <a href=\"#\">Menu</a>\r\n-    <a href=\"#\">About Us</a>\r\n-    <a href=\"#\">Contact Us</a>\r\n-    <a href=\"#\">Signin</a>\r\n-    <a href=\"#\">Bookmarks</a>\r\n-    <div class=\"header-DayNight\"></div>\r\n-  </div>\r\n   </>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1683268629478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from \"react\";\r\n \r\n const Footer = () => {\r\n   return (<>\r\n-    <div id=\"bafooterdayba\" class=\"BA-Footer\">\r\n+    <div id=\"bafooterdayba\" className=\"BA-Footer\">\r\n     <p id=\"PrivacyPolicyInDaymood\">Privacy Policy</p>\r\n     <div id=\"divInfooterInDaymood\"></div>\r\n     <p id=\"TermsOfInDaymood\">Terms Of Services</p>\r\n   </div>\r\n"
+                },
+                {
+                    "date": 1683302010906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from \"react\";\r\n \r\n const Footer = () => {\r\n   return (<>\r\n-    <div id=\"bafooterdayba\" className=\"BA-Footer\">\r\n+    <div  className=\"BA-Footer\">\r\n     <p id=\"PrivacyPolicyInDaymood\">Privacy Policy</p>\r\n     <div id=\"divInfooterInDaymood\"></div>\r\n     <p id=\"TermsOfInDaymood\">Terms Of Services</p>\r\n   </div>\r\n"
+                },
+                {
+                    "date": 1683302017149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,10 @@\n \r\n const Footer = () => {\r\n   return (<>\r\n     <div  className=\"BA-Footer\">\r\n-    <p id=\"PrivacyPolicyInDaymood\">Privacy Policy</p>\r\n-    <div id=\"divInfooterInDaymood\"></div>\r\n-    <p id=\"TermsOfInDaymood\">Terms Of Services</p>\r\n+    <p >Privacy Policy</p>\r\n+    <di>Terms Of Services</p>\r\n   </div>\r\n \r\n   </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1683302030722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const Footer = () => {\r\n   return (<>\r\n     <div  className=\"BA-Footer\">\r\n     <p >Privacy Policy</p>\r\n-    <di>Terms Of Services</p>\r\n+    <p>Terms Of Services</p>\r\n   </div>\r\n \r\n   </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1683302064965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const Footer = () => {\r\n   return (<>\r\n     <div  className=\"BA-Footer\">\r\n     <p >Privacy Policy</p>\r\n-    <p>Terms Of Services</p>\r\n+    <div>Terms Of Services</div>\r\n   </div>\r\n \r\n   </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1683302096424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n const Footer = () => {\r\n   return (<>\r\n     <div  className=\"BA-Footer\">\r\n     <p >Privacy Policy</p>\r\n+    <div id=\"divInfooterInDaymood\"></div>\r\n     <div>Terms Of Services</div>\r\n   </div>\r\n \r\n   </>\r\n"
+                },
+                {
+                    "date": 1683302102535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   return (<>\r\n     <div  className=\"BA-Footer\">\r\n     <p >Privacy Policy</p>\r\n     <div id=\"divInfooterInDaymood\"></div>\r\n-    <div>Terms Of Services</div>\r\n+    <p>Terms Of Services</p>\r\n   </div>\r\n \r\n   </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1689946775380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const Footer = () => {\r\n   return (<>\r\n     <div  className=\"BA-Footer\">\r\n     <p >Privacy Policy</p>\r\n-    <div id=\"divInfooterInDaymood\"></div>\r\n+    <div st></div>\r\n     <p>Terms Of Services</p>\r\n   </div>\r\n \r\n   </>\r\n"
+                },
+                {
+                    "date": 1689946781115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const Footer = () => {\r\n   return (<>\r\n     <div  className=\"BA-Footer\">\r\n     <p >Privacy Policy</p>\r\n-    <div st></div>\r\n+    <div style={{    border: solid 1px white;}}></div>\r\n     <p>Terms Of Services</p>\r\n   </div>\r\n \r\n   </>\r\n"
+                },
+                {
+                    "date": 1689946787273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const Footer = () => {\r\n   return (<>\r\n     <div  className=\"BA-Footer\">\r\n     <p >Privacy Policy</p>\r\n-    <div style={{    border: solid 1px white;}}></div>\r\n+    <div style={{    border: \"solid 1px white\";}}></div>\r\n     <p>Terms Of Services</p>\r\n   </div>\r\n \r\n   </>\r\n"
+                },
+                {
+                    "date": 1689946792616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,13 @@\n-import React from \"react\";\r\n-\r\n const Footer = () => {\r\n-  return (<>\r\n-    <div  className=\"BA-Footer\">\r\n-    <p >Privacy Policy</p>\r\n-    <div style={{    border: \"solid 1px white\";}}></div>\r\n-    <p>Terms Of Services</p>\r\n-  </div>\r\n-\r\n-  </>\r\n+  return (\r\n+    <>\r\n+      <div className=\"BA-Footer\">\r\n+        <p>Privacy Policy</p>\r\n+        <div style={{ border: \"solid 1px white\" }}></div>\r\n+        <p>Terms Of Services</p>\r\n+      </div>\r\n+    </>\r\n   );\r\n };\r\n \r\n export default Footer;\r\n"
+                }
+            ],
+            "date": 1682705757183,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\nconst Footer = () => {\r\n  return (\r\n    <div id=\"bafooterdayba\" class=\"BA-Footer\">\r\n    <p id=\"PrivacyPolicyInDaymood\">Privacy Policy</p>\r\n    <div id=\"divInfooterInDaymood\"></div>\r\n    <p id=\"TermsOfInDaymood\">Terms Of Services</p>\r\n  </div>\r\n  <!-- end of the footer -->\r\n\r\n  </div>\r\n \r\n \r\n \r\n  <!-- Top Navigation Menu -->\r\n  <div id=\"mySidenav\" class=\"sidenav\">\r\n    <a href=\"javascript:void(0)\" class=\"closebtn\" onclick=\"closeNav()\"\r\n      >&times;</a\r\n    >\r\n    <a href=\"#\">Menu</a>\r\n    <a href=\"#\">About Us</a>\r\n    <a href=\"#\">Contact Us</a>\r\n    <a href=\"#\">Signin</a>\r\n    <a href=\"#\">Bookmarks</a>\r\n    <div class=\"header-DayNight\"></div>\r\n  </div>\r\n  );\r\n};\r\n\r\nexport default Footer;\r\n"
+        }
+    ]
+}

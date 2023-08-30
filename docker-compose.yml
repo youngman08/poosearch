@@ -1,0 +1,11 @@
+version: "3"
+services:
+  frontend:
+    build:
+      context: ./Deployment
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    tty: true
+    working_dir: /app
+    ports:
+      - 80:3000

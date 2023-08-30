@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 45px;
+    background-color: rgb(0,22,45); 
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .header1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+   padding-left: 50px;
+}
+.container .header1 img{
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.container .header1 a{
+    color:#ffffff;
+     margin-left: 2em;
+     font-size:15px;
+     font-weight: 300;
+     letter-spacing: 1.5px;
+}
+.container .header1 a:hover{
+    font-size: 17px;
+     transition: 0.5s;
+     margin-left: 1.7em;
+     cursor: pointer;
+}
+/* style the dropdown */
+.dropdown {
+    position: relative;
+  }
+.dropdown-content {
+    display: none;
+  flex-direction: column;
+  position: absolute;
+  
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: -3px 5px 16px 0px rgba(255, 255, 255, 0.507);
+ padding: 5px;
+  z-index: 1;
+  border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+    color: #000000 !important;
+    margin: 5px 5px 5px 9px !important;
+    text-decoration: none !important;
+  }
+  
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  
+  
+.container .header2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;color: white;
+}
+.container .header2 a{
+    margin-right:20px;
+    cursor: pointer;
+    
+}
+/* style the body */
+.FQbody{
+    width: 100%;
+    height: 655px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.FQbody .box1{
+    width: 10%;
+    height: 100%;
+    background-color: rgb(223, 223, 223);
+}
+.FQbody .box2{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    position: relative;
+   
+}
+.FQbody .box2 a{
+    padding-left: 10px;
+    text-align: center;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    border-left: 4px solid black;
+    margin-bottom:30px ;
+    letter-spacing: 2px;
+}
+.FQbody .box2 a:hover{
+    font-size: 22px;
+    transition: 0.5s;
+}
+.box2 .title{
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    font-size: 25px;
+}
+.box2 .title2{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    font-size: 18px;
+}
+.box2 .city{
+    width:700px;
+    height:350px;
+    position: absolute;
+    top:200px;
+    left:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.box2 .city .fq1{
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 10%;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 30px;
+   padding-right: 30px;
+   box-shadow: 0 3px 10px 1px black;
+   margin-bottom: 20px;
+}
+.box2 .city .thefirstcontentFQ{
+width: 97%;
+height: 30%;
+margin-left: 12px;
+border-radius: 5px;
+padding: 10px;
+box-shadow: 0 3px 10px 1px black;
+font-size: 15px;
+display: none;
+margin-bottom: 20px;
+}
+.box2 .city .thefirstcontentFQ a{
+    font-size:10px !important;
+    border-left: none;
+    border-bottom: 2px solid black;
+}
+.thefirstcontentFQ2{
+    display: block !important;
+    height: 100px  !important;
+}
+
+
+/* style the footer */
+.footer{
+    height: 30px;
+    background-color: rgb(0,22,45); 
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+}
+.footer div{
+    width: 2px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+  }
+  .footer p{
+    font-size: 10px;
+   color: #fff;
+   letter-spacing:1px;
+   margin-top: 15px;
+  }
